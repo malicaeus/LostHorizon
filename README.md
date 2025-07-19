@@ -60,6 +60,10 @@
 - **Plume Solaire** : Immunise contre les dégâts de feu. Donne Fire Resistance I si tu brûles. Recharge : 30s.  
 - **Œil d’Hyperion** : Révèle les entités invisibles proches et donne Night Vision. Recharge : 45s.
 
+#### 🌕 Reliques de l'éclipse
+- Lame d’Éclipse : lame céleste tranchant l'ombre.
+- Cloche de lune : Cloche mystique aux effets lunaires.
+
 ### 💍 Bagues et gemmes infusées
 
 L’**Infuseur de bague** permet de combiner des **bagues en or ou en argent** avec des **gemmes mystiques**. Chaque combinaison confère des effets uniques au joueur, équilibrés par une contrepartie. Pour infuser une bague, il faut aussi un Cœur du lien. Cela rend le processus plus stratégique, et récompense les joueurs qui osent défier le Gardien du Cœur.
