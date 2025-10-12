@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/github/license/malicaeus/LostHorizon)  
 
 <p align="center">
-  <img src="https://github.com/elieduclr/malicaeus/blob/main/losthorizon.png" alt="LostHorizon Banner" width="40%">
+  <img src="https://github.com/malicaeus/LostHorizon/blob/main/losthorizon.png" alt="LostHorizon Banner" width="40%">
 </p>
 
 ## 🧭 About
