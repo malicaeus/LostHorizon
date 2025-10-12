@@ -4,7 +4,7 @@
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.4-blue)  
 ![Mod Loader](https://img.shields.io/badge/Forge/NeoForge-FML-orange)  
-![License](https://img.shields.io/github/license/elieduclr/LostHorizon)  
+![License](https://img.shields.io/github/license/malicaeus/LostHorizon)  
 
 <p align="center">
   <img src="https://github.com/malicaeus/LostHorizon/blob/main/losthorizon.png" alt="LostHorizon Banner" width="40%">
@@ -306,4 +306,4 @@ Développé par **Malicaeus**
 ⭐ Si tu aimes le mod, pense à mettre une ⭐ sur GitHub pour soutenir le projet !
 
 ---
-🔗 [GitHub](https://github.com/elieduclr/LostHorizon) | 🏗️ En développement | 🎮 Compatible avec NeoForge
+🔗 [GitHub](https://github.com/malicaeus/LostHorizon) | 🏗️ En développement | 🎮 Compatible avec NeoForge
