@@ -1,13 +1,13 @@
 # LostHorizon  
 
-[🇫🇷 Version française](https://github.com/elieduclr/LostHorizon/blob/main/README.md) | [🇺🇸 English version](https://github.com/elieduclr/LostHorizon/blob/main/EN-README.md)
+[🇫🇷 Version française](https://github.com/malicaeus/LostHorizon/blob/main/README.md) | [🇺🇸 English version](https://github.com/malicaeus/LostHorizon/blob/main/EN-README.md)
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.4-blue)  
 ![Mod Loader](https://img.shields.io/badge/Forge/NeoForge-FML-orange)  
-![License](https://img.shields.io/github/license/elieduclr/LostHorizon)  
+![License](https://img.shields.io/github/license/malicaeus/LostHorizon)  
 
 <p align="center">
-  <img src="https://github.com/elieduclr/LostHorizon/blob/main/losthorizon.png" alt="LostHorizon Banner" width="40%">
+  <img src="https://github.com/elieduclr/malicaeus/blob/main/losthorizon.png" alt="LostHorizon Banner" width="40%">
 </p>
 
 ## 🧭 About
@@ -299,7 +299,7 @@ As long as you respect the terms of the [GPL 3.0 license](https://www.gnu.org/li
 
 ## 🧠 Author
 
-Developed by **Élie** 
+Developed by **Malicaeus** 
 🧪 Passionate about science, code, and digital mysticism.
 
 ---
@@ -307,4 +307,4 @@ Developed by **Élie**
 ⭐ If you like the mod, consider giving a ⭐ on GitHub to support the project!
 
 ---
-🔗 [GitHub](https://github.com/elieduclr/LostHorizon) | 🏗️ Under development | 🎮 Compatible with NeoForge
+🔗 [GitHub](https://github.com/malicaeus/LostHorizon) | 🏗️ Under development | 🎮 Compatible with NeoForge
