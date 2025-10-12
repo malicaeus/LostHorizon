@@ -1,13 +1,13 @@
 # LostHorizon  
 
-[🇫🇷 Version française](https://github.com/elieduclr/LostHorizon/blob/main/README.md) | [🇺🇸 English version](https://github.com/elieduclr/LostHorizon/blob/main/EN-README.md)
+[🇫🇷 Version française](https://github.com/malicaeus/LostHorizon/blob/main/README.md) | [🇺🇸 English version](https://github.com/malicaeus/LostHorizon/blob/main/EN-README.md)
 
 ![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.4-blue)  
 ![Mod Loader](https://img.shields.io/badge/Forge/NeoForge-FML-orange)  
 ![License](https://img.shields.io/github/license/elieduclr/LostHorizon)  
 
 <p align="center">
-  <img src="https://github.com/elieduclr/LostHorizon/blob/main/losthorizon.png" alt="LostHorizon Banner" width="40%">
+  <img src="https://github.com/malicaeus/LostHorizon/blob/main/losthorizon.png" alt="LostHorizon Banner" width="40%">
 </p>
 
 ## 🧭 À propos
@@ -298,7 +298,7 @@ Tant que tu respectes les termes de la [licence GPL 3.0](https://www.gnu.org/lic
 
 ## 🧠 Auteur
 
-Développé par **Élie** 
+Développé par **Malicaeus** 
 🧪 Passionné de sciences, de code et de mysticisme numérique.
 
 ---
