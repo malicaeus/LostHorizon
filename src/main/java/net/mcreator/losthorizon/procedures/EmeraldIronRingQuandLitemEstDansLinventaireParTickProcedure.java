@@ -29,13 +29,13 @@ public class EmeraldIronRingQuandLitemEstDansLinventaireParTickProcedure {
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (entityiterator instanceof Mob _mobEnt2 && _mobEnt2.isAggressive()) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1, false, false));
+							_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 60, 1, false, false));
 					}
 				}
 			}
 			if (Level.NETHER == (entity.level().dimension()) || world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_aride")))) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 60, 1, false, false));
 			}
 		}
 	}

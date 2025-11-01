@@ -19,38 +19,38 @@ public class NecromancerMeleeProcedure {
 			return;
 		double Chain = 0;
 		double ChainWait = 0;
-		if (entity.getPersistentData().getDouble("IA") == 40) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 40) {
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(LosthorizonModItems.FROSTBITE_DAGGER.get()).copy();
-				_setstack.setCount(1);
-				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				ItemStack _setstack1 = new ItemStack(LosthorizonModItems.FROSTBITE_DAGGER.get()).copy();
+				_setstack1.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack1);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
 			if (entity instanceof NecromancerBossEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(NecromancerBossEntity.DATA_attack, true);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 120, 1));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 120, 1));
 		}
-		if (entity.getPersistentData().getDouble("IA") == 70) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 70) {
 			NecromancerDashProcedure.execute(entity);
 			if (entity instanceof NecromancerBossEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(NecromancerBossEntity.DATA_attack, true);
 		}
-		if (entity.getPersistentData().getDouble("IA") == 100) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 100) {
 			if (entity instanceof NecromancerBossEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(NecromancerBossEntity.DATA_attack, true);
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
-				_setstack.setCount(1);
-				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				ItemStack _setstack8 = new ItemStack(Blocks.AIR).copy();
+				_setstack8.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack8);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 3));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 100, 3));
 		}
-		if (entity.getPersistentData().getDouble("IA") == 150) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 150) {
 			NecromancerRandomProcedure.execute(world, x, y, z, entity);
 		}
 	}

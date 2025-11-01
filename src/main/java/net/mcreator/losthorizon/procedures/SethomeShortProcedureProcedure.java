@@ -21,17 +21,9 @@ public class SethomeShortProcedureProcedure {
 		{
 			LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 			_vars.homeX = Math.round(entity.getX());
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 			_vars.homeZ = Math.round(entity.getZ());
-			_vars.syncPlayerVariables(entity);
-		}
-		{
-			LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 			_vars.homeY = Math.round(entity.getY());
-			_vars.syncPlayerVariables(entity);
+			_vars.markSyncDirty();
 		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal(("La base de " + entity.getDisplayName().getString() + " est fix\u00E9e \u00E0 " + Math.round(entity.getX()) + " " + Math.round(entity.getY()) + " " + Math.round(entity.getZ())

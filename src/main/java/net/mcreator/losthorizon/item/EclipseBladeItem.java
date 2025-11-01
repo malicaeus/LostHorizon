@@ -1,12 +1,8 @@
-
 package net.mcreator.losthorizon.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ToolMaterial;
-import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,28 +14,26 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.losthorizon.procedures.EclipseBladeQuandUneEntiteVivanteEstFrappeeAvecLoutilProcedure;
 
-import java.util.List;
+import java.util.function.Consumer;
 
-public class EclipseBladeItem extends SwordItem {
+public class EclipseBladeItem extends Item {
 	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2100, 8f, 0, 12, TagKey.create(Registries.ITEM, ResourceLocation.parse("losthorizon:eclipse_blade_repair_items")));
 
 	public EclipseBladeItem(Item.Properties properties) {
-		super(TOOL_MATERIAL, 4f, -2f, properties.fireResistant());
+		super(properties.sword(TOOL_MATERIAL, 4f, -2f).fireResistant());
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+	public void hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		super.hurtEnemy(itemstack, entity, sourceentity);
 		EclipseBladeQuandUneEntiteVivanteEstFrappeeAvecLoutilProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, sourceentity);
-		return retval;
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.losthorizon.eclipse_blade.description_0"));
-		list.add(Component.translatable("item.losthorizon.eclipse_blade.description_1"));
-		list.add(Component.translatable("item.losthorizon.eclipse_blade.description_2"));
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+		componentConsumer.accept(Component.translatable("item.losthorizon.eclipse_blade.description_0"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.eclipse_blade.description_1"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.eclipse_blade.description_2"));
 	}
 }

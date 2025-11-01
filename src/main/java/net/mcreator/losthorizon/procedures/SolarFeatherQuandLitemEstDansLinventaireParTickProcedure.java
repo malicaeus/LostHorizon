@@ -17,7 +17,7 @@ public class SolarFeatherQuandLitemEstDansLinventaireParTickProcedure {
 		if (entity == null)
 			return;
 		if ((entity.isInLava() || entity.isOnFire()) && (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == LosthorizonModItems.SOLAR_FEATHER.get()
-				&& itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBoolean("SolarFeather2") == false) {
+				&& itemstack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getBooleanOr("SolarFeather2", false) == false) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 100, 0, false, false));
 			{

@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "desert",
-    "savanna",
-    "savanna_plateau",
-    "windswept_savanna",
     "badlands",
+    "savanna",
     "eroded_badlands",
-    "wooded_badlands"
+    "windswept_savanna",
+    "wooded_badlands",
+    "desert",
+    "savanna_plateau"
   ]
 }

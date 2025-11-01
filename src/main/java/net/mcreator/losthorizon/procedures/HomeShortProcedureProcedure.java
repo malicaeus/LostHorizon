@@ -45,10 +45,10 @@ public class HomeShortProcedureProcedure {
 			_level.sendParticles(ParticleTypes.SOUL_FIRE_FLAME, entity.getData(LosthorizonModVariables.PLAYER_VARIABLES).homeX, entity.getData(LosthorizonModVariables.PLAYER_VARIABLES).homeY,
 					entity.getData(LosthorizonModVariables.PLAYER_VARIABLES).homeZ, 200, 2, 3, 2, 1);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 160, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 160, 1, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 320, 1, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 240, 1, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 240, 1, false, false));
 	}
 }

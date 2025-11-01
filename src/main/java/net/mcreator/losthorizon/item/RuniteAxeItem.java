@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.item;
 
 import net.minecraft.world.item.ToolMaterial;
@@ -21,9 +20,8 @@ public class RuniteAxeItem extends AxeItem {
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+	public void hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		super.hurtEnemy(itemstack, entity, sourceentity);
 		RuniteSwordQuandUneEntiteVivanteEstFrappeeAvecLoutilProcedure.execute(entity.level(), entity.getX(), entity.getY(), entity.getZ(), entity, itemstack);
-		return retval;
 	}
 }

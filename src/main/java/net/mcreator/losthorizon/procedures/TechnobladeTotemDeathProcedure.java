@@ -65,9 +65,9 @@ public class TechnobladeTotemDeathProcedure {
 				_cancellable.setCanceled(true);
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 2, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 300, 2, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 2, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 300, 2, false, false));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(entity.getX(), entity.getY(), entity.getZ()), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("losthorizon:technoblade_never_dies")), SoundSource.NEUTRAL, 1, 1);

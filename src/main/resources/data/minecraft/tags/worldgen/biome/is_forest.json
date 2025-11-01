@@ -2,13 +2,13 @@
   "replace": false,
   "values": [
     "losthorizon:enchanted_forest",
+    "warped_forest",
+    "windswept_forest",
+    "forest",
+    "old_growth_birch_forest",
     "birch_forest",
     "crimson_forest",
     "dark_forest",
-    "flower_forest",
-    "forest",
-    "old_growth_birch_forest",
-    "warped_forest",
-    "windswept_forest"
+    "flower_forest"
   ]
 }

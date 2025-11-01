@@ -18,7 +18,7 @@ public class NecromancerFireballProcedure {
 			return;
 		double Chain = 0;
 		double ChainWait = 0;
-		if (entity.getPersistentData().getDouble("IA") == 20) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 20) {
 			Chain = 5;
 			for (int index0 = 0; index0 < (int) Chain; index0++) {
 				LosthorizonMod.queueServerWork((int) ChainWait, () -> {
@@ -42,7 +42,7 @@ public class NecromancerFireballProcedure {
 				ChainWait = ChainWait + 3;
 			}
 		}
-		if (entity.getPersistentData().getDouble("IA") == 40) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 40) {
 			Chain = 7;
 			for (int index1 = 0; index1 < (int) Chain; index1++) {
 				LosthorizonMod.queueServerWork((int) ChainWait, () -> {

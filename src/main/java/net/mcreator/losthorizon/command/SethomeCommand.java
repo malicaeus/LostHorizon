@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.command;
 
 import org.checkerframework.checker.units.qual.s;

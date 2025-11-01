@@ -21,14 +21,14 @@ public class OnyxGoldRingQuandLitemEstDansLinventaireParTickProcedure {
 			{
 				LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.onyx_gold_ring_cooldown = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("losthorizon:corruption")))), 1);
 			LosthorizonMod.queueServerWork(900, () -> {
 				{
 					LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 					_vars.onyx_gold_ring_cooldown = false;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			});
 		}

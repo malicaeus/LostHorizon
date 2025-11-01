@@ -1,17 +1,8 @@
-
 package net.mcreator.losthorizon.item;
-
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ProjectileWeaponItem;
-import net.minecraft.world.item.ItemUseAnimation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.BowItem;
+import net.minecraft.world.item.*;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -42,7 +33,6 @@ public class OnyxKnifeItem extends Item {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
 	public boolean isFoil(ItemStack itemstack) {
 		return true;
 	}
@@ -85,8 +75,8 @@ public class OnyxKnifeItem extends Item {
 	private ItemStack findAmmo(Player player) {
 		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == ThrowingOnyxKnifeEntity.PROJECTILE_ITEM.getItem());
 		if (stack == ItemStack.EMPTY) {
-			for (int i = 0; i < player.getInventory().items.size(); i++) {
-				ItemStack teststack = player.getInventory().items.get(i);
+			for (int i = 0; i < player.getInventory().getContainerSize(); i++) {
+				ItemStack teststack = player.getInventory().getItem(i);
 				if (teststack != null && teststack.getItem() == ThrowingOnyxKnifeEntity.PROJECTILE_ITEM.getItem()) {
 					stack = teststack;
 					break;

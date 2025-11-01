@@ -1,8 +1,4 @@
-
 package net.mcreator.losthorizon.item;
-
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.ShovelItem;
@@ -21,7 +17,6 @@ public class MythrilEnchantedShovelItem extends ShovelItem {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
 	public boolean isFoil(ItemStack itemstack) {
 		return true;
 	}

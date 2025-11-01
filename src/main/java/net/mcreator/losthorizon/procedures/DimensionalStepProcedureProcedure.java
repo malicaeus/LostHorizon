@@ -27,19 +27,15 @@ public class DimensionalStepProcedureProcedure {
 			{
 				LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.nbrjump = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES).nbrjump + 1;
-				_vars.syncPlayerVariables(entity);
-			}
-			{
-				LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.PreventClimbingFallDamage = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 		if (entity.onGround()) {
 			{
 				LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.nbrjump = 0;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

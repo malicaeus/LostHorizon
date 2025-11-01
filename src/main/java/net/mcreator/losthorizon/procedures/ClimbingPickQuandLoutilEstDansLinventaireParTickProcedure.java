@@ -29,7 +29,7 @@ public class ClimbingPickQuandLoutilEstDansLinventaireParTickProcedure {
 						{
 							LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 							_vars.PreventClimbingFallDamage = true;
-							_vars.syncPlayerVariables(entity);
+							_vars.markSyncDirty();
 						}
 					}
 				}

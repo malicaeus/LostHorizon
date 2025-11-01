@@ -256,5 +256,12 @@
   "item.losthorizon.climbing_pick": "Climbing Pick",
   "item.minecraft.lingering_potion.effect.furtivity_potion": "Lingering Potion of Furtivity",
   "item.losthorizon.black_blaze_spawn_egg": "Black Blaze Spawn Egg",
-  "entity.losthorizon.heart_guardian": "Heart Guardian"
+  "entity.losthorizon.heart_guardian": "Heart Guardian",
+  "item.losthorizon.ash_of_dawn": "Ash Of Dawn",
+  "entity.villager.losthorizon.hunter": "Hunter",
+  "entity.villager.losthorizon.necromancer_work": "Necromancer",
+  "item.losthorizon.lunar_sword": "Lunar Sword",
+  "item.losthorizon.lunar_sword.description_0": "§dForged beneath the full moon",
+  "item.losthorizon.lunar_sword.description_1": "§dInfused with astral silence",
+  "item.losthorizon.lunar_sword.description_2": "§dIts blade reflects dreams"
 }

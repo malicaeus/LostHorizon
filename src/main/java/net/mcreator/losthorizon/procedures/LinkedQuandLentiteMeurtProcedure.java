@@ -15,7 +15,7 @@ public class LinkedQuandLentiteMeurtProcedure {
 			{
 				LosthorizonModVariables.PlayerVariables _vars = sourceentity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.linked_soul = sourceentity.getData(LosthorizonModVariables.PLAYER_VARIABLES).linked_soul + 1;
-				_vars.syncPlayerVariables(sourceentity);
+				_vars.markSyncDirty();
 			}
 		}
 	}

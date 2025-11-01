@@ -28,18 +28,18 @@ public class AetherHeartAdvProcedureProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (false == (entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel
-				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().get(ResourceLocation.parse("losthorizon:aether_heart_recipe"))).isDone())) {
-			if (true == (entity instanceof ServerPlayer _plr1 && _plr1.level() instanceof ServerLevel
-					&& _plr1.getAdvancements().getOrStartProgress(_plr1.server.getAdvancements().get(ResourceLocation.parse("losthorizon:basalt_obsidian_advancement"))).isDone())
-					&& true == (entity instanceof ServerPlayer _plr2 && _plr2.level() instanceof ServerLevel
-							&& _plr2.getAdvancements().getOrStartProgress(_plr2.server.getAdvancements().get(ResourceLocation.parse("losthorizon:totem_of_the_moon_advancement"))).isDone())
-					&& true == (entity instanceof ServerPlayer _plr3 && _plr3.level() instanceof ServerLevel
-							&& _plr3.getAdvancements().getOrStartProgress(_plr3.server.getAdvancements().get(ResourceLocation.parse("losthorizon:runite_advancement"))).isDone())
-					&& true == (entity instanceof ServerPlayer _plr4 && _plr4.level() instanceof ServerLevel
-							&& _plr4.getAdvancements().getOrStartProgress(_plr4.server.getAdvancements().get(ResourceLocation.parse("losthorizon:onyx_advancement"))).isDone())) {
-				if (entity instanceof ServerPlayer _player) {
-					AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("losthorizon:aether_heart_recipe"));
+		if (false == (entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel _serverLevel0
+				&& _plr0.getAdvancements().getOrStartProgress(_serverLevel0.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:aether_heart_recipe"))).isDone())) {
+			if (true == (entity instanceof ServerPlayer _plr1 && _plr1.level() instanceof ServerLevel _serverLevel1
+					&& _plr1.getAdvancements().getOrStartProgress(_serverLevel1.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:basalt_obsidian_advancement"))).isDone())
+					&& true == (entity instanceof ServerPlayer _plr2 && _plr2.level() instanceof ServerLevel _serverLevel2
+							&& _plr2.getAdvancements().getOrStartProgress(_serverLevel2.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:totem_of_the_moon_advancement"))).isDone())
+					&& true == (entity instanceof ServerPlayer _plr3 && _plr3.level() instanceof ServerLevel _serverLevel3
+							&& _plr3.getAdvancements().getOrStartProgress(_serverLevel3.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:runite_advancement"))).isDone())
+					&& true == (entity instanceof ServerPlayer _plr4 && _plr4.level() instanceof ServerLevel _serverLevel4
+							&& _plr4.getAdvancements().getOrStartProgress(_serverLevel4.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:onyx_advancement"))).isDone())) {
+				if (entity instanceof ServerPlayer _player && _player.level() instanceof ServerLevel _level) {
+					AdvancementHolder _adv = _level.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:aether_heart_recipe"));
 					if (_adv != null) {
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {

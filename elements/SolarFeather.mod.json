@@ -1,15 +1,21 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "solar_feather",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
+    "animations": [],
     "name": "Solar Feather",
     "rarity": "UNCOMMON",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "TOOLS"
+      }
+    ],
     "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
@@ -20,6 +26,7 @@
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
+    "isPiglinCurrency": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -64,6 +71,7 @@
     },
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
-    "musicDiscAnalogOutput": 0
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": []
   }
 }

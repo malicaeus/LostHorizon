@@ -20,17 +20,17 @@ public class IceCrystalGoldRingQuandLitemEstDansLinventaireParTickProcedure {
 			{
 				LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.ice_crystal_gold_ring_cooldown = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 300, 0, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0, false, false));
 			LosthorizonMod.queueServerWork(1200, () -> {
 				{
 					LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 					_vars.ice_crystal_gold_ring_cooldown = false;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			});
 		}

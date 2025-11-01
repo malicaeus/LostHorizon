@@ -13,7 +13,7 @@ public class NecromancerBossChaqueMiseAJourDeTickDeLentiteProcedure {
 		double Chain = 0;
 		double ChainWait = 0;
 		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
-			entity.getPersistentData().putDouble("IA", (entity.getPersistentData().getDouble("IA") + 1));
+			entity.getPersistentData().putDouble("IA", (entity.getPersistentData().getDoubleOr("IA", 0) + 1));
 			if (entity instanceof NecromancerBossEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(NecromancerBossEntity.DATA_idle, false);
 			if (entity instanceof NecromancerBossEntity _datEntSetL)
@@ -26,24 +26,24 @@ public class NecromancerBossChaqueMiseAJourDeTickDeLentiteProcedure {
 			entity.getPersistentData().putDouble("IA", 0);
 			entity.getPersistentData().putString("State", "Idle");
 		}
-		if ((entity.getPersistentData().getString("State")).equals("Idle")) {
-			if (entity.getPersistentData().getDouble("IA") == 20) {
+		if ((entity.getPersistentData().getStringOr("State", "")).equals("Idle")) {
+			if (entity.getPersistentData().getDoubleOr("IA", 0) == 20) {
 				NecromancerRandomProcedure.execute(world, x, y, z, entity);
 			}
 		}
-		if ((entity.getPersistentData().getString("State")).equals("Melee")) {
+		if ((entity.getPersistentData().getStringOr("State", "")).equals("Melee")) {
 			NecromancerMeleeProcedure.execute(world, x, y, z, entity);
 		}
-		if ((entity.getPersistentData().getString("State")).equals("Fireball")) {
+		if ((entity.getPersistentData().getStringOr("State", "")).equals("Fireball")) {
 			NecromancerFireballProcedure.execute(world, entity);
 		}
-		if ((entity.getPersistentData().getString("State")).equals("Summon")) {
+		if ((entity.getPersistentData().getStringOr("State", "")).equals("Summon")) {
 			NecromancerSummonProcedure.execute(world, x, y, z, entity);
 		}
-		if ((entity.getPersistentData().getString("State")).equals("Regen")) {
+		if ((entity.getPersistentData().getStringOr("State", "")).equals("Regen")) {
 			NecromancerRegenProcedure.execute(entity);
 		}
-		if (entity.getPersistentData().getDouble("IA") == 200) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 200) {
 			entity.getPersistentData().putDouble("IA", 0);
 			NecromancerRandomProcedure.execute(world, x, y, z, entity);
 		}

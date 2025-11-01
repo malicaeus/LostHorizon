@@ -1,8 +1,7 @@
-
 package net.mcreator.losthorizon.block.entity;
 
-import net.neoforged.neoforge.items.wrapper.SidedInvWrapper;
-
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
@@ -29,27 +28,25 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class RingInfuserBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
-	private final SidedInvWrapper handler = new SidedInvWrapper(this, null);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(4, ItemStack.EMPTY);
 
 	public RingInfuserBlockEntity(BlockPos position, BlockState state) {
 		super(LosthorizonModBlockEntities.RING_INFUSER.get(), position, state);
 	}
 
 	@Override
-	public void loadAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
-		super.loadAdditional(compound, lookupProvider);
-		if (!this.tryLoadLootTable(compound))
+	public void loadAdditional(ValueInput valueInput) {
+		super.loadAdditional(valueInput);
+		if (!this.tryLoadLootTable(valueInput))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
-		ContainerHelper.loadAllItems(compound, this.stacks, lookupProvider);
+		ContainerHelper.loadAllItems(valueInput, this.stacks);
 	}
 
 	@Override
-	public void saveAdditional(CompoundTag compound, HolderLookup.Provider lookupProvider) {
-		super.saveAdditional(compound, lookupProvider);
-		if (!this.trySaveLootTable(compound)) {
-			ContainerHelper.saveAllItems(compound, this.stacks, lookupProvider);
-		}
+	public void saveAdditional(ValueOutput valueOutput) {
+		super.saveAdditional(valueOutput);
+		if (!this.trySaveLootTable(valueOutput))
+			ContainerHelper.saveAllItems(valueOutput, this.stacks);
 	}
 
 	@Override
@@ -123,9 +120,5 @@ public class RingInfuserBlockEntity extends RandomizableContainerBlockEntity imp
 	@Override
 	public boolean canTakeItemThroughFace(int index, ItemStack itemstack, Direction direction) {
 		return true;
-	}
-
-	public SidedInvWrapper getItemHandler() {
-		return handler;
 	}
 }

@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.block;
 
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -13,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagicStairsBlock extends StairBlock {
 	public MagicStairsBlock(BlockBehaviour.Properties properties) {
-		super(Blocks.AIR.defaultBlockState(), properties.ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(3f, 2f));
+		super(Blocks.AIR.defaultBlockState(), properties.sound(SoundType.WOOD).strength(3f, 2f).ignitedByLava().instrument(NoteBlockInstrument.BASS));
 	}
 
 	@Override

@@ -40,7 +40,7 @@ public class LunarGraceProcedureProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 400, 0, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 1, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 400, 1, false, false));
 		}
 	}
 }

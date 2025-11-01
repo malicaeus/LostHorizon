@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.block;
 
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -13,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagicButtonBlock extends ButtonBlock {
 	public MagicButtonBlock(BlockBehaviour.Properties properties) {
-		super(BlockSetType.OAK, 30, properties.ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
+		super(BlockSetType.OAK, 30, properties.sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS));
 	}
 
 	@Override

@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.network;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -18,7 +17,7 @@ import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.mcreator.losthorizon.procedures.DimensionalStepProcedureProcedure;
 import net.mcreator.losthorizon.LosthorizonMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public record DimensionalStepKeybindMessage(int eventType, int pressedms) implements CustomPacketPayload {
 	public static final Type<DimensionalStepKeybindMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(LosthorizonMod.MODID, "key_dimensional_step_keybind"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, DimensionalStepKeybindMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, DimensionalStepKeybindMessage message) -> {

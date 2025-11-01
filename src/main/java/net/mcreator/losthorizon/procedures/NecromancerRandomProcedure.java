@@ -10,8 +10,8 @@ public class NecromancerRandomProcedure {
 		if (entity == null)
 			return;
 		double StateSelector = 0;
-		entity.getPersistentData().putString("PreviousPreviousState", (entity.getPersistentData().getString("PreviousState")));
-		entity.getPersistentData().putString("PreviousState", (entity.getPersistentData().getString("State")));
+		entity.getPersistentData().putString("PreviousPreviousState", (entity.getPersistentData().getStringOr("PreviousState", "")));
+		entity.getPersistentData().putString("PreviousState", (entity.getPersistentData().getStringOr("State", "")));
 		StateSelector = Mth.nextInt(RandomSource.create(), 0, 3);
 		if (StateSelector == 0) {
 			entity.getPersistentData().putString("State", "Melee");
@@ -25,7 +25,7 @@ public class NecromancerRandomProcedure {
 		if (StateSelector == 3) {
 			entity.getPersistentData().putString("State", "Regen");
 		}
-		if ((entity.getPersistentData().getString("PreviousPreviousState")).equals("PreviousState") || (entity.getPersistentData().getString("PreviousState")).equals("State")) {
+		if ((entity.getPersistentData().getStringOr("PreviousPreviousState", "")).equals("PreviousState") || (entity.getPersistentData().getStringOr("PreviousState", "")).equals("State")) {
 			NecromancerRandomProcedure.execute(world, x, y, z, entity);
 		}
 	}

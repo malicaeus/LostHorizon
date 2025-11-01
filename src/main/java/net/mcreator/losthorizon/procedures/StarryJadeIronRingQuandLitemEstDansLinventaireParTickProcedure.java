@@ -18,25 +18,21 @@ public class StarryJadeIronRingQuandLitemEstDansLinventaireParTickProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (!(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LosthorizonModItems.ICE_CRYSTAL_GOLD_RING.get())) : false)
-				&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LosthorizonModItems.ICE_CRYSTAL_IRON_RING.get())) : false)
-				&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LosthorizonModItems.MYTHRIL_GOLD_RING.get())) : false)
-				&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LosthorizonModItems.MYTHRIL_IRON_RING.get())) : false)
-				&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LosthorizonModItems.ONYX_GOLD_RING.get())) : false)
-				&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LosthorizonModItems.ONYX_IRON_RING.get())) : false)
-				&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LosthorizonModItems.EMERALD_GOLD_RING.get())) : false)
-				&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(LosthorizonModItems.EMERALD_IRON_RING.get())) : false)) {
+		if (!hasEntityInInventory(entity, new ItemStack(LosthorizonModItems.ICE_CRYSTAL_GOLD_RING.get())) && !hasEntityInInventory(entity, new ItemStack(LosthorizonModItems.ICE_CRYSTAL_IRON_RING.get()))
+				&& !hasEntityInInventory(entity, new ItemStack(LosthorizonModItems.MYTHRIL_GOLD_RING.get())) && !hasEntityInInventory(entity, new ItemStack(LosthorizonModItems.MYTHRIL_IRON_RING.get()))
+				&& !hasEntityInInventory(entity, new ItemStack(LosthorizonModItems.ONYX_GOLD_RING.get())) && !hasEntityInInventory(entity, new ItemStack(LosthorizonModItems.ONYX_IRON_RING.get()))
+				&& !hasEntityInInventory(entity, new ItemStack(LosthorizonModItems.EMERALD_GOLD_RING.get())) && !hasEntityInInventory(entity, new ItemStack(LosthorizonModItems.EMERALD_IRON_RING.get()))) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 10) {
 				if (Mth.nextInt(RandomSource.create(), 1, 100) <= 25) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 0, false, false));
+						_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 200, 0, false, false));
 				}
 			}
 			if (entity.getData(LosthorizonModVariables.PLAYER_VARIABLES).starry_jade_iron_rinh_cooldown == false) {
 				{
 					LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 					_vars.starry_jade_iron_rinh_cooldown = true;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.LUCK, 600, 0, false, false));
@@ -44,10 +40,16 @@ public class StarryJadeIronRingQuandLitemEstDansLinventaireParTickProcedure {
 					{
 						LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 						_vars.starry_jade_iron_rinh_cooldown = false;
-						_vars.syncPlayerVariables(entity);
+						_vars.markSyncDirty();
 					}
 				});
 			}
 		}
+	}
+
+	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
+		if (entity instanceof Player player)
+			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
+		return false;
 	}
 }

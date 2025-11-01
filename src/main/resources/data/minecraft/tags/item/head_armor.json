@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
+    "losthorizon:runite_armor_helmet",
     "losthorizon:mythril_enchanted_armor_helmet",
-    "losthorizon:mythril_armor_helmet",
-    "losthorizon:runite_armor_helmet"
+    "losthorizon:mythril_armor_helmet"
   ]
 }

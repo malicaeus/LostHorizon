@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -18,17 +17,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
-import net.mcreator.losthorizon.entity.ThrowingOnyxKnifeEntity;
-import net.mcreator.losthorizon.entity.ThrowingKnifeEntity;
-import net.mcreator.losthorizon.entity.NecromancerBossEntity;
-import net.mcreator.losthorizon.entity.LinkedEntity;
-import net.mcreator.losthorizon.entity.HeartGuardianEntity;
-import net.mcreator.losthorizon.entity.CryptGuardianEntity;
-import net.mcreator.losthorizon.entity.BlackBlazeEntityProjectile;
-import net.mcreator.losthorizon.entity.BlackBlazeEntity;
+import net.mcreator.losthorizon.entity.*;
 import net.mcreator.losthorizon.LosthorizonMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class LosthorizonModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(Registries.ENTITY_TYPE, LosthorizonMod.MODID);
 	public static final DeferredHolder<EntityType<?>, EntityType<ThrowingKnifeEntity>> THROWING_KNIFE = register("throwing_knife",
@@ -40,21 +32,25 @@ public class LosthorizonModEntities {
 
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<CryptGuardianEntity>> CRYPT_GUARDIAN = register("crypt_guardian",
-			EntityType.Builder.<CryptGuardianEntity>of(CryptGuardianEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune().sized(0.6f, 1.8f));
+			EntityType.Builder.<CryptGuardianEntity>of(CryptGuardianEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
+
+					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<LinkedEntity>> LINKED = register("linked",
 			EntityType.Builder.<LinkedEntity>of(LinkedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.ridingOffset(-0.6f).sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<HeartGuardianEntity>> HEART_GUARDIAN = register("heart_guardian",
 			EntityType.Builder.<HeartGuardianEntity>of(HeartGuardianEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
-					.sized(0.6f, 1.8f));
+					.ridingOffset(-0.6f).sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<BlackBlazeEntity>> BLACK_BLAZE = register("black_blaze",
-			EntityType.Builder.<BlackBlazeEntity>of(BlackBlazeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+			EntityType.Builder.<BlackBlazeEntity>of(BlackBlazeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).fireImmune()
 
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<BlackBlazeEntityProjectile>> BLACK_BLAZE_PROJECTILE = register("projectile_black_blaze",
 			EntityType.Builder.<BlackBlazeEntityProjectile>of(BlackBlazeEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<AshOfDawnProjectileEntity>> ASH_OF_DAWN_PROJECTILE = register("ash_of_dawn_projectile",
+			EntityType.Builder.<AshOfDawnProjectileEntity>of(AshOfDawnProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

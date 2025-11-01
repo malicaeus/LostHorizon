@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;
@@ -6,6 +5,7 @@ import net.minecraft.client.renderer.entity.state.LivingEntityRenderState;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.model.geom.ModelPart;
+import net.minecraft.client.animation.KeyframeAnimation;
 
 import net.mcreator.losthorizon.entity.BlackBlazeEntity;
 import net.mcreator.losthorizon.client.model.animations.black_blazeAnimation;
@@ -39,9 +39,11 @@ public class BlackBlazeRenderer extends MobRenderer<BlackBlazeEntity, LivingEnti
 
 	private static final class AnimatedModel extends Modelblack_blaze {
 		private BlackBlazeEntity entity = null;
+		private final KeyframeAnimation keyframeAnimation0;
 
 		public AnimatedModel(ModelPart root) {
 			super(root);
+			this.keyframeAnimation0 = black_blazeAnimation.move.bake(root);
 		}
 
 		public void setEntity(BlackBlazeEntity entity) {
@@ -51,7 +53,7 @@ public class BlackBlazeRenderer extends MobRenderer<BlackBlazeEntity, LivingEnti
 		@Override
 		public void setupAnim(LivingEntityRenderState state) {
 			this.root().getAllParts().forEach(ModelPart::resetPose);
-			this.animateWalk(black_blazeAnimation.move, state.walkAnimationPos, state.walkAnimationSpeed, 1f, 1f);
+			this.keyframeAnimation0.applyWalk(state.walkAnimationPos, state.walkAnimationSpeed, 1f, 1f);
 			super.setupAnim(state);
 		}
 	}

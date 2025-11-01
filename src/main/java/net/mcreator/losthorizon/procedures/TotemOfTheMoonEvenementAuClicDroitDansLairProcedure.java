@@ -22,10 +22,10 @@ public class TotemOfTheMoonEvenementAuClicDroitDansLairProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (false == (entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel
-				&& _plr0.getAdvancements().getOrStartProgress(_plr0.server.getAdvancements().get(ResourceLocation.parse("losthorizon:totem_of_the_moon_advancement"))).isDone())) {
-			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("losthorizon:totem_of_the_moon_advancement"));
+		if (false == (entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel _serverLevel0
+				&& _plr0.getAdvancements().getOrStartProgress(_serverLevel0.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:totem_of_the_moon_advancement"))).isDone())) {
+			if (entity instanceof ServerPlayer _player && _player.level() instanceof ServerLevel _level) {
+				AdvancementHolder _adv = _level.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:totem_of_the_moon_advancement"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {

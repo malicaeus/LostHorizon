@@ -1,10 +1,11 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "recipe",
   "definition": {
     "recipeType": "Campfire cooking",
     "recipeRetstackSize": 1,
     "group": "",
+    "unlockingItems": [],
     "cookingBookCategory": "FOOD",
     "xpReward": 5.0,
     "cookingTime": 150,

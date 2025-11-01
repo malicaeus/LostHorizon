@@ -1,8 +1,4 @@
-
 package net.mcreator.losthorizon.entity;
-
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.EntityHitResult;
@@ -31,7 +27,6 @@ import net.mcreator.losthorizon.init.LosthorizonModEntities;
 
 import javax.annotation.Nullable;
 
-@OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class ThrowingOnyxKnifeEntity extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(LosthorizonModItems.ONYX_KNIFE.get());
 	private int knockback = 0;
@@ -53,7 +48,6 @@ public class ThrowingOnyxKnifeEntity extends AbstractArrow implements ItemSuppli
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
 		return PROJECTILE_ITEM;
 	}

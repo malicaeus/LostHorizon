@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.world.features.treedecorators;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
@@ -10,6 +9,7 @@ import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.CocoaBlock;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.util.RandomSource;
 import net.minecraft.resources.ResourceLocation;
@@ -21,7 +21,7 @@ import java.util.List;
 
 import com.mojang.serialization.MapCodec;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class EnchantedForestFruitDecorator extends CocoaDecorator {
 	public static MapCodec<EnchantedForestFruitDecorator> CODEC = MapCodec.unit(EnchantedForestFruitDecorator::new);
 	public static TreeDecoratorType<?> DECORATOR_TYPE = new TreeDecoratorType<>(CODEC);
@@ -53,7 +53,7 @@ public class EnchantedForestFruitDecorator extends CocoaDecorator {
 							Direction direction1 = direction.getOpposite();
 							BlockPos blockpos = p_226026_.offset(direction1.getStepX(), 0, direction1.getStepZ());
 							if (context.isAir(blockpos)) {
-								context.setBlock(blockpos, oriented(Blocks.AIR.defaultBlockState(), direction1));
+								context.setBlock(blockpos, Blocks.COCOA.defaultBlockState().setValue(CocoaBlock.AGE, randomsource.nextInt(3)).setValue(CocoaBlock.FACING, direction));
 							}
 						}
 					}

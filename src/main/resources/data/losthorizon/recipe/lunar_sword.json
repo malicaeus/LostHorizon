@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " c "
+  ],
+  "key": {
+    "a": "minecraft:glowstone_dust",
+    "b": "minecraft:diamond",
+    "c": "minecraft:diamond_sword"
+  },
+  "result": {
+    "id": "losthorizon:lunar_sword",
+    "count": 1
+  }
+}

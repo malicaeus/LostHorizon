@@ -13,7 +13,7 @@ public class NecromancerSummonProcedure {
 			return;
 		double Chain = 0;
 		double ChainWait = 0;
-		if (entity.getPersistentData().getDouble("IA") == 15) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 15) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
@@ -21,7 +21,7 @@ public class NecromancerSummonProcedure {
 				}
 			}
 		}
-		if (entity.getPersistentData().getDouble("IA") == 40) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 40) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = EntityType.SKELETON.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
@@ -29,7 +29,7 @@ public class NecromancerSummonProcedure {
 				}
 			}
 		}
-		if (entity.getPersistentData().getDouble("IA") == 80) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 80) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = EntityType.SKELETON.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {

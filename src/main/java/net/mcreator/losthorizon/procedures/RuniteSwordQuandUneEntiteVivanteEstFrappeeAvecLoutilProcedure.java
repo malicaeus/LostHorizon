@@ -21,10 +21,10 @@ public class RuniteSwordQuandUneEntiteVivanteEstFrappeeAvecLoutilProcedure {
 			return;
 		double random = 0;
 		random = Mth.nextInt(RandomSource.create(), 0, 100);
-		if ((entity instanceof ServerPlayer _plr1 && _plr1.level() instanceof ServerLevel
-				&& _plr1.getAdvancements().getOrStartProgress(_plr1.server.getAdvancements().get(ResourceLocation.parse("losthorizon:runic_arsenal_advancement"))).isDone()) == false) {
-			if (entity instanceof ServerPlayer _player) {
-				AdvancementHolder _adv = _player.server.getAdvancements().get(ResourceLocation.parse("losthorizon:runic_arsenal_advancement"));
+		if ((entity instanceof ServerPlayer _plr1 && _plr1.level() instanceof ServerLevel _serverLevel1
+				&& _plr1.getAdvancements().getOrStartProgress(_serverLevel1.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:runic_arsenal_advancement"))).isDone()) == false) {
+			if (entity instanceof ServerPlayer _player && _player.level() instanceof ServerLevel _level) {
+				AdvancementHolder _adv = _level.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:runic_arsenal_advancement"));
 				if (_adv != null) {
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 					if (!_ap.isDone()) {
@@ -39,9 +39,9 @@ public class RuniteSwordQuandUneEntiteVivanteEstFrappeeAvecLoutilProcedure {
 				_level.explode(null, x, y, z, 1, Level.ExplosionInteraction.NONE);
 		} else if (random > 60 && random <= 80) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 2, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 100, 2, false, false));
 		} else if (random > 80 && random <= 100) {
-			itemstack.setDamageValue((int) (itemstack.getDamageValue() - 5));
+			itemstack.setDamageValue(itemstack.getDamageValue() - 5);
 		}
 	}
 }

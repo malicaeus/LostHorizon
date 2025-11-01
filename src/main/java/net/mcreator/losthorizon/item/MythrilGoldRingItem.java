@@ -1,20 +1,20 @@
-
 package net.mcreator.losthorizon.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
-import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.losthorizon.procedures.MythrilGoldRingQuandLitemEstDansLinventaireParTickProcedure;
 
-import java.util.List;
+import javax.annotation.Nullable;
+
+import java.util.function.Consumer;
 
 public class MythrilGoldRingItem extends Item {
 	public MythrilGoldRingItem(Item.Properties properties) {
@@ -22,18 +22,17 @@ public class MythrilGoldRingItem extends Item {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.losthorizon.mythril_gold_ring.description_0"));
-		list.add(Component.translatable("item.losthorizon.mythril_gold_ring.description_1"));
-		list.add(Component.translatable("item.losthorizon.mythril_gold_ring.description_2"));
-		list.add(Component.translatable("item.losthorizon.mythril_gold_ring.description_3"));
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+		componentConsumer.accept(Component.translatable("item.losthorizon.mythril_gold_ring.description_0"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.mythril_gold_ring.description_1"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.mythril_gold_ring.description_2"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.mythril_gold_ring.description_3"));
 	}
 
 	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
+	public void inventoryTick(ItemStack itemstack, ServerLevel world, Entity entity, @Nullable EquipmentSlot equipmentSlot) {
+		super.inventoryTick(itemstack, world, entity, equipmentSlot);
 		MythrilGoldRingQuandLitemEstDansLinventaireParTickProcedure.execute(entity);
 	}
 }

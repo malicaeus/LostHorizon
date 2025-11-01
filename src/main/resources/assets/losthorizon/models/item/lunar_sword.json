@@ -1,0 +1,7 @@
+{
+  "parent": "losthorizon:custom/lunar_sword",
+  "textures": {
+    "0": "losthorizon:block/lunar_sword",
+    "particle": "losthorizon:item/lunar_sword"
+  }
+}

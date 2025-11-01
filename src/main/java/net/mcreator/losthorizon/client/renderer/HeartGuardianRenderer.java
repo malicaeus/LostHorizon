@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.client.renderer;
 
 import net.minecraft.resources.ResourceLocation;

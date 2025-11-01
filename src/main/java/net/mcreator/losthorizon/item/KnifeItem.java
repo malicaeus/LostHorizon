@@ -1,9 +1,7 @@
-
 package net.mcreator.losthorizon.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.ItemStack;
@@ -24,9 +22,8 @@ import net.mcreator.losthorizon.entity.ThrowingKnifeEntity;
 
 public class KnifeItem extends Item {
 	public KnifeItem(Item.Properties properties) {
-		super(properties.rarity(Rarity.COMMON).stacksTo(6)
-				.attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 1.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
-						.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
+		super(properties.stacksTo(6).attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 1.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+				.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.4, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND).build()));
 	}
 
 	@Override
@@ -77,8 +74,8 @@ public class KnifeItem extends Item {
 	private ItemStack findAmmo(Player player) {
 		ItemStack stack = ProjectileWeaponItem.getHeldProjectile(player, e -> e.getItem() == ThrowingKnifeEntity.PROJECTILE_ITEM.getItem());
 		if (stack == ItemStack.EMPTY) {
-			for (int i = 0; i < player.getInventory().items.size(); i++) {
-				ItemStack teststack = player.getInventory().items.get(i);
+			for (int i = 0; i < player.getInventory().getContainerSize(); i++) {
+				ItemStack teststack = player.getInventory().getItem(i);
 				if (teststack != null && teststack.getItem() == ThrowingKnifeEntity.PROJECTILE_ITEM.getItem()) {
 					stack = teststack;
 					break;

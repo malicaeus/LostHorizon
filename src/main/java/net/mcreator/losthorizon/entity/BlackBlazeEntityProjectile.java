@@ -1,8 +1,4 @@
-
 package net.mcreator.losthorizon.entity;
-
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
@@ -12,7 +8,6 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 
-@OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class BlackBlazeEntityProjectile extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(Items.FIRE_CHARGE);
 
@@ -35,7 +30,6 @@ public class BlackBlazeEntityProjectile extends AbstractArrow implements ItemSup
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
 		return PROJECTILE_ITEM;
 	}

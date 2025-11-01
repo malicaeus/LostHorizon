@@ -1,8 +1,4 @@
-
 package net.mcreator.losthorizon.client.particle;
-
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.client.particle.TextureSheetParticle;
@@ -12,7 +8,6 @@ import net.minecraft.client.particle.ParticleProvider;
 import net.minecraft.client.particle.Particle;
 import net.minecraft.client.multiplayer.ClientLevel;
 
-@OnlyIn(Dist.CLIENT)
 public class LinkDaggerParticleParticle extends TextureSheetParticle {
 	public static LinkDaggerParticleParticleProvider provider(SpriteSet spriteSet) {
 		return new LinkDaggerParticleParticleProvider(spriteSet);

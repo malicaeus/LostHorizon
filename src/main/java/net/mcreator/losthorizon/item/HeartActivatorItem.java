@@ -1,10 +1,7 @@
-
 package net.mcreator.losthorizon.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -14,7 +11,7 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.losthorizon.procedures.HeartActivatorLorsqueVousCliquezAvecLeBoutonDroitDeLaSourisSurUnBlocProcedure;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class HeartActivatorItem extends Item {
 	public HeartActivatorItem(Item.Properties properties) {
@@ -22,13 +19,12 @@ public class HeartActivatorItem extends Item {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.losthorizon.heart_activator.description_0"));
-		list.add(Component.translatable("item.losthorizon.heart_activator.description_1"));
-		list.add(Component.translatable("item.losthorizon.heart_activator.description_2"));
-		list.add(Component.translatable("item.losthorizon.heart_activator.description_3"));
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+		componentConsumer.accept(Component.translatable("item.losthorizon.heart_activator.description_0"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.heart_activator.description_1"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.heart_activator.description_2"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.heart_activator.description_3"));
 	}
 
 	@Override

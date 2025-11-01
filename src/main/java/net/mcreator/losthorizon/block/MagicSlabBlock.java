@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.block;
 
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -12,7 +11,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagicSlabBlock extends SlabBlock {
 	public MagicSlabBlock(BlockBehaviour.Properties properties) {
-		super(properties.ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
+		super(properties.sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS));
 	}
 
 	@Override

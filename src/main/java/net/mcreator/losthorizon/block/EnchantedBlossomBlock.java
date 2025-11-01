@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.block;
 
 import org.checkerframework.checker.units.qual.s;

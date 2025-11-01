@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
+    "losthorizon:runite_hoe",
     "losthorizon:mythril_enchanted_hoe",
-    "losthorizon:mythril_hoe",
-    "losthorizon:runite_hoe"
+    "losthorizon:mythril_hoe"
   ]
 }

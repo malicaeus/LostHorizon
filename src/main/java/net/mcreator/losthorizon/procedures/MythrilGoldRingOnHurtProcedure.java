@@ -18,7 +18,7 @@ import javax.annotation.Nullable;
 @EventBusSubscriber
 public class MythrilGoldRingOnHurtProcedure {
 	@SubscribeEvent
-	public static void onEntityAttacked(LivingDamageEvent.Post event) {
+	public static void onEntityAttacked(LivingDamageEvent.Pre event) {
 		if (event.getEntity() != null) {
 			execute(event, event.getEntity());
 		}
@@ -33,7 +33,7 @@ public class MythrilGoldRingOnHurtProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == LosthorizonModItems.MYTHRIL_GOLD_RING.get()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 80, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 80, 0, false, false));
 		}
 	}
 }

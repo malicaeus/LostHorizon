@@ -22,7 +22,7 @@ public class DestinyDiceEvenementAuClicDroitDansLairProcedure {
 			{
 				LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.dice_cooldown = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			choice = Mth.nextInt(RandomSource.create(), 1, 6);
 			if (choice == 1) {
@@ -33,13 +33,13 @@ public class DestinyDiceEvenementAuClicDroitDansLairProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 200, 0, false, false));
 			} else if (choice == 3) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 0, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 200, 0, false, false));
 			} else if (choice == 4) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 0, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 200, 0, false, false));
 			} else if (choice == 5) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200, 0, false, false));
+					_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 200, 0, false, false));
 			} else if (choice == 6) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.UNLUCK, 200, 0, false, false));
@@ -52,7 +52,7 @@ public class DestinyDiceEvenementAuClicDroitDansLairProcedure {
 				{
 					LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 					_vars.dice_cooldown = false;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			});
 		}

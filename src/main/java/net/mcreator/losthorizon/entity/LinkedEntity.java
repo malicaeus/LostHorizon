@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.entity;
 
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;

@@ -1,0 +1,43 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "lunar_sword",
+    "customModelName": "lunar_sword:default",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Lunar Sword",
+    "specialInformation": {
+      "fixedValue": [
+        "§dForged beneath the full moon",
+        "§dInfused with astral silence",
+        "§dIts blade reflects dreams"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "efficiency": 7.0,
+    "attackSpeed": 1.5999999999999999,
+    "enchantability": 11,
+    "damageVsEntity": 7.0,
+    "usageCount": 1600,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "blockDropsTier": "NETHERITE",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "LunarSwordQuandUneEntiteVivanteEstFrappeeAvecLoutil"
+    }
+  }
+}

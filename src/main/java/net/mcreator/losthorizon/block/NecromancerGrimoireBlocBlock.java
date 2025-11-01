@@ -1,8 +1,4 @@
-
 package net.mcreator.losthorizon.block;
-
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -19,17 +15,20 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.losthorizon.procedures.NecromancerGrimoireBlocQuandLeJoueurCommenceADetruireProcedure;
+import net.mcreator.losthorizon.init.LosthorizonModBlocks;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class NecromancerGrimoireBlocBlock extends Block {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
@@ -37,13 +36,6 @@ public class NecromancerGrimoireBlocBlock extends Block {
 	public NecromancerGrimoireBlocBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.CHISELED_BOOKSHELF).strength(1f, 500f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
-	}
-
-	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("block.losthorizon.necromancer_grimoire_block.description_0"));
 	}
 
 	@Override
@@ -94,5 +86,17 @@ public class NecromancerGrimoireBlocBlock extends Block {
 	public void attack(BlockState blockstate, Level world, BlockPos pos, Player entity) {
 		super.attack(blockstate, world, pos, entity);
 		NecromancerGrimoireBlocQuandLeJoueurCommenceADetruireProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+	}
+
+	public static class Item extends BlockItem {
+		public Item(Item.Properties properties) {
+			super(LosthorizonModBlocks.NECROMANCER_GRIMOIRE_BLOCK.get(), properties);
+		}
+
+		@Override
+		public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+			super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+			componentConsumer.accept(Component.translatable("block.losthorizon.necromancer_grimoire_block.description_0"));
+		}
 	}
 }

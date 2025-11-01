@@ -15,6 +15,6 @@ public class FrosbiteDaggerQuandUneEntiteVivanteEstFrappeeAvecLoutilProcedure {
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.SNOWFLAKE, x, y, z, 1200, 2, 3, 2, 0.1);
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 2, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 100, 2, false, false));
 	}
 }

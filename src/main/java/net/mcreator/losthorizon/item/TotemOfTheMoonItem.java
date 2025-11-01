@@ -1,8 +1,4 @@
-
 package net.mcreator.losthorizon.item;
-
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
@@ -20,7 +16,6 @@ public class TotemOfTheMoonItem extends Item {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
 	public boolean isFoil(ItemStack itemstack) {
 		return true;
 	}

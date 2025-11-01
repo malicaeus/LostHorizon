@@ -1,30 +1,27 @@
 package net.mcreator.losthorizon.client.gui;
 
-import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.losthorizon.world.inventory.RingInfuserGUIMenu;
 import net.mcreator.losthorizon.network.RingInfuserGUIButtonMessage;
+import net.mcreator.losthorizon.init.LosthorizonModScreens;
 
-import java.util.HashMap;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
-public class RingInfuserGUIScreen extends AbstractContainerScreen<RingInfuserGUIMenu> {
-	private final static HashMap<String, Object> guistate = RingInfuserGUIMenu.guistate;
+public class RingInfuserGUIScreen extends AbstractContainerScreen<RingInfuserGUIMenu> implements LosthorizonModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_infuse;
+	private boolean menuStateUpdateActive = false;
+	private Button button_infuse;
 
 	public RingInfuserGUIScreen(RingInfuserGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -37,6 +34,12 @@ public class RingInfuserGUIScreen extends AbstractContainerScreen<RingInfuserGUI
 		this.imageHeight = 166;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("losthorizon:textures/screens/ring_infuser_gui.png");
 
 	@Override
@@ -46,12 +49,8 @@ public class RingInfuserGUIScreen extends AbstractContainerScreen<RingInfuserGUI
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
-		RenderSystem.setShaderColor(1, 1, 1, 1);
-		RenderSystem.enableBlend();
-		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(RenderType::guiTextured, texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		RenderSystem.disableBlend();
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 	}
 
 	@Override
@@ -72,12 +71,13 @@ public class RingInfuserGUIScreen extends AbstractContainerScreen<RingInfuserGUI
 	public void init() {
 		super.init();
 		button_infuse = Button.builder(Component.translatable("gui.losthorizon.ring_infuser_gui.button_infuse"), e -> {
+			int x = RingInfuserGUIScreen.this.x;
+			int y = RingInfuserGUIScreen.this.y;
 			if (true) {
-				PacketDistributor.sendToServer(new RingInfuserGUIButtonMessage(0, x, y, z));
+				ClientPacketDistributor.sendToServer(new RingInfuserGUIButtonMessage(0, x, y, z));
 				RingInfuserGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 70, this.topPos + 38, 56, 20).build();
-		guistate.put("button:button_infuse", button_infuse);
 		this.addRenderableWidget(button_infuse);
 	}
 }
