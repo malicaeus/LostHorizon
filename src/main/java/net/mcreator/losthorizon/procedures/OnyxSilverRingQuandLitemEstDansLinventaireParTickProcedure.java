@@ -19,13 +19,13 @@ public class OnyxSilverRingQuandLitemEstDansLinventaireParTickProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 60, 0, false, false));
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == LosthorizonModItems.ONYX_IRON_RING.get() && !(world instanceof Level _lvl7 && _lvl7.isDay())) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == LosthorizonModItems.ONYX_IRON_RING.get() && !(world instanceof Level _lvl7 && _lvl7.isBrightOutside())) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 60, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 60, 0, false, false));
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == LosthorizonModItems.ONYX_IRON_RING.get() && world instanceof Level _lvl11 && _lvl11.isDay()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == LosthorizonModItems.ONYX_IRON_RING.get() && world instanceof Level _lvl11 && _lvl11.isBrightOutside()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 60, 0, false, false));
 		}
 	}
 }

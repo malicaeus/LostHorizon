@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "losthorizon:ring_infuser",
     "losthorizon:basalt_obsidian_ore",
-    "losthorizon:runite_block",
     "losthorizon:runite_ore",
-    "losthorizon:onyx_block",
-    "losthorizon:onyx_ore"
+    "losthorizon:ring_infuser",
+    "losthorizon:runite_block",
+    "losthorizon:onyx_ore",
+    "losthorizon:onyx_block"
   ]
 }

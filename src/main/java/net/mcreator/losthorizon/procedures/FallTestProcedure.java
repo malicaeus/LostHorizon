@@ -32,7 +32,7 @@ public class FallTestProcedure {
 			{
 				LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.PreventClimbingFallDamage = false;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			if (event instanceof ICancellableEvent _cancellable) {
 				_cancellable.setCanceled(true);

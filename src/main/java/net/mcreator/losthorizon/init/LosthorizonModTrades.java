@@ -1,4 +1,3 @@
-
 /*
 *	MCreator note: This file will be REGENERATED on each build.
 */
@@ -11,12 +10,15 @@ import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 
 @EventBusSubscriber
 public class LosthorizonModTrades {
 	@SubscribeEvent
 	public static void registerTrades(VillagerTradesEvent event) {
-		if (event.getType() == LosthorizonModVillagerProfessions.NECROMANCER_WORK.get()) {
+		if (event.getType() == ResourceKey.create(Registries.VILLAGER_PROFESSION, ResourceLocation.parse("losthorizon:necromancer_work"))) {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.SHIELD), new ItemStack(Items.TORCH, 2), new ItemStack(LosthorizonModItems.LANTERN_SHIELD.get()), 4, 7, 0.1f));
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(LosthorizonModItems.ONYX.get(), 8), new ItemStack(LosthorizonModItems.ONYX_KNIFE.get(), 3), 8, 5, 0.08f));
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(LosthorizonModItems.RUNITE_INGOT.get(), 2), new ItemStack(Items.EMERALD, 6), 10, 7, 0.07f));
@@ -27,7 +29,7 @@ public class LosthorizonModTrades {
 					.add(new BasicItemListing(new ItemStack(LosthorizonModItems.TOTEM_OF_THE_MOON.get()), new ItemStack(LosthorizonModItems.RUNITE_INGOT.get(), 2), new ItemStack(LosthorizonModItems.TECHNOBLADE_TOTEM.get()), 2, 10, 0.05f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(LosthorizonModBlocks.BASALT_OBSIDIAN_ORE.get(), 5), new ItemStack(LosthorizonModItems.BASALT_EDGE.get()), 2, 15, 0.05f));
 		}
-		if (event.getType() == LosthorizonModVillagerProfessions.HUNTER.get()) {
+		if (event.getType() == ResourceKey.create(Registries.VILLAGER_PROFESSION, ResourceLocation.parse("losthorizon:hunter"))) {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.ARROW, 16), new ItemStack(Items.EMERALD, 2), 15, 5, 0.05f));
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD), new ItemStack(Items.SPECTRAL_ARROW, 5), 15, 5, 0.05f));
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.LEATHER, 6), new ItemStack(Items.EMERALD), 10, 6, 0.05f));

@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.block;
 
 import net.minecraft.world.level.block.state.BlockState;

@@ -1,8 +1,9 @@
-
 package net.mcreator.losthorizon.entity;
 
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
@@ -29,7 +30,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.losthorizon.procedures.NecromancerBossQuandLentiteMeurtProcedure;
@@ -99,22 +99,19 @@ public class NecromancerBossEntity extends Monster {
 	}
 
 	@Override
-	public void addAdditionalSaveData(CompoundTag compound) {
-		super.addAdditionalSaveData(compound);
-		compound.putBoolean("Datadeath", this.entityData.get(DATA_death));
-		compound.putBoolean("Dataidle", this.entityData.get(DATA_idle));
-		compound.putBoolean("Dataattack", this.entityData.get(DATA_attack));
+	public void addAdditionalSaveData(ValueOutput valueOutput) {
+		super.addAdditionalSaveData(valueOutput);
+		valueOutput.putBoolean("Datadeath", this.entityData.get(DATA_death));
+		valueOutput.putBoolean("Dataidle", this.entityData.get(DATA_idle));
+		valueOutput.putBoolean("Dataattack", this.entityData.get(DATA_attack));
 	}
 
 	@Override
-	public void readAdditionalSaveData(CompoundTag compound) {
-		super.readAdditionalSaveData(compound);
-		if (compound.contains("Datadeath"))
-			this.entityData.set(DATA_death, compound.getBoolean("Datadeath"));
-		if (compound.contains("Dataidle"))
-			this.entityData.set(DATA_idle, compound.getBoolean("Dataidle"));
-		if (compound.contains("Dataattack"))
-			this.entityData.set(DATA_attack, compound.getBoolean("Dataattack"));
+	public void readAdditionalSaveData(ValueInput valueInput) {
+		super.readAdditionalSaveData(valueInput);
+		this.entityData.set(DATA_death, valueInput.getBooleanOr("Datadeath", false));
+		this.entityData.set(DATA_idle, valueInput.getBooleanOr("Dataidle", false));
+		this.entityData.set(DATA_attack, valueInput.getBooleanOr("Dataattack", false));
 	}
 
 	@Override

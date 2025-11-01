@@ -1,14 +1,15 @@
 {
   "replace": false,
   "values": [
-    "losthorizon:eye_of_hyperion",
-    "losthorizon:aether_heart",
+    "losthorizon:totem_of_the_moon",
     "losthorizon:solar_feather",
     "losthorizon:shard_of_the_void",
-    "losthorizon:heart_activator",
     "losthorizon:destiny_dice",
-    "losthorizon:anchor_totem",
     "losthorizon:technoblade_totem",
-    "losthorizon:totem_of_the_moon"
+    "losthorizon:moonbell",
+    "losthorizon:eye_of_hyperion",
+    "losthorizon:anchor_totem",
+    "losthorizon:aether_heart",
+    "losthorizon:heart_activator"
   ]
 }

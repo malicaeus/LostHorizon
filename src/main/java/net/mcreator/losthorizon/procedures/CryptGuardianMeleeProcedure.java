@@ -18,49 +18,49 @@ public class CryptGuardianMeleeProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getPersistentData().getDouble("IA") == 40) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 40) {
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(Items.IRON_AXE).copy();
-				_setstack.setCount(1);
-				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				ItemStack _setstack1 = new ItemStack(Items.IRON_AXE).copy();
+				_setstack1.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack1);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
 			if (entity instanceof CryptGuardianEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(CryptGuardianEntity.DATA_attack, true);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 120, 1));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 120, 1));
 		}
-		if (entity.getPersistentData().getDouble("IA") == 70) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 70) {
 			CryptGuardianDashProcedure.execute(entity);
 		}
-		if (entity.getPersistentData().getDouble("IA") == 100) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 100) {
 			if (entity instanceof CryptGuardianEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(CryptGuardianEntity.DATA_attack, false);
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(Blocks.AIR).copy();
-				_setstack.setCount(1);
-				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				ItemStack _setstack7 = new ItemStack(Blocks.AIR).copy();
+				_setstack7.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack7);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 3));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 100, 3));
 		}
-		if (entity.getPersistentData().getDouble("IA") == 150) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 150) {
 			if (entity instanceof LivingEntity _entity) {
-				ItemStack _setstack = new ItemStack(LosthorizonModItems.KNIFE.get()).copy();
-				_setstack.setCount(1);
-				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+				ItemStack _setstack10 = new ItemStack(LosthorizonModItems.KNIFE.get()).copy();
+				_setstack10.setCount(1);
+				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack10);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
 			}
 			if (entity instanceof CryptGuardianEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(CryptGuardianEntity.DATA_attack, true);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 120, 1));
+				_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 120, 1));
 		}
-		if (entity.getPersistentData().getDouble("IA") == 200) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 200) {
 			CryptGuardianRandomProcedure.execute(world, x, y, z, entity);
 		}
 	}

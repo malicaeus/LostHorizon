@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -56,6 +56,10 @@
     "unbreakable": false,
     "isSolid": false,
     "isWaterloggable": false,
+    "hasBlockItem": true,
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": false,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "PLANT"
@@ -80,6 +84,8 @@
       "value": ""
     },
     "dropAmount": 1,
+    "xpAmountMin": 0,
+    "xpAmountMax": 0,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
@@ -90,6 +96,7 @@
     },
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
+    "ignitedByLava": false,
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,

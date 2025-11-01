@@ -29,7 +29,7 @@ public class HeartGuardianChaqueMiseAJourDeTickDeLentiteProcedure {
 						{
 							LosthorizonModVariables.PlayerVariables _vars = entityiterator.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 							_vars.linked_soul = 0;
-							_vars.syncPlayerVariables(entityiterator);
+							_vars.markSyncDirty();
 						}
 						if (world instanceof ServerLevel _level)
 							_level.sendParticles((SimpleParticleType) (LosthorizonModParticleTypes.LINK_DAGGER_PARTICLE.get()), x, y, z, 1000, 3, 3, 3, 0.1);

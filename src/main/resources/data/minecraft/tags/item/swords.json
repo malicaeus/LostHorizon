@@ -1,13 +1,15 @@
 {
   "replace": false,
   "values": [
-    "losthorizon:death_sword",
-    "losthorizon:link_dagger",
-    "losthorizon:climbing_pick",
     "losthorizon:basalt_edge",
-    "losthorizon:mythril_enchanted_sword",
+    "losthorizon:death_sword",
+    "losthorizon:climbing_pick",
     "losthorizon:mythril_sword",
     "losthorizon:runite_sword",
-    "losthorizon:frostbite_dagger"
+    "losthorizon:eclipse_blade",
+    "losthorizon:link_dagger",
+    "losthorizon:mythril_enchanted_sword",
+    "losthorizon:frostbite_dagger",
+    "losthorizon:lunar_sword"
   ]
 }

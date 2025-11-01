@@ -1,10 +1,7 @@
-
 package net.mcreator.losthorizon.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -16,7 +13,7 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.losthorizon.procedures.ShardOfTheVoidEvenementAuClicDroitDansLairProcedure;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class ShardOfTheVoidItem extends Item {
 	public ShardOfTheVoidItem(Item.Properties properties) {
@@ -24,18 +21,16 @@ public class ShardOfTheVoidItem extends Item {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
 	public boolean isFoil(ItemStack itemstack) {
 		return true;
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.losthorizon.shard_of_the_void.description_0"));
-		list.add(Component.translatable("item.losthorizon.shard_of_the_void.description_1"));
-		list.add(Component.translatable("item.losthorizon.shard_of_the_void.description_2"));
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+		componentConsumer.accept(Component.translatable("item.losthorizon.shard_of_the_void.description_0"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.shard_of_the_void.description_1"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.shard_of_the_void.description_2"));
 	}
 
 	@Override

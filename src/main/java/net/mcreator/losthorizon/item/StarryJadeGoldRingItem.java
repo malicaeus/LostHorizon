@@ -1,29 +1,25 @@
-
 package net.mcreator.losthorizon.item;
 
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
-
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class StarryJadeGoldRingItem extends Item {
 	public StarryJadeGoldRingItem(Item.Properties properties) {
-		super(properties.rarity(Rarity.RARE).stacksTo(64));
+		super(properties.rarity(Rarity.RARE));
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.losthorizon.starry_jade_gold_ring.description_0"));
-		list.add(Component.translatable("item.losthorizon.starry_jade_gold_ring.description_1"));
-		list.add(Component.translatable("item.losthorizon.starry_jade_gold_ring.description_2"));
-		list.add(Component.translatable("item.losthorizon.starry_jade_gold_ring.description_3"));
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+		componentConsumer.accept(Component.translatable("item.losthorizon.starry_jade_gold_ring.description_0"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.starry_jade_gold_ring.description_1"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.starry_jade_gold_ring.description_2"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.starry_jade_gold_ring.description_3"));
 	}
 }

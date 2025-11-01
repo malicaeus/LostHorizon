@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.mcreator.losthorizon.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "NoiseGeneratorSettingsMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8.4"
+}

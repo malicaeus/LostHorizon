@@ -1,11 +1,8 @@
-
 package net.mcreator.losthorizon.item;
-
-import net.neoforged.api.distmarker.OnlyIn;
-import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
@@ -17,7 +14,7 @@ import net.minecraft.network.chat.Component;
 
 import net.mcreator.losthorizon.procedures.DestinyDiceEvenementAuClicDroitDansLairProcedure;
 
-import java.util.List;
+import java.util.function.Consumer;
 
 public class DestinyDiceItem extends Item {
 	public DestinyDiceItem(Item.Properties properties) {
@@ -25,14 +22,13 @@ public class DestinyDiceItem extends Item {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.translatable("item.losthorizon.destiny_dice.description_0"));
-		list.add(Component.translatable("item.losthorizon.destiny_dice.description_1"));
-		list.add(Component.translatable("item.losthorizon.destiny_dice.description_2"));
-		list.add(Component.translatable("item.losthorizon.destiny_dice.description_3"));
-		list.add(Component.translatable("item.losthorizon.destiny_dice.description_4"));
+	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, TooltipDisplay tooltipDisplay, Consumer<Component> componentConsumer, TooltipFlag flag) {
+		super.appendHoverText(itemstack, context, tooltipDisplay, componentConsumer, flag);
+		componentConsumer.accept(Component.translatable("item.losthorizon.destiny_dice.description_0"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.destiny_dice.description_1"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.destiny_dice.description_2"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.destiny_dice.description_3"));
+		componentConsumer.accept(Component.translatable("item.losthorizon.destiny_dice.description_4"));
 	}
 
 	@Override

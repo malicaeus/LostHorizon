@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -18,7 +17,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.losthorizon.LosthorizonMod;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class LosthorizonModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, LosthorizonMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> RINGS = REGISTRY.register("rings",
@@ -60,6 +59,8 @@ public class LosthorizonModTabs {
 			tabData.accept(LosthorizonModItems.MYTHRIL_ENCHANTED_ARMOR_LEGGINGS.get());
 			tabData.accept(LosthorizonModItems.MYTHRIL_ENCHANTED_ARMOR_BOOTS.get());
 			tabData.accept(LosthorizonModItems.BASALT_EDGE.get());
+			tabData.accept(LosthorizonModItems.ECLIPSE_BLADE.get());
+			tabData.accept(LosthorizonModItems.LUNAR_SWORD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(LosthorizonModItems.ONYX.get());
 			tabData.accept(LosthorizonModItems.RUNITE_INGOT.get());
@@ -110,8 +111,11 @@ public class LosthorizonModTabs {
 			tabData.accept(LosthorizonModItems.LINK_DAGGER.get());
 			tabData.accept(LosthorizonModItems.DEATH_SWORD.get());
 			tabData.accept(LosthorizonModItems.SHARD_OF_THE_VOID.get());
+			tabData.accept(LosthorizonModItems.SOLAR_FEATHER.get());
 			tabData.accept(LosthorizonModItems.AETHER_HEART.get());
 			tabData.accept(LosthorizonModItems.EYE_OF_HYPERION.get());
+			tabData.accept(LosthorizonModItems.MOONBELL.get());
+			tabData.accept(LosthorizonModItems.ASH_OF_DAWN.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(LosthorizonModItems.RED_GROUPER_RAW.get());
 			tabData.accept(LosthorizonModItems.RED_GROUPER_COOKED.get());
@@ -128,6 +132,7 @@ public class LosthorizonModTabs {
 			tabData.accept(LosthorizonModItems.CRYPT_GUARDIAN_SPAWN_EGG.get());
 			tabData.accept(LosthorizonModItems.LINKED_SPAWN_EGG.get());
 			tabData.accept(LosthorizonModItems.HEART_GUARDIAN_SPAWN_EGG.get());
+			tabData.accept(LosthorizonModItems.BLACK_BLAZE_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(LosthorizonModBlocks.MAGIC_LEAVES.get().asItem());
 			tabData.accept(LosthorizonModBlocks.ENCHANTED_BLOSSOM.get().asItem());

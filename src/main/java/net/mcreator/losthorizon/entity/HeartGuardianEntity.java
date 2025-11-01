@@ -1,9 +1,10 @@
-
 package net.mcreator.losthorizon.entity;
 
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -30,7 +31,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.losthorizon.procedures.HeartGuardianIsActivateProcedure;
@@ -131,19 +131,17 @@ public class HeartGuardianEntity extends Monster {
 	}
 
 	@Override
-	public void addAdditionalSaveData(CompoundTag compound) {
-		super.addAdditionalSaveData(compound);
-		compound.putBoolean("Dataactivate", this.entityData.get(DATA_activate));
-		compound.putBoolean("Dataawaken", this.entityData.get(DATA_awaken));
+	public void addAdditionalSaveData(ValueOutput valueOutput) {
+		super.addAdditionalSaveData(valueOutput);
+		valueOutput.putBoolean("Dataactivate", this.entityData.get(DATA_activate));
+		valueOutput.putBoolean("Dataawaken", this.entityData.get(DATA_awaken));
 	}
 
 	@Override
-	public void readAdditionalSaveData(CompoundTag compound) {
-		super.readAdditionalSaveData(compound);
-		if (compound.contains("Dataactivate"))
-			this.entityData.set(DATA_activate, compound.getBoolean("Dataactivate"));
-		if (compound.contains("Dataawaken"))
-			this.entityData.set(DATA_awaken, compound.getBoolean("Dataawaken"));
+	public void readAdditionalSaveData(ValueInput valueInput) {
+		super.readAdditionalSaveData(valueInput);
+		this.entityData.set(DATA_activate, valueInput.getBooleanOr("Dataactivate", false));
+		this.entityData.set(DATA_awaken, valueInput.getBooleanOr("Dataawaken", false));
 	}
 
 	@Override

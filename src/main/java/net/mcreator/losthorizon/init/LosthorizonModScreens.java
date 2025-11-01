@@ -1,4 +1,3 @@
-
 /*
  *	MCreator note: This file will be REGENERATED on each build.
  */
@@ -13,12 +12,16 @@ import net.mcreator.losthorizon.client.gui.RingInfuserGUIScreen;
 import net.mcreator.losthorizon.client.gui.BackPackGuiScreen;
 import net.mcreator.losthorizon.client.gui.BackPackExtendedGuiScreen;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class LosthorizonModScreens {
 	@SubscribeEvent
 	public static void clientLoad(RegisterMenuScreensEvent event) {
 		event.register(LosthorizonModMenus.BACK_PACK_GUI.get(), BackPackGuiScreen::new);
 		event.register(LosthorizonModMenus.BACK_PACK_EXTENDED_GUI.get(), BackPackExtendedGuiScreen::new);
 		event.register(LosthorizonModMenus.RING_INFUSER_GUI.get(), RingInfuserGUIScreen::new);
+	}
+
+	public interface ScreenAccessor {
+		void updateMenuState(int elementType, String name, Object elementState);
 	}
 }

@@ -34,9 +34,9 @@
       "registry_name": "fisherman_hut_structure",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/worldgen/structure_set/fisherman_hut_structure.json",
           "src/main/resources/data/losthorizon/worldgen/template_pool/fisherman_hut_structure.json",
-          "src/main/resources/data/losthorizon/worldgen/structure/fisherman_hut_structure.json"
+          "src/main/resources/data/losthorizon/worldgen/structure/fisherman_hut_structure.json",
+          "src/main/resources/data/losthorizon/worldgen/structure_set/fisherman_hut_structure.json"
         ]
       },
       "path": "~/Structures"
@@ -85,8 +85,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/item/FrosbiteDaggerItem.java",
-          "src/main/resources/assets/losthorizon/items/frostbite_dagger.json",
-          "src/main/resources/assets/losthorizon/models/item/frostbite_dagger.json"
+          "src/main/resources/assets/losthorizon/models/item/frostbite_dagger.json",
+          "src/main/resources/assets/losthorizon/items/frostbite_dagger.json"
         ]
       },
       "path": "~/Tools/Frostbite Dagger"
@@ -118,9 +118,9 @@
       "registry_name": "knife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/knife.json",
+          "src/main/resources/assets/losthorizon/items/knife.json",
           "src/main/java/net/mcreator/losthorizon/item/KnifeItem.java",
-          "src/main/resources/assets/losthorizon/items/knife.json"
+          "src/main/resources/assets/losthorizon/models/item/knife.json"
         ]
       },
       "path": "~/Tools/Knife"
@@ -208,9 +208,9 @@
       "registry_name": "onyx",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/item/OnyxItem.java",
           "src/main/resources/assets/losthorizon/models/item/onyx.json",
-          "src/main/resources/assets/losthorizon/items/onyx.json"
+          "src/main/resources/assets/losthorizon/items/onyx.json",
+          "src/main/java/net/mcreator/losthorizon/item/OnyxItem.java"
         ]
       },
       "path": "~/Ore/Onyx"
@@ -223,14 +223,14 @@
       "registry_name": "onyx_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/onyx_ore.json",
-          "src/main/resources/data/losthorizon/worldgen/placed_feature/onyx_ore.json",
           "src/main/java/net/mcreator/losthorizon/block/OnyxOreBlock.java",
-          "src/main/resources/assets/losthorizon/items/onyx_ore.json",
-          "src/main/resources/assets/losthorizon/models/block/onyx_ore.json",
+          "src/main/resources/data/losthorizon/worldgen/configured_feature/onyx_ore.json",
           "src/main/resources/assets/losthorizon/blockstates/onyx_ore.json",
+          "src/main/resources/assets/losthorizon/models/block/onyx_ore.json",
+          "src/main/resources/assets/losthorizon/items/onyx_ore.json",
           "src/main/resources/data/losthorizon/neoforge/biome_modifier/onyx_ore_biome_modifier.json",
-          "src/main/resources/data/losthorizon/worldgen/configured_feature/onyx_ore.json"
+          "src/main/resources/data/losthorizon/worldgen/placed_feature/onyx_ore.json",
+          "src/main/resources/assets/losthorizon/models/item/onyx_ore.json"
         ]
       },
       "path": "~/Ore/Onyx"
@@ -243,12 +243,12 @@
       "registry_name": "onyx_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/onyx_block.json",
           "src/main/resources/assets/losthorizon/blockstates/onyx_block.json",
-          "src/main/java/net/mcreator/losthorizon/block/OnyxBlockBlock.java",
+          "src/main/resources/data/losthorizon/loot_table/blocks/onyx_block.json",
           "src/main/resources/assets/losthorizon/models/block/onyx_block.json",
           "src/main/resources/assets/losthorizon/items/onyx_block.json",
-          "src/main/resources/data/losthorizon/loot_table/blocks/onyx_block.json"
+          "src/main/java/net/mcreator/losthorizon/block/OnyxBlockBlock.java",
+          "src/main/resources/assets/losthorizon/models/item/onyx_block.json"
         ]
       },
       "path": "~/Ore/Onyx"
@@ -300,9 +300,9 @@
       "registry_name": "onyx_knife",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/onyx_knife.json",
           "src/main/resources/assets/losthorizon/models/item/onyx_knife.json",
-          "src/main/java/net/mcreator/losthorizon/item/OnyxKnifeItem.java"
+          "src/main/java/net/mcreator/losthorizon/item/OnyxKnifeItem.java",
+          "src/main/resources/assets/losthorizon/items/onyx_knife.json"
         ]
       },
       "path": "~/Tools/Knife"
@@ -407,8 +407,8 @@
       "registry_name": "totem_of_the_moon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/totem_of_the_moon.json",
           "src/main/resources/assets/losthorizon/models/item/totem_of_the_moon.json",
+          "src/main/resources/assets/losthorizon/items/totem_of_the_moon.json",
           "src/main/java/net/mcreator/losthorizon/item/TotemOfTheMoonItem.java"
         ]
       },
@@ -449,9 +449,9 @@
       "registry_name": "lantern_shield",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/lantern_shield.json",
-          "src/main/resources/assets/losthorizon/models/item/lantern_shield_blocking.json",
           "src/main/java/net/mcreator/losthorizon/item/LanternShieldItem.java",
+          "src/main/resources/assets/losthorizon/models/item/lantern_shield_blocking.json",
+          "src/main/resources/assets/losthorizon/items/lantern_shield.json",
           "src/main/resources/assets/losthorizon/models/item/lantern_shield.json"
         ]
       },
@@ -514,8 +514,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/item/RuniteIngotItem.java",
-          "src/main/resources/assets/losthorizon/models/item/runite_ingot.json",
-          "src/main/resources/assets/losthorizon/items/runite_ingot.json"
+          "src/main/resources/assets/losthorizon/items/runite_ingot.json",
+          "src/main/resources/assets/losthorizon/models/item/runite_ingot.json"
         ]
       },
       "path": "~/Ore/Runite"
@@ -528,14 +528,14 @@
       "registry_name": "runite_ore",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/blockstates/runite_ore.json",
           "src/main/resources/data/losthorizon/worldgen/configured_feature/runite_ore.json",
-          "src/main/java/net/mcreator/losthorizon/block/RuniteOreBlock.java",
+          "src/main/resources/assets/losthorizon/models/item/runite_ore.json",
           "src/main/resources/data/losthorizon/worldgen/placed_feature/runite_ore.json",
           "src/main/resources/assets/losthorizon/items/runite_ore.json",
           "src/main/resources/assets/losthorizon/models/block/runite_ore.json",
-          "src/main/resources/assets/losthorizon/models/item/runite_ore.json",
-          "src/main/resources/assets/losthorizon/blockstates/runite_ore.json",
-          "src/main/resources/data/losthorizon/neoforge/biome_modifier/runite_ore_biome_modifier.json"
+          "src/main/resources/data/losthorizon/neoforge/biome_modifier/runite_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/losthorizon/block/RuniteOreBlock.java"
         ]
       },
       "path": "~/Ore/Runite"
@@ -548,12 +548,12 @@
       "registry_name": "runite_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/runite_block.json",
-          "src/main/resources/assets/losthorizon/blockstates/runite_block.json",
-          "src/main/resources/assets/losthorizon/items/runite_block.json",
-          "src/main/java/net/mcreator/losthorizon/block/RuniteBlockBlock.java",
           "src/main/resources/assets/losthorizon/models/block/runite_block.json",
-          "src/main/resources/data/losthorizon/loot_table/blocks/runite_block.json"
+          "src/main/resources/assets/losthorizon/models/item/runite_block.json",
+          "src/main/resources/assets/losthorizon/items/runite_block.json",
+          "src/main/resources/data/losthorizon/loot_table/blocks/runite_block.json",
+          "src/main/resources/assets/losthorizon/blockstates/runite_block.json",
+          "src/main/java/net/mcreator/losthorizon/block/RuniteBlockBlock.java"
         ]
       },
       "path": "~/Ore/Runite"
@@ -605,9 +605,9 @@
       "registry_name": "runite_pickaxe",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/runite_pickaxe.json",
           "src/main/java/net/mcreator/losthorizon/item/RunitePickaxeItem.java",
-          "src/main/resources/assets/losthorizon/models/item/runite_pickaxe.json"
+          "src/main/resources/assets/losthorizon/models/item/runite_pickaxe.json",
+          "src/main/resources/assets/losthorizon/items/runite_pickaxe.json"
         ]
       },
       "path": "~/Ore/Runite"
@@ -620,8 +620,8 @@
       "registry_name": "runite_axe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/item/RuniteAxeItem.java",
           "src/main/resources/assets/losthorizon/models/item/runite_axe.json",
+          "src/main/java/net/mcreator/losthorizon/item/RuniteAxeItem.java",
           "src/main/resources/assets/losthorizon/items/runite_axe.json"
         ]
       },
@@ -636,8 +636,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/item/RuniteSwordItem.java",
-          "src/main/resources/assets/losthorizon/items/runite_sword.json",
-          "src/main/resources/assets/losthorizon/models/item/runite_sword.json"
+          "src/main/resources/assets/losthorizon/models/item/runite_sword.json",
+          "src/main/resources/assets/losthorizon/items/runite_sword.json"
         ]
       },
       "path": "~/Ore/Runite"
@@ -651,8 +651,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/losthorizon/models/item/runite_shovel.json",
-          "src/main/resources/assets/losthorizon/items/runite_shovel.json",
-          "src/main/java/net/mcreator/losthorizon/item/RuniteShovelItem.java"
+          "src/main/java/net/mcreator/losthorizon/item/RuniteShovelItem.java",
+          "src/main/resources/assets/losthorizon/items/runite_shovel.json"
         ]
       },
       "path": "~/Ore/Runite"
@@ -665,9 +665,9 @@
       "registry_name": "runite_hoe",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/item/RuniteHoeItem.java",
           "src/main/resources/assets/losthorizon/models/item/runite_hoe.json",
-          "src/main/resources/assets/losthorizon/items/runite_hoe.json"
+          "src/main/resources/assets/losthorizon/items/runite_hoe.json",
+          "src/main/java/net/mcreator/losthorizon/item/RuniteHoeItem.java"
         ]
       },
       "path": "~/Ore/Runite"
@@ -745,16 +745,17 @@
       "registry_name": "runite_armor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/item/RuniteArmorItem.java",
-          "src/main/resources/assets/losthorizon/items/runite_armor_chestplate.json",
-          "src/main/resources/assets/losthorizon/models/item/runite_armor_chestplate.json",
-          "src/main/resources/assets/losthorizon/items/runite_armor_boots.json",
           "src/main/resources/assets/losthorizon/items/runite_armor_leggings.json",
           "src/main/resources/assets/losthorizon/models/item/runite_armor_helmet.json",
           "src/main/resources/assets/losthorizon/models/item/runite_armor_boots.json",
+          "src/main/java/net/mcreator/losthorizon/item/RuniteArmorItem.java",
+          "src/main/java/net/mcreator/losthorizon/client/renderer/item/RuniteArmorArmor.java",
+          "src/main/resources/assets/losthorizon/models/item/runite_armor_leggings.json",
           "src/main/resources/assets/losthorizon/equipment/runite_armor.json",
           "src/main/resources/assets/losthorizon/items/runite_armor_helmet.json",
-          "src/main/resources/assets/losthorizon/models/item/runite_armor_leggings.json"
+          "src/main/resources/assets/losthorizon/items/runite_armor_boots.json",
+          "src/main/resources/assets/losthorizon/models/item/runite_armor_chestplate.json",
+          "src/main/resources/assets/losthorizon/items/runite_armor_chestplate.json"
         ]
       },
       "path": "~/Ore/Runite"
@@ -859,8 +860,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/item/IceCrystalItem.java",
-          "src/main/resources/assets/losthorizon/items/ice_crystal.json",
-          "src/main/resources/assets/losthorizon/models/item/ice_crystal.json"
+          "src/main/resources/assets/losthorizon/models/item/ice_crystal.json",
+          "src/main/resources/assets/losthorizon/items/ice_crystal.json"
         ]
       },
       "path": "~/Tools"
@@ -914,14 +915,14 @@
       "registry_name": "mythril_ore",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/worldgen/placed_feature/mythril_ore.json",
+          "src/main/resources/assets/losthorizon/models/block/mythril_ore.json",
+          "src/main/resources/data/losthorizon/neoforge/biome_modifier/mythril_ore_biome_modifier.json",
           "src/main/resources/assets/losthorizon/items/mythril_ore.json",
           "src/main/resources/data/losthorizon/worldgen/configured_feature/mythril_ore.json",
-          "src/main/resources/assets/losthorizon/blockstates/mythril_ore.json",
-          "src/main/resources/assets/losthorizon/models/block/mythril_ore.json",
-          "src/main/java/net/mcreator/losthorizon/block/MythrilOreBlock.java",
+          "src/main/resources/data/losthorizon/worldgen/placed_feature/mythril_ore.json",
           "src/main/resources/assets/losthorizon/models/item/mythril_ore.json",
-          "src/main/resources/data/losthorizon/neoforge/biome_modifier/mythril_ore_biome_modifier.json"
+          "src/main/java/net/mcreator/losthorizon/block/MythrilOreBlock.java",
+          "src/main/resources/assets/losthorizon/blockstates/mythril_ore.json"
         ]
       },
       "path": "~/Ore/Mythril"
@@ -935,11 +936,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/block/MythrilBlockBlock.java",
-          "src/main/resources/assets/losthorizon/models/block/mythril_block.json",
-          "src/main/resources/data/losthorizon/loot_table/blocks/mythril_block.json",
+          "src/main/resources/assets/losthorizon/items/mythril_block.json",
           "src/main/resources/assets/losthorizon/models/item/mythril_block.json",
           "src/main/resources/assets/losthorizon/blockstates/mythril_block.json",
-          "src/main/resources/assets/losthorizon/items/mythril_block.json"
+          "src/main/resources/assets/losthorizon/models/block/mythril_block.json",
+          "src/main/resources/data/losthorizon/loot_table/blocks/mythril_block.json"
         ]
       },
       "path": "~/Ore/Mythril"
@@ -992,8 +993,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/item/MythrilPickaxeItem.java",
-          "src/main/resources/assets/losthorizon/items/mythril_pickaxe.json",
-          "src/main/resources/assets/losthorizon/models/item/mythril_pickaxe.json"
+          "src/main/resources/assets/losthorizon/models/item/mythril_pickaxe.json",
+          "src/main/resources/assets/losthorizon/items/mythril_pickaxe.json"
         ]
       },
       "path": "~/Ore/Mythril"
@@ -1036,9 +1037,9 @@
       "registry_name": "mythril_shovel",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/item/MythrilShovelItem.java",
           "src/main/resources/assets/losthorizon/models/item/mythril_shovel.json",
-          "src/main/resources/assets/losthorizon/items/mythril_shovel.json"
+          "src/main/resources/assets/losthorizon/items/mythril_shovel.json",
+          "src/main/java/net/mcreator/losthorizon/item/MythrilShovelItem.java"
         ]
       },
       "path": "~/Ore/Mythril"
@@ -1131,16 +1132,17 @@
       "registry_name": "mythril_armor",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/item/MythrilArmorItem.java",
           "src/main/resources/assets/losthorizon/items/mythril_armor_leggings.json",
-          "src/main/resources/assets/losthorizon/models/item/mythril_armor_chestplate.json",
-          "src/main/resources/assets/losthorizon/items/mythril_armor_helmet.json",
           "src/main/resources/assets/losthorizon/models/item/mythril_armor_boots.json",
-          "src/main/resources/assets/losthorizon/items/mythril_armor_boots.json",
-          "src/main/resources/assets/losthorizon/items/mythril_armor_chestplate.json",
-          "src/main/resources/assets/losthorizon/models/item/mythril_armor_helmet.json",
           "src/main/resources/assets/losthorizon/models/item/mythril_armor_leggings.json",
-          "src/main/resources/assets/losthorizon/equipment/mythril_armor.json"
+          "src/main/resources/assets/losthorizon/items/mythril_armor_chestplate.json",
+          "src/main/java/net/mcreator/losthorizon/client/renderer/item/MythrilArmorArmor.java",
+          "src/main/resources/assets/losthorizon/equipment/mythril_armor.json",
+          "src/main/resources/assets/losthorizon/models/item/mythril_armor_helmet.json",
+          "src/main/resources/assets/losthorizon/models/item/mythril_armor_chestplate.json",
+          "src/main/resources/assets/losthorizon/items/mythril_armor_boots.json",
+          "src/main/resources/assets/losthorizon/items/mythril_armor_helmet.json",
+          "src/main/java/net/mcreator/losthorizon/item/MythrilArmorItem.java"
         ]
       },
       "path": "~/Ore/Mythril"
@@ -1205,9 +1207,9 @@
       "registry_name": "mythril_enchanted_pickaxe",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_pickaxe.json",
           "src/main/resources/assets/losthorizon/items/mythril_enchanted_pickaxe.json",
-          "src/main/java/net/mcreator/losthorizon/item/MythrilEnchantedPickaxeItem.java",
-          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_pickaxe.json"
+          "src/main/java/net/mcreator/losthorizon/item/MythrilEnchantedPickaxeItem.java"
         ]
       },
       "path": "~/Ore/Mythril/MythrilEnchanted"
@@ -1220,9 +1222,9 @@
       "registry_name": "mythril_enchanted_axe",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/items/mythril_enchanted_axe.json",
           "src/main/java/net/mcreator/losthorizon/item/MythrilEnchantedAxeItem.java",
-          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_axe.json",
-          "src/main/resources/assets/losthorizon/items/mythril_enchanted_axe.json"
+          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_axe.json"
         ]
       },
       "path": "~/Ore/Mythril/MythrilEnchanted"
@@ -1236,8 +1238,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_sword.json",
-          "src/main/java/net/mcreator/losthorizon/item/MythrilEnchantedSwordItem.java",
-          "src/main/resources/assets/losthorizon/items/mythril_enchanted_sword.json"
+          "src/main/resources/assets/losthorizon/items/mythril_enchanted_sword.json",
+          "src/main/java/net/mcreator/losthorizon/item/MythrilEnchantedSwordItem.java"
         ]
       },
       "path": "~/Ore/Mythril/MythrilEnchanted"
@@ -1250,9 +1252,9 @@
       "registry_name": "mythril_enchanted_shovel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_shovel.json",
+          "src/main/resources/assets/losthorizon/items/mythril_enchanted_shovel.json",
           "src/main/java/net/mcreator/losthorizon/item/MythrilEnchantedShovelItem.java",
-          "src/main/resources/assets/losthorizon/items/mythril_enchanted_shovel.json"
+          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_shovel.json"
         ]
       },
       "path": "~/Ore/Mythril/MythrilEnchanted"
@@ -1265,9 +1267,9 @@
       "registry_name": "mythril_enchanted_hoe",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/items/mythril_enchanted_hoe.json",
           "src/main/java/net/mcreator/losthorizon/item/MythrilEnchantedHoeItem.java",
-          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_hoe.json",
-          "src/main/resources/assets/losthorizon/items/mythril_enchanted_hoe.json"
+          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_hoe.json"
         ]
       },
       "path": "~/Ore/Mythril/MythrilEnchanted"
@@ -1345,16 +1347,17 @@
       "registry_name": "mythril_enchanted_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/mythril_enchanted_armor_leggings.json",
-          "src/main/resources/assets/losthorizon/items/mythril_enchanted_armor_helmet.json",
+          "src/main/java/net/mcreator/losthorizon/client/renderer/item/MythrilEnchantedArmorArmor.java",
           "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_armor_helmet.json",
-          "src/main/resources/assets/losthorizon/items/mythril_enchanted_armor_boots.json",
           "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_armor_leggings.json",
-          "src/main/resources/assets/losthorizon/items/mythril_enchanted_armor_chestplate.json",
-          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_armor_chestplate.json",
           "src/main/java/net/mcreator/losthorizon/item/MythrilEnchantedArmorItem.java",
+          "src/main/resources/assets/losthorizon/items/mythril_enchanted_armor_helmet.json",
+          "src/main/resources/assets/losthorizon/items/mythril_enchanted_armor_chestplate.json",
+          "src/main/resources/assets/losthorizon/equipment/mythril_enchanted_armor.json",
+          "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_armor_chestplate.json",
+          "src/main/resources/assets/losthorizon/items/mythril_enchanted_armor_leggings.json",
           "src/main/resources/assets/losthorizon/models/item/mythril_enchanted_armor_boots.json",
-          "src/main/resources/assets/losthorizon/equipment/mythril_enchanted_armor.json"
+          "src/main/resources/assets/losthorizon/items/mythril_enchanted_armor_boots.json"
         ]
       },
       "path": "~/Ore/Mythril/MythrilEnchanted"
@@ -1438,14 +1441,14 @@
       "registry_name": "basalt_obsidian_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/block/BasaltObsidianOreBlock.java",
-          "src/main/resources/assets/losthorizon/models/item/basalt_obsidian_ore.json",
-          "src/main/resources/assets/losthorizon/models/block/basalt_obsidian_ore.json",
-          "src/main/resources/data/losthorizon/neoforge/biome_modifier/basalt_obsidian_ore_biome_modifier.json",
-          "src/main/resources/data/losthorizon/worldgen/configured_feature/basalt_obsidian_ore.json",
-          "src/main/resources/assets/losthorizon/blockstates/basalt_obsidian_ore.json",
           "src/main/resources/assets/losthorizon/items/basalt_obsidian_ore.json",
-          "src/main/resources/data/losthorizon/worldgen/placed_feature/basalt_obsidian_ore.json"
+          "src/main/resources/data/losthorizon/neoforge/biome_modifier/basalt_obsidian_ore_biome_modifier.json",
+          "src/main/java/net/mcreator/losthorizon/block/BasaltObsidianOreBlock.java",
+          "src/main/resources/assets/losthorizon/blockstates/basalt_obsidian_ore.json",
+          "src/main/resources/assets/losthorizon/models/item/basalt_obsidian_ore.json",
+          "src/main/resources/data/losthorizon/worldgen/placed_feature/basalt_obsidian_ore.json",
+          "src/main/resources/assets/losthorizon/models/block/basalt_obsidian_ore.json",
+          "src/main/resources/data/losthorizon/worldgen/configured_feature/basalt_obsidian_ore.json"
         ]
       },
       "path": "~/Ore/BasaltObsidian"
@@ -1491,8 +1494,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/item/BasaltEdgeItem.java",
-          "src/main/resources/assets/losthorizon/items/basalt_edge.json",
-          "src/main/resources/assets/losthorizon/models/item/basalt_edge.json"
+          "src/main/resources/assets/losthorizon/models/item/basalt_edge.json",
+          "src/main/resources/assets/losthorizon/items/basalt_edge.json"
         ]
       },
       "path": "~/Tools/BasaltEdge"
@@ -1599,8 +1602,8 @@
       "registry_name": "explorers_hideout_structure",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/worldgen/structure/explorers_hideout_structure.json",
           "src/main/resources/data/losthorizon/worldgen/structure_set/explorers_hideout_structure.json",
+          "src/main/resources/data/losthorizon/worldgen/structure/explorers_hideout_structure.json",
           "src/main/resources/data/losthorizon/worldgen/template_pool/explorers_hideout_structure.json"
         ]
       },
@@ -1614,8 +1617,8 @@
       "registry_name": "back_pack_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/world/inventory/BackPackGuiMenu.java",
-          "src/main/java/net/mcreator/losthorizon/client/gui/BackPackGuiScreen.java"
+          "src/main/java/net/mcreator/losthorizon/client/gui/BackPackGuiScreen.java",
+          "src/main/java/net/mcreator/losthorizon/world/inventory/BackPackGuiMenu.java"
         ]
       },
       "path": "~/Tools/Backpack"
@@ -1628,10 +1631,10 @@
       "registry_name": "back_pack",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/back_pack.json",
-          "src/main/java/net/mcreator/losthorizon/item/BackPackItem.java",
+          "src/main/java/net/mcreator/losthorizon/item/inventory/BackPackInventoryCapability.java",
           "src/main/resources/assets/losthorizon/items/back_pack.json",
-          "src/main/java/net/mcreator/losthorizon/item/inventory/BackPackInventoryCapability.java"
+          "src/main/java/net/mcreator/losthorizon/item/BackPackItem.java",
+          "src/main/resources/assets/losthorizon/models/item/back_pack.json"
         ]
       },
       "path": "~/Tools/Backpack"
@@ -1734,10 +1737,10 @@
       "registry_name": "back_pack_extended",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/back_pack_extended.json",
-          "src/main/resources/assets/losthorizon/models/item/back_pack_extended.json",
           "src/main/java/net/mcreator/losthorizon/item/BackPackExtendedItem.java",
-          "src/main/java/net/mcreator/losthorizon/item/inventory/BackPackExtendedInventoryCapability.java"
+          "src/main/java/net/mcreator/losthorizon/item/inventory/BackPackExtendedInventoryCapability.java",
+          "src/main/resources/assets/losthorizon/models/item/back_pack_extended.json",
+          "src/main/resources/assets/losthorizon/items/back_pack_extended.json"
         ]
       },
       "path": "~/Tools/Backpack"
@@ -1750,8 +1753,8 @@
       "registry_name": "back_pack_extended_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/world/inventory/BackPackExtendedGuiMenu.java",
-          "src/main/java/net/mcreator/losthorizon/client/gui/BackPackExtendedGuiScreen.java"
+          "src/main/java/net/mcreator/losthorizon/client/gui/BackPackExtendedGuiScreen.java",
+          "src/main/java/net/mcreator/losthorizon/world/inventory/BackPackExtendedGuiMenu.java"
         ]
       },
       "path": "~/Tools/Backpack"
@@ -1816,9 +1819,9 @@
       "registry_name": "climbing_pick",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/climbing_pick.json",
           "src/main/resources/assets/losthorizon/models/item/climbing_pick.json",
-          "src/main/java/net/mcreator/losthorizon/item/ClimbingPickItem.java"
+          "src/main/java/net/mcreator/losthorizon/item/ClimbingPickItem.java",
+          "src/main/resources/assets/losthorizon/items/climbing_pick.json"
         ]
       },
       "path": "~/Tools/ClimbingPick"
@@ -1890,8 +1893,8 @@
       "registry_name": "red_grouper_raw",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/red_grouper_raw.json",
           "src/main/resources/assets/losthorizon/items/red_grouper_raw.json",
+          "src/main/resources/assets/losthorizon/models/item/red_grouper_raw.json",
           "src/main/java/net/mcreator/losthorizon/item/RedGrouperRawItem.java"
         ]
       },
@@ -1906,8 +1909,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/losthorizon/items/red_grouper_cooked.json",
-          "src/main/java/net/mcreator/losthorizon/item/RedGrouperCookedItem.java",
-          "src/main/resources/assets/losthorizon/models/item/red_grouper_cooked.json"
+          "src/main/resources/assets/losthorizon/models/item/red_grouper_cooked.json",
+          "src/main/java/net/mcreator/losthorizon/item/RedGrouperCookedItem.java"
         ]
       },
       "path": "~/Mobs/fish"
@@ -1959,9 +1962,9 @@
       "registry_name": "red_bellied_piranha_raw",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/losthorizon/item/RedBelliedPiranhaRawItem.java",
           "src/main/resources/assets/losthorizon/models/item/red_bellied_piranha_raw.json",
-          "src/main/resources/assets/losthorizon/items/red_bellied_piranha_raw.json",
-          "src/main/java/net/mcreator/losthorizon/item/RedBelliedPiranhaRawItem.java"
+          "src/main/resources/assets/losthorizon/items/red_bellied_piranha_raw.json"
         ]
       },
       "path": "~/Mobs/fish"
@@ -2043,8 +2046,8 @@
       "registry_name": "arapaima_cooked",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/arapaima_cooked.json",
           "src/main/java/net/mcreator/losthorizon/item/ArapaimaCookedItem.java",
+          "src/main/resources/assets/losthorizon/models/item/arapaima_cooked.json",
           "src/main/resources/assets/losthorizon/items/arapaima_cooked.json"
         ]
       },
@@ -2228,9 +2231,9 @@
       "registry_name": "technoblade_totem",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/items/technoblade_totem.json",
           "src/main/java/net/mcreator/losthorizon/item/TechnobladeTotemItem.java",
-          "src/main/resources/assets/losthorizon/models/item/technoblade_totem.json",
-          "src/main/resources/assets/losthorizon/items/technoblade_totem.json"
+          "src/main/resources/assets/losthorizon/models/item/technoblade_totem.json"
         ]
       },
       "path": "~/Tools/TechnobladeTotem"
@@ -2266,9 +2269,9 @@
       "registry_name": "anchor_totem",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/anchor_totem.json",
           "src/main/resources/assets/losthorizon/items/anchor_totem.json",
-          "src/main/java/net/mcreator/losthorizon/item/AnchorTotemItem.java"
+          "src/main/java/net/mcreator/losthorizon/item/AnchorTotemItem.java",
+          "src/main/resources/assets/losthorizon/models/item/anchor_totem.json"
         ]
       },
       "path": "~/Tools/AnchorTotem"
@@ -2470,9 +2473,9 @@
       "registry_name": "mushroom_house_structure",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/worldgen/structure/mushroom_house_structure.json",
+          "src/main/resources/data/losthorizon/worldgen/structure_set/mushroom_house_structure.json",
           "src/main/resources/data/losthorizon/worldgen/template_pool/mushroom_house_structure.json",
-          "src/main/resources/data/losthorizon/worldgen/structure_set/mushroom_house_structure.json"
+          "src/main/resources/data/losthorizon/worldgen/structure/mushroom_house_structure.json"
         ]
       },
       "path": "~/Structures"
@@ -2524,8 +2527,8 @@
       "registry_name": "ice_tower_structure",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/worldgen/structure/ice_tower_structure.json",
           "src/main/resources/data/losthorizon/worldgen/structure_set/ice_tower_structure.json",
+          "src/main/resources/data/losthorizon/worldgen/structure/ice_tower_structure.json",
           "src/main/resources/data/losthorizon/worldgen/template_pool/ice_tower_structure.json"
         ]
       },
@@ -2734,12 +2737,12 @@
       "registry_name": "trap",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/trap.json",
           "src/main/java/net/mcreator/losthorizon/block/TrapBlock.java",
           "src/main/resources/assets/losthorizon/models/block/trap.json",
-          "src/main/resources/assets/losthorizon/blockstates/trap.json",
           "src/main/resources/assets/losthorizon/models/item/trap.json",
-          "src/main/resources/data/losthorizon/loot_table/blocks/trap.json"
+          "src/main/resources/data/losthorizon/loot_table/blocks/trap.json",
+          "src/main/resources/assets/losthorizon/items/trap.json",
+          "src/main/resources/assets/losthorizon/blockstates/trap.json"
         ]
       },
       "path": "~/Tools/Trap"
@@ -2911,12 +2914,12 @@
       "registry_name": "necromancer_grimoire_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/block/NecromancerGrimoireBlocBlock.java",
-          "src/main/resources/assets/losthorizon/models/item/necromancer_grimoire_block.json",
-          "src/main/resources/assets/losthorizon/blockstates/necromancer_grimoire_block.json",
-          "src/main/resources/assets/losthorizon/items/necromancer_grimoire_block.json",
+          "src/main/resources/assets/losthorizon/models/block/necromancer_grimoire_block.json",
           "src/main/resources/data/losthorizon/loot_table/blocks/necromancer_grimoire_block.json",
-          "src/main/resources/assets/losthorizon/models/block/necromancer_grimoire_block.json"
+          "src/main/resources/assets/losthorizon/blockstates/necromancer_grimoire_block.json",
+          "src/main/resources/assets/losthorizon/models/item/necromancer_grimoire_block.json",
+          "src/main/resources/assets/losthorizon/items/necromancer_grimoire_block.json",
+          "src/main/java/net/mcreator/losthorizon/block/NecromancerGrimoireBlocBlock.java"
         ]
       },
       "path": "~/Tools/NecromancerGrimoire"
@@ -2929,9 +2932,10 @@
       "registry_name": "necromancer",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/entity/NecromancerBossEntity.java",
           "src/main/java/net/mcreator/losthorizon/client/renderer/NecromancerBossRenderer.java",
-          "src/main/resources/assets/losthorizon/items/necromancer_spawn_egg.json"
+          "src/main/resources/assets/losthorizon/items/necromancer_spawn_egg.json",
+          "src/main/java/net/mcreator/losthorizon/entity/NecromancerBossEntity.java",
+          "src/main/resources/assets/losthorizon/models/item/necromancer_spawn_egg.json"
         ]
       },
       "path": "~/Mobs/Necromancer"
@@ -3235,9 +3239,10 @@
       "registry_name": "crypt_guardian",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/entity/CryptGuardianEntity.java",
+          "src/main/resources/assets/losthorizon/items/crypt_guardian_spawn_egg.json",
           "src/main/java/net/mcreator/losthorizon/client/renderer/CryptGuardianRenderer.java",
-          "src/main/resources/assets/losthorizon/items/crypt_guardian_spawn_egg.json"
+          "src/main/resources/assets/losthorizon/models/item/crypt_guardian_spawn_egg.json",
+          "src/main/java/net/mcreator/losthorizon/entity/CryptGuardianEntity.java"
         ]
       },
       "path": "~/Mobs/Necromancer/Sbire"
@@ -3491,9 +3496,9 @@
       "registry_name": "necromancer_grimoire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/necromancer_grimoire.json",
+          "src/main/java/net/mcreator/losthorizon/item/NecromancerGrimoireItem.java",
           "src/main/resources/assets/losthorizon/items/necromancer_grimoire.json",
-          "src/main/java/net/mcreator/losthorizon/item/NecromancerGrimoireItem.java"
+          "src/main/resources/assets/losthorizon/models/item/necromancer_grimoire.json"
         ]
       },
       "path": "~/Tools/NecromancerGrimoire"
@@ -3587,8 +3592,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/losthorizon/worldgen/structure/ice_statue_structure.json",
-          "src/main/resources/data/losthorizon/worldgen/template_pool/ice_statue_structure.json",
-          "src/main/resources/data/losthorizon/worldgen/structure_set/ice_statue_structure.json"
+          "src/main/resources/data/losthorizon/worldgen/structure_set/ice_statue_structure.json",
+          "src/main/resources/data/losthorizon/worldgen/template_pool/ice_statue_structure.json"
         ]
       },
       "path": "~/Structures"
@@ -3601,12 +3606,12 @@
       "registry_name": "magic_wood",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/loot_table/blocks/magic_wood.json",
+          "src/main/java/net/mcreator/losthorizon/block/MagicWoodBlock.java",
           "src/main/resources/assets/losthorizon/items/magic_wood.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_wood.json",
           "src/main/resources/assets/losthorizon/blockstates/magic_wood.json",
           "src/main/resources/assets/losthorizon/models/item/magic_wood.json",
-          "src/main/java/net/mcreator/losthorizon/block/MagicWoodBlock.java"
+          "src/main/resources/data/losthorizon/loot_table/blocks/magic_wood.json",
+          "src/main/resources/assets/losthorizon/models/block/magic_wood.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3620,10 +3625,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/losthorizon/models/block/magic_log.json",
+          "src/main/resources/data/losthorizon/loot_table/blocks/magic_log.json",
           "src/main/resources/assets/losthorizon/blockstates/magic_log.json",
           "src/main/resources/assets/losthorizon/models/item/magic_log.json",
           "src/main/java/net/mcreator/losthorizon/block/MagicLogBlock.java",
-          "src/main/resources/data/losthorizon/loot_table/blocks/magic_log.json",
           "src/main/resources/assets/losthorizon/items/magic_log.json"
         ]
       },
@@ -3638,11 +3643,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/block/MagicPlanksBlock.java",
-          "src/main/resources/assets/losthorizon/items/magic_planks.json",
           "src/main/resources/assets/losthorizon/blockstates/magic_planks.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_planks.json",
+          "src/main/resources/assets/losthorizon/items/magic_planks.json",
+          "src/main/resources/assets/losthorizon/models/item/magic_planks.json",
           "src/main/resources/data/losthorizon/loot_table/blocks/magic_planks.json",
-          "src/main/resources/assets/losthorizon/models/item/magic_planks.json"
+          "src/main/resources/assets/losthorizon/models/block/magic_planks.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3655,11 +3660,11 @@
       "registry_name": "magic_leaves",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/losthorizon/block/MagicLeavesBlock.java",
           "src/main/resources/assets/losthorizon/items/magic_leaves.json",
           "src/main/resources/assets/losthorizon/models/block/magic_leaves.json",
-          "src/main/resources/assets/losthorizon/models/item/magic_leaves.json",
-          "src/main/java/net/mcreator/losthorizon/block/MagicLeavesBlock.java",
-          "src/main/resources/assets/losthorizon/blockstates/magic_leaves.json"
+          "src/main/resources/assets/losthorizon/blockstates/magic_leaves.json",
+          "src/main/resources/assets/losthorizon/models/item/magic_leaves.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3672,14 +3677,14 @@
       "registry_name": "magic_stairs",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/models/block/magic_stairs_outer.json",
+          "src/main/resources/assets/losthorizon/models/block/magic_stairs.json",
+          "src/main/resources/assets/losthorizon/models/item/magic_stairs.json",
+          "src/main/resources/assets/losthorizon/items/magic_stairs.json",
           "src/main/resources/data/losthorizon/loot_table/blocks/magic_stairs.json",
           "src/main/resources/assets/losthorizon/blockstates/magic_stairs.json",
           "src/main/resources/assets/losthorizon/models/block/magic_stairs_inner.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_stairs_outer.json",
-          "src/main/resources/assets/losthorizon/items/magic_stairs.json",
-          "src/main/resources/assets/losthorizon/models/item/magic_stairs.json",
-          "src/main/java/net/mcreator/losthorizon/block/MagicStairsBlock.java",
-          "src/main/resources/assets/losthorizon/models/block/magic_stairs.json"
+          "src/main/java/net/mcreator/losthorizon/block/MagicStairsBlock.java"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3692,14 +3697,14 @@
       "registry_name": "magic_slab",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/magic_slab.json",
           "src/main/resources/assets/losthorizon/blockstates/magic_slab.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_slab.json",
-          "src/main/java/net/mcreator/losthorizon/block/MagicSlabBlock.java",
-          "src/main/resources/assets/losthorizon/models/block/magic_slab_top.json",
-          "src/main/resources/assets/losthorizon/items/magic_slab.json",
           "src/main/resources/data/losthorizon/loot_table/blocks/magic_slab.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_slab_full.json"
+          "src/main/resources/assets/losthorizon/models/block/magic_slab_full.json",
+          "src/main/resources/assets/losthorizon/models/block/magic_slab_top.json",
+          "src/main/resources/assets/losthorizon/models/block/magic_slab.json",
+          "src/main/resources/assets/losthorizon/items/magic_slab.json",
+          "src/main/resources/assets/losthorizon/models/item/magic_slab.json",
+          "src/main/java/net/mcreator/losthorizon/block/MagicSlabBlock.java"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3712,14 +3717,14 @@
       "registry_name": "magic_fence",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/loot_table/blocks/magic_fence.json",
+          "src/main/resources/assets/losthorizon/models/block/magic_fence.json",
+          "src/main/resources/assets/losthorizon/models/block/magic_fence_inventory.json",
+          "src/main/resources/assets/losthorizon/models/item/magic_fence.json",
+          "src/main/resources/assets/losthorizon/models/block/magic_fence_post.json",
           "src/main/resources/assets/losthorizon/items/magic_fence.json",
           "src/main/java/net/mcreator/losthorizon/block/MagicFenceBlock.java",
-          "src/main/resources/assets/losthorizon/models/item/magic_fence.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_fence_inventory.json",
-          "src/main/resources/assets/losthorizon/blockstates/magic_fence.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_fence.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_fence_post.json"
+          "src/main/resources/data/losthorizon/loot_table/blocks/magic_fence.json",
+          "src/main/resources/assets/losthorizon/blockstates/magic_fence.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3735,12 +3740,12 @@
           "src/main/resources/assets/losthorizon/models/block/magic_fence_gate_wall.json",
           "src/main/resources/data/losthorizon/loot_table/blocks/magic_fence_gate.json",
           "src/main/resources/assets/losthorizon/items/magic_fence_gate.json",
-          "src/main/resources/assets/losthorizon/blockstates/magic_fence_gate.json",
           "src/main/resources/assets/losthorizon/models/item/magic_fence_gate.json",
+          "src/main/resources/assets/losthorizon/models/block/magic_fence_gate_open.json",
           "src/main/resources/assets/losthorizon/models/block/magic_fence_gate.json",
           "src/main/java/net/mcreator/losthorizon/block/MagicFenceGateBlock.java",
           "src/main/resources/assets/losthorizon/models/block/magic_fence_gate_wall_open.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_fence_gate_open.json"
+          "src/main/resources/assets/losthorizon/blockstates/magic_fence_gate.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3753,13 +3758,13 @@
       "registry_name": "magic_pressure_plate",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/loot_table/blocks/magic_pressure_plate.json",
           "src/main/resources/assets/losthorizon/models/item/magic_pressure_plate.json",
-          "src/main/java/net/mcreator/losthorizon/block/MagicPressurePlateBlock.java",
+          "src/main/resources/data/losthorizon/loot_table/blocks/magic_pressure_plate.json",
+          "src/main/resources/assets/losthorizon/models/block/magic_pressure_plate_down.json",
           "src/main/resources/assets/losthorizon/items/magic_pressure_plate.json",
-          "src/main/resources/assets/losthorizon/blockstates/magic_pressure_plate.json",
+          "src/main/java/net/mcreator/losthorizon/block/MagicPressurePlateBlock.java",
           "src/main/resources/assets/losthorizon/models/block/magic_pressure_plate.json",
-          "src/main/resources/assets/losthorizon/models/block/magic_pressure_plate_down.json"
+          "src/main/resources/assets/losthorizon/blockstates/magic_pressure_plate.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3772,14 +3777,14 @@
       "registry_name": "magic_button",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/models/block/magic_button_inventory.json",
           "src/main/resources/assets/losthorizon/models/block/magic_button.json",
+          "src/main/resources/assets/losthorizon/models/item/magic_button.json",
+          "src/main/resources/assets/losthorizon/items/magic_button.json",
+          "src/main/resources/data/losthorizon/loot_table/blocks/magic_button.json",
           "src/main/resources/assets/losthorizon/models/block/magic_button_pressed.json",
           "src/main/java/net/mcreator/losthorizon/block/MagicButtonBlock.java",
-          "src/main/resources/assets/losthorizon/models/block/magic_button_inventory.json",
-          "src/main/resources/data/losthorizon/loot_table/blocks/magic_button.json",
-          "src/main/resources/assets/losthorizon/models/item/magic_button.json",
-          "src/main/resources/assets/losthorizon/blockstates/magic_button.json",
-          "src/main/resources/assets/losthorizon/items/magic_button.json"
+          "src/main/resources/assets/losthorizon/blockstates/magic_button.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3923,8 +3928,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/losthorizon/items/luminous_berries.json",
-          "src/main/resources/assets/losthorizon/models/item/luminous_berries.json",
-          "src/main/java/net/mcreator/losthorizon/item/LuminousBerriesItem.java"
+          "src/main/java/net/mcreator/losthorizon/item/LuminousBerriesItem.java",
+          "src/main/resources/assets/losthorizon/models/item/luminous_berries.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3969,15 +3974,15 @@
       "registry_name": "enchanted_blossom",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/block/EnchantedBlossomBlock.java",
           "src/main/resources/data/losthorizon/worldgen/placed_feature/enchanted_blossom.json",
-          "src/main/resources/assets/losthorizon/models/item/enchanted_blossom.json",
-          "src/main/resources/data/losthorizon/neoforge/biome_modifier/enchanted_blossom_biome_modifier.json",
-          "src/main/resources/data/losthorizon/loot_table/blocks/enchanted_blossom.json",
           "src/main/resources/assets/losthorizon/items/enchanted_blossom.json",
-          "src/main/resources/assets/losthorizon/blockstates/enchanted_blossom.json",
+          "src/main/resources/assets/losthorizon/models/block/enchanted_blossom.json",
+          "src/main/resources/data/losthorizon/loot_table/blocks/enchanted_blossom.json",
+          "src/main/resources/data/losthorizon/neoforge/biome_modifier/enchanted_blossom_biome_modifier.json",
           "src/main/resources/data/losthorizon/worldgen/configured_feature/enchanted_blossom.json",
-          "src/main/resources/assets/losthorizon/models/block/enchanted_blossom.json"
+          "src/main/java/net/mcreator/losthorizon/block/EnchantedBlossomBlock.java",
+          "src/main/resources/assets/losthorizon/models/item/enchanted_blossom.json",
+          "src/main/resources/assets/losthorizon/blockstates/enchanted_blossom.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -3990,12 +3995,12 @@
       "registry_name": "enchanted_forest",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/worldgen/configured_feature/enchanted_forest_tree.json",
-          "src/main/resources/data/losthorizon/worldgen/placed_feature/enchanted_forest_tree.json",
           "src/main/java/net/mcreator/losthorizon/world/features/treedecorators/EnchantedForestTrunkDecorator.java",
-          "src/main/java/net/mcreator/losthorizon/world/features/treedecorators/EnchantedForestLeaveDecorator.java",
           "src/main/resources/data/losthorizon/worldgen/biome/enchanted_forest.json",
-          "src/main/java/net/mcreator/losthorizon/world/features/treedecorators/EnchantedForestFruitDecorator.java"
+          "src/main/resources/data/losthorizon/worldgen/placed_feature/enchanted_forest_tree.json",
+          "src/main/resources/data/losthorizon/worldgen/configured_feature/enchanted_forest_tree.json",
+          "src/main/java/net/mcreator/losthorizon/world/features/treedecorators/EnchantedForestFruitDecorator.java",
+          "src/main/java/net/mcreator/losthorizon/world/features/treedecorators/EnchantedForestLeaveDecorator.java"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -4008,9 +4013,9 @@
       "registry_name": "suspicious_stew_enchanted_blossum",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/suspicious_stew_enchanted_blossum.json",
           "src/main/java/net/mcreator/losthorizon/item/SuspiciousStewEnchantedBlossumItem.java",
-          "src/main/resources/assets/losthorizon/items/suspicious_stew_enchanted_blossum.json"
+          "src/main/resources/assets/losthorizon/items/suspicious_stew_enchanted_blossum.json",
+          "src/main/resources/assets/losthorizon/models/item/suspicious_stew_enchanted_blossum.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -4055,9 +4060,9 @@
       "registry_name": "stone_ritual",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/worldgen/template_pool/stone_ritual.json",
           "src/main/resources/data/losthorizon/worldgen/structure/stone_ritual.json",
-          "src/main/resources/data/losthorizon/worldgen/structure_set/stone_ritual.json"
+          "src/main/resources/data/losthorizon/worldgen/structure_set/stone_ritual.json",
+          "src/main/resources/data/losthorizon/worldgen/template_pool/stone_ritual.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -4096,13 +4101,13 @@
       "registry_name": "ring_infuser",
       "metadata": {
         "files": [
-          "src/main/resources/data/losthorizon/loot_table/blocks/ring_infuser.json",
           "src/main/resources/assets/losthorizon/blockstates/ring_infuser.json",
-          "src/main/resources/assets/losthorizon/items/ring_infuser.json",
+          "src/main/resources/data/losthorizon/loot_table/blocks/ring_infuser.json",
           "src/main/java/net/mcreator/losthorizon/block/RingInfuserBlock.java",
           "src/main/resources/assets/losthorizon/models/block/ring_infuser.json",
           "src/main/java/net/mcreator/losthorizon/block/entity/RingInfuserBlockEntity.java",
-          "src/main/resources/assets/losthorizon/models/item/ring_infuser.json"
+          "src/main/resources/assets/losthorizon/models/item/ring_infuser.json",
+          "src/main/resources/assets/losthorizon/items/ring_infuser.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -4115,9 +4120,9 @@
       "registry_name": "ring_infuser_gui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/network/RingInfuserGUIButtonMessage.java",
+          "src/main/java/net/mcreator/losthorizon/client/gui/RingInfuserGUIScreen.java",
           "src/main/java/net/mcreator/losthorizon/world/inventory/RingInfuserGUIMenu.java",
-          "src/main/java/net/mcreator/losthorizon/client/gui/RingInfuserGUIScreen.java"
+          "src/main/java/net/mcreator/losthorizon/network/RingInfuserGUIButtonMessage.java"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -4146,8 +4151,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/losthorizon/models/item/iron_ring.json",
-          "src/main/resources/assets/losthorizon/items/iron_ring.json",
-          "src/main/java/net/mcreator/losthorizon/item/SilverRingItem.java"
+          "src/main/java/net/mcreator/losthorizon/item/SilverRingItem.java",
+          "src/main/resources/assets/losthorizon/items/iron_ring.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest/Rings"
@@ -4160,9 +4165,9 @@
       "registry_name": "ice_crystal_gold_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/ice_crystal_gold_ring.json",
           "src/main/java/net/mcreator/losthorizon/item/IceCrystalGoldRingItem.java",
-          "src/main/resources/assets/losthorizon/items/ice_crystal_gold_ring.json"
+          "src/main/resources/assets/losthorizon/items/ice_crystal_gold_ring.json",
+          "src/main/resources/assets/losthorizon/models/item/ice_crystal_gold_ring.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest/Rings"
@@ -4176,8 +4181,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/item/IceCrystalSilverRingItem.java",
-          "src/main/resources/assets/losthorizon/models/item/ice_crystal_iron_ring.json",
-          "src/main/resources/assets/losthorizon/items/ice_crystal_iron_ring.json"
+          "src/main/resources/assets/losthorizon/items/ice_crystal_iron_ring.json",
+          "src/main/resources/assets/losthorizon/models/item/ice_crystal_iron_ring.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest/Rings"
@@ -4283,8 +4288,8 @@
       "registry_name": "mythril_gold_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/mythril_gold_ring.json",
           "src/main/java/net/mcreator/losthorizon/item/MythrilGoldRingItem.java",
+          "src/main/resources/assets/losthorizon/models/item/mythril_gold_ring.json",
           "src/main/resources/assets/losthorizon/items/mythril_gold_ring.json"
         ]
       },
@@ -4298,9 +4303,9 @@
       "registry_name": "mythril_iron_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/mythril_iron_ring.json",
+          "src/main/java/net/mcreator/losthorizon/item/MythrilSilverRingItem.java",
           "src/main/resources/assets/losthorizon/items/mythril_iron_ring.json",
-          "src/main/java/net/mcreator/losthorizon/item/MythrilSilverRingItem.java"
+          "src/main/resources/assets/losthorizon/models/item/mythril_iron_ring.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest/Rings"
@@ -4313,8 +4318,8 @@
       "registry_name": "onyx_gold_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/onyx_gold_ring.json",
           "src/main/resources/assets/losthorizon/models/item/onyx_gold_ring.json",
+          "src/main/resources/assets/losthorizon/items/onyx_gold_ring.json",
           "src/main/java/net/mcreator/losthorizon/item/OnyxGoldRingItem.java"
         ]
       },
@@ -4328,9 +4333,9 @@
       "registry_name": "onyx_iron_ring",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/models/item/onyx_iron_ring.json",
           "src/main/resources/assets/losthorizon/items/onyx_iron_ring.json",
-          "src/main/java/net/mcreator/losthorizon/item/OnyxSilverRingItem.java",
-          "src/main/resources/assets/losthorizon/models/item/onyx_iron_ring.json"
+          "src/main/java/net/mcreator/losthorizon/item/OnyxSilverRingItem.java"
         ]
       },
       "path": "~/Biomes/EnchantedForest/Rings"
@@ -4588,9 +4593,9 @@
       "registry_name": "emerald_gold_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/emerald_gold_ring.json",
+          "src/main/resources/assets/losthorizon/items/emerald_gold_ring.json",
           "src/main/java/net/mcreator/losthorizon/item/EmeraldGoldRingItem.java",
-          "src/main/resources/assets/losthorizon/items/emerald_gold_ring.json"
+          "src/main/resources/assets/losthorizon/models/item/emerald_gold_ring.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest/Rings"
@@ -4603,9 +4608,9 @@
       "registry_name": "emerald_iron_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/emerald_iron_ring.json",
+          "src/main/resources/assets/losthorizon/items/emerald_iron_ring.json",
           "src/main/java/net/mcreator/losthorizon/item/EmeraldIronRingItem.java",
-          "src/main/resources/assets/losthorizon/items/emerald_iron_ring.json"
+          "src/main/resources/assets/losthorizon/models/item/emerald_iron_ring.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest/Rings"
@@ -4727,9 +4732,9 @@
       "registry_name": "starry_jade",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/starry_jade.json",
+          "src/main/resources/assets/losthorizon/models/item/starry_jade.json",
           "src/main/java/net/mcreator/losthorizon/item/StarryJadeItem.java",
-          "src/main/resources/assets/losthorizon/models/item/starry_jade.json"
+          "src/main/resources/assets/losthorizon/items/starry_jade.json"
         ]
       },
       "path": "~/Ore/Jade Etoilee"
@@ -4742,15 +4747,15 @@
       "registry_name": "starry_jade_ore",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/block/starry_jade_ore.json",
-          "src/main/resources/data/losthorizon/worldgen/placed_feature/starry_jade_ore.json",
-          "src/main/resources/data/losthorizon/loot_table/blocks/starry_jade_ore.json",
-          "src/main/resources/assets/losthorizon/models/item/starry_jade_ore.json",
-          "src/main/resources/assets/losthorizon/blockstates/starry_jade_ore.json",
           "src/main/resources/data/losthorizon/neoforge/biome_modifier/starry_jade_ore_biome_modifier.json",
-          "src/main/resources/assets/losthorizon/items/starry_jade_ore.json",
+          "src/main/resources/assets/losthorizon/blockstates/starry_jade_ore.json",
+          "src/main/resources/assets/losthorizon/models/item/starry_jade_ore.json",
+          "src/main/resources/data/losthorizon/loot_table/blocks/starry_jade_ore.json",
+          "src/main/resources/assets/losthorizon/models/block/starry_jade_ore.json",
           "src/main/resources/data/losthorizon/worldgen/configured_feature/starry_jade_ore.json",
-          "src/main/java/net/mcreator/losthorizon/block/StarryJadeOreBlock.java"
+          "src/main/resources/data/losthorizon/worldgen/placed_feature/starry_jade_ore.json",
+          "src/main/java/net/mcreator/losthorizon/block/StarryJadeOreBlock.java",
+          "src/main/resources/assets/losthorizon/items/starry_jade_ore.json"
         ]
       },
       "path": "~/Ore/Jade Etoilee"
@@ -4763,12 +4768,12 @@
       "registry_name": "starry_jade_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/block/starry_jade_block.json",
-          "src/main/java/net/mcreator/losthorizon/block/StarryJadeBlockBlock.java",
           "src/main/resources/data/losthorizon/loot_table/blocks/starry_jade_block.json",
-          "src/main/resources/assets/losthorizon/items/starry_jade_block.json",
           "src/main/resources/assets/losthorizon/blockstates/starry_jade_block.json",
-          "src/main/resources/assets/losthorizon/models/item/starry_jade_block.json"
+          "src/main/resources/assets/losthorizon/models/item/starry_jade_block.json",
+          "src/main/java/net/mcreator/losthorizon/block/StarryJadeBlockBlock.java",
+          "src/main/resources/assets/losthorizon/models/block/starry_jade_block.json",
+          "src/main/resources/assets/losthorizon/items/starry_jade_block.json"
         ]
       },
       "path": "~/Ore/Jade Etoilee"
@@ -4820,9 +4825,9 @@
       "registry_name": "starry_jade_raw",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/starry_jade_raw.json",
           "src/main/java/net/mcreator/losthorizon/item/StarryJadeRawItem.java",
-          "src/main/resources/assets/losthorizon/models/item/starry_jade_raw.json"
+          "src/main/resources/assets/losthorizon/models/item/starry_jade_raw.json",
+          "src/main/resources/assets/losthorizon/items/starry_jade_raw.json"
         ]
       },
       "path": "~/Ore/Jade Etoilee"
@@ -4863,8 +4868,8 @@
       "registry_name": "starry_jade_iron_ring",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/losthorizon/item/StarryJadeIronRingItem.java",
           "src/main/resources/assets/losthorizon/models/item/starry_jade_iron_ring.json",
+          "src/main/java/net/mcreator/losthorizon/item/StarryJadeIronRingItem.java",
           "src/main/resources/assets/losthorizon/items/starry_jade_iron_ring.json"
         ]
       },
@@ -4958,9 +4963,9 @@
       "registry_name": "destiny_dice",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/items/destiny_dice.json",
           "src/main/resources/assets/losthorizon/models/item/destiny_dice.json",
-          "src/main/java/net/mcreator/losthorizon/item/DestinyDiceItem.java",
-          "src/main/resources/assets/losthorizon/items/destiny_dice.json"
+          "src/main/java/net/mcreator/losthorizon/item/DestinyDiceItem.java"
         ]
       },
       "path": "~/Ore/Jade Etoilee"
@@ -5013,8 +5018,8 @@
       "registry_name": "heart_link",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/models/item/heart_link.json",
           "src/main/java/net/mcreator/losthorizon/item/HeartLinkItem.java",
+          "src/main/resources/assets/losthorizon/models/item/heart_link.json",
           "src/main/resources/assets/losthorizon/items/heart_link.json"
         ]
       },
@@ -5028,9 +5033,9 @@
       "registry_name": "link_dagger",
       "metadata": {
         "files": [
+          "src/main/resources/assets/losthorizon/models/item/link_dagger.json",
           "src/main/resources/assets/losthorizon/items/link_dagger.json",
-          "src/main/java/net/mcreator/losthorizon/item/LinkDaggerItem.java",
-          "src/main/resources/assets/losthorizon/models/item/link_dagger.json"
+          "src/main/java/net/mcreator/losthorizon/item/LinkDaggerItem.java"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -5044,8 +5049,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/losthorizon/models/item/death_sword.json",
-          "src/main/resources/assets/losthorizon/items/death_sword.json",
-          "src/main/java/net/mcreator/losthorizon/item/DeathSwordItem.java"
+          "src/main/java/net/mcreator/losthorizon/item/DeathSwordItem.java",
+          "src/main/resources/assets/losthorizon/items/death_sword.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest/Boss"
@@ -5124,8 +5129,9 @@
       "registry_name": "linked",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/linked_spawn_egg.json",
           "src/main/java/net/mcreator/losthorizon/client/renderer/LinkedRenderer.java",
+          "src/main/resources/assets/losthorizon/items/linked_spawn_egg.json",
+          "src/main/resources/assets/losthorizon/models/item/linked_spawn_egg.json",
           "src/main/java/net/mcreator/losthorizon/entity/LinkedEntity.java"
         ]
       },
@@ -5159,8 +5165,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/client/renderer/HeartGuardianRenderer.java",
-          "src/main/resources/assets/losthorizon/items/heart_guardian_spawn_egg.json",
-          "src/main/java/net/mcreator/losthorizon/entity/HeartGuardianEntity.java"
+          "src/main/resources/assets/losthorizon/models/item/heart_guardian_spawn_egg.json",
+          "src/main/java/net/mcreator/losthorizon/entity/HeartGuardianEntity.java",
+          "src/main/resources/assets/losthorizon/items/heart_guardian_spawn_egg.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest/Boss"
@@ -5229,8 +5236,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/losthorizon/item/HeartActivatorItem.java",
-          "src/main/resources/assets/losthorizon/items/heart_activator.json",
-          "src/main/resources/assets/losthorizon/models/item/heart_activator.json"
+          "src/main/resources/assets/losthorizon/models/item/heart_activator.json",
+          "src/main/resources/assets/losthorizon/items/heart_activator.json"
         ]
       },
       "path": "~/Biomes/EnchantedForest"
@@ -5256,11 +5263,11 @@
       "registry_name": "heart_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/blockstates/heart_block.json",
-          "src/main/resources/assets/losthorizon/models/block/heart_block.json",
-          "src/main/java/net/mcreator/losthorizon/block/HeartBlockBlock.java",
-          "src/main/resources/assets/losthorizon/items/heart_block.json",
           "src/main/resources/data/losthorizon/loot_table/blocks/heart_block.json",
+          "src/main/resources/assets/losthorizon/items/heart_block.json",
+          "src/main/resources/assets/losthorizon/models/block/heart_block.json",
+          "src/main/resources/assets/losthorizon/blockstates/heart_block.json",
+          "src/main/java/net/mcreator/losthorizon/block/HeartBlockBlock.java",
           "src/main/resources/assets/losthorizon/models/item/heart_block.json"
         ]
       },
@@ -5310,8 +5317,8 @@
       "metadata": {
         "files": [
           "src/main/resources/data/losthorizon/worldgen/structure/shrine.json",
-          "src/main/resources/data/losthorizon/worldgen/template_pool/shrine.json",
-          "src/main/resources/data/losthorizon/worldgen/structure_set/shrine.json"
+          "src/main/resources/data/losthorizon/worldgen/structure_set/shrine.json",
+          "src/main/resources/data/losthorizon/worldgen/template_pool/shrine.json"
         ]
       },
       "path": "~/Structures"
@@ -5324,48 +5331,9 @@
       "registry_name": "shard_of_the_void",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/shard_of_the_void.json",
+          "src/main/resources/assets/losthorizon/models/item/shard_of_the_void.json",
           "src/main/java/net/mcreator/losthorizon/item/ShardOfTheVoidItem.java",
-          "src/main/resources/assets/losthorizon/models/item/shard_of_the_void.json"
-        ]
-      },
-      "path": "~/Tools/Stellar Artefact/ShardOfTheVoid"
-    },
-    {
-      "name": "ShardOfTheVoidEvenementAuClicDroitDansLair",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shard_of_the_void_evenement_au_clic_droit_dans_lair",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/losthorizon/procedures/ShardOfTheVoidEvenementAuClicDroitDansLairProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/resources/assets/losthorizon/items/shard_of_the_void.json"
         ]
       },
       "path": "~/Tools/Stellar Artefact/ShardOfTheVoid"
@@ -5391,8 +5359,8 @@
       "registry_name": "solar_feather",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/solar_feather.json",
           "src/main/java/net/mcreator/losthorizon/item/SolarFeatherItem.java",
+          "src/main/resources/assets/losthorizon/items/solar_feather.json",
           "src/main/resources/assets/losthorizon/models/item/solar_feather.json"
         ]
       },
@@ -5416,18 +5384,6 @@
           {
             "name": "itemstack",
             "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
           },
           {
             "name": "world",
@@ -5485,8 +5441,8 @@
       "registry_name": "aether_heart",
       "metadata": {
         "files": [
-          "src/main/resources/assets/losthorizon/items/aether_heart.json",
           "src/main/java/net/mcreator/losthorizon/item/AetherHeartItem.java",
+          "src/main/resources/assets/losthorizon/items/aether_heart.json",
           "src/main/resources/assets/losthorizon/models/item/aether_heart.json"
         ]
       },
@@ -5642,6 +5598,278 @@
         ]
       },
       "path": "~/Tools/Stellar Artefact/EyeOfHyperion"
+    },
+    {
+      "name": "BlackBlaze",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "black_blaze",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/neoforge/biome_modifier/black_blaze_biome_modifier.json",
+          "src/main/java/net/mcreator/losthorizon/client/renderer/BlackBlazeRenderer.java",
+          "src/main/resources/assets/losthorizon/items/black_blaze_spawn_egg.json",
+          "src/main/java/net/mcreator/losthorizon/entity/BlackBlazeEntity.java",
+          "src/main/resources/assets/losthorizon/models/item/black_blaze_spawn_egg.json",
+          "src/main/java/net/mcreator/losthorizon/entity/BlackBlazeEntityProjectile.java"
+        ]
+      },
+      "path": "~/Mobs/Black Blaze"
+    },
+    {
+      "name": "EclipseBlade",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eclipse_blade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/losthorizon/items/eclipse_blade.json",
+          "src/main/resources/assets/losthorizon/models/item/eclipse_blade.json",
+          "src/main/java/net/mcreator/losthorizon/item/EclipseBladeItem.java"
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Eclipse Blade"
+    },
+    {
+      "name": "EclipseBladeQuandUneEntiteVivanteEstFrappeeAvecLoutil",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eclipse_blade_quand_une_entite_vivante_est_frappee_avec_loutil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/EclipseBladeQuandUneEntiteVivanteEstFrappeeAvecLoutilProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Eclipse Blade"
+    },
+    {
+      "name": "Moonbell",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moonbell",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/losthorizon/items/moonbell.json",
+          "src/main/resources/assets/losthorizon/models/item/moonbell.json",
+          "src/main/java/net/mcreator/losthorizon/item/MoonbellItem.java"
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Moonbell"
+    },
+    {
+      "name": "MoonbellEvenementAuClicDroitDansLair",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moonbell_evenement_au_clic_droit_dans_lair",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/MoonbellEvenementAuClicDroitDansLairProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Moonbell"
+    },
+    {
+      "name": "AshOfDawn",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_of_dawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/item/AshOfDawnItem.java",
+          "src/main/resources/assets/losthorizon/models/item/ash_of_dawn.json",
+          "src/main/resources/assets/losthorizon/items/ash_of_dawn.json"
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Ash of Dawn"
+    },
+    {
+      "name": "AshOfDawnProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_of_dawn_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/entity/AshOfDawnProjectileEntity.java"
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Ash of Dawn"
+    },
+    {
+      "name": "AshOfDawnProjectileLorsqueLeProjectileToucheUnBloc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_of_dawn_projectile_lorsque_le_projectile_touche_un_bloc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/AshOfDawnProjectileLorsqueLeProjectileToucheUnBlocProcedure.java"
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Ash of Dawn"
+    },
+    {
+      "name": "ShardOfTheVoidEvenementAuClicDroitDansLair",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shard_of_the_void_evenement_au_clic_droit_dans_lair",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/ShardOfTheVoidEvenementAuClicDroitDansLairProcedure.java"
+        ]
+      },
+      "path": "~/Tools/Stellar Artefact/ShardOfTheVoid"
+    },
+    {
+      "name": "LunarSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lunar_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/item/LunarSwordItem.java",
+          "src/main/resources/assets/losthorizon/models/item/lunar_sword.json",
+          "src/main/resources/assets/losthorizon/items/lunar_sword.json"
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Lunar Sword"
+    },
+    {
+      "name": "LunarSwordQuandUneEntiteVivanteEstFrappeeAvecLoutil",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lunar_sword_quand_une_entite_vivante_est_frappee_avec_loutil",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/LunarSwordQuandUneEntiteVivanteEstFrappeeAvecLoutilProcedure.java"
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Lunar Sword"
+    },
+    {
+      "name": "LunarSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lunar_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/recipe/lunar_sword.json",
+          "src/main/resources/data/losthorizon/advancement/recipes/lunar_sword_recipe.json"
+        ]
+      },
+      "path": "~/Tools/Relics of the Eclipse/Lunar Sword"
     }
   ],
   "variable_elements": [
@@ -5789,6 +6017,7 @@
       "~CUSTOM:RuniteArmor.body"
     ],
     "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Moonbell",
       "~CUSTOM:EyeOfHyperion",
       "~CUSTOM:AetherHeart",
       "~CUSTOM:SolarFeather",
@@ -5835,14 +6064,12 @@
       "~CUSTOM:MythrilAxe",
       "~CUSTOM:RuniteAxe"
     ],
-    "BLOCKS:minecraft:sand": [],
     "ITEMS:losthorizon:mythril_armor_repair_items": [
       "~CUSTOM:Mythril"
     ],
     "ITEMS:losthorizon:runite_hoe_repair_items": [
       "~CUSTOM:RuniteIngot"
     ],
-    "BLOCKS:minecraft:dirt": [],
     "ITEMS:minecraft:head_armor": [
       "~CUSTOM:MythrilEnchantedArmor.helmet",
       "~CUSTOM:MythrilArmor.helmet",
@@ -5881,7 +6108,6 @@
     "ITEMS:losthorizon:mythril_shovel_repair_items": [
       "~CUSTOM:Mythril"
     ],
-    "BIOMES:minecraft:is_overworld": [],
     "ITEMS:losthorizon:mythril_enchanted_hoe_repair_items": [
       "~CUSTOM:Mythril"
     ],
@@ -5963,6 +6189,8 @@
       "~CUSTOM:RuniteIngot"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:LunarSword",
+      "~CUSTOM:EclipseBlade",
       "~CUSTOM:DeathSword",
       "~CUSTOM:LinkDagger",
       "~CUSTOM:ClimbingPick",
@@ -5978,10 +6206,6 @@
     "ITEMS:losthorizon:mythril_pickaxe_repair_items": [
       "~CUSTOM:Mythril"
     ],
-    "BLOCKS:minecraft:fences": [
-      "~CUSTOM:MagicFence"
-    ],
-    "DAMAGE_TYPES:minecraft:bypasses_armor": [],
     "ITEMS:losthorizon:runite_pickaxe_repair_items": [
       "~CUSTOM:RuniteIngot"
     ],
@@ -6037,6 +6261,12 @@
       "~CUSTOM:MythrilEnchantedArmor.legs",
       "~CUSTOM:MythrilArmor.legs",
       "~CUSTOM:RuniteArmor.legs"
+    ],
+    "BLOCKS:minecraft:wooden_pressure_plates": [
+      "~CUSTOM:MagicPressurePlate"
+    ],
+    "BLOCKS:minecraft:wooden_buttons": [
+      "~CUSTOM:MagicButton"
     ]
   },
   "tab_element_order": {},
@@ -6143,8 +6373,11 @@
       "item.losthorizon.link_dagger": "§4Dagger of Link",
       "item.losthorizon.basalt_obsidian_ore": "Basalt Obsidian Ore",
       "item.losthorizon.runite_ore": "Runite Ore",
+      "item.losthorizon.moonbell.description_2": "§dInterrupts the darkness",
       "entity.minecraft.villager.losthorizon.necromancer_work": "Necromancer",
+      "item.losthorizon.moonbell.description_1": "§dCalls back the spirits",
       "item.losthorizon.starry_jade_raw": "Starry Jade Raw",
+      "item.losthorizon.moonbell.description_0": "§dForgotten sound",
       "item.losthorizon.ice_crystal_gold_ring.description_1": "north, this golden jewel encloses a sparkling",
       "item.losthorizon.totem_of_the_moon": "Totem Of The Moon",
       "advancements.lantern_shield_advancement.descr": "And the light was... attached to your arm.",
@@ -6220,6 +6453,7 @@
       "message.link_dagger_craft": "§3The Link Dagger is watching you. It knows your name.",
       "item.losthorizon.ice_crystal_iron_ring.description_0": "Enveloped in the calm of",
       "item.losthorizon.mythril_iron_ring": "Quiet pedestal ring",
+      "entity.losthorizon.black_blaze": "Black Blaze",
       "item.losthorizon.luminous_berries": "Luminous Berries",
       "item.losthorizon.anchor_totem": "Anchor Totem",
       "item.losthorizon.mythril_enchanted_pickaxe": "Mythril Enchanted Pickaxe",
@@ -6232,9 +6466,12 @@
       "item.losthorizon.eye_of_hyperion.description_2": "The eternal eye",
       "item.losthorizon.necromancer_grimoire": "Necromancer Grimoire",
       "item.losthorizon.mythril_armor_helmet": "Mythril Helmet",
+      "item.losthorizon.eclipse_blade.description_0": "§5Forged in the shadows",
       "item.losthorizon.runite_hoe": "Runite Hoe",
       "advancements.frosbite_dagger_advancement.descr": "Frost bites harder than iron.",
+      "item.losthorizon.eclipse_blade.description_1": "§5Steeped in light",
       "item.losthorizon.eye_of_hyperion.description_0": "Sees the invisible",
+      "item.losthorizon.eclipse_blade.description_2": "§5Blade of judgement",
       "item.losthorizon.magic_pressure_plate": "Magic Pressure Plate",
       "item.losthorizon.knife": "Knife",
       "item.losthorizon.mythril_enchanted_armor_helmet": "Mythril Enchanted Helmet",
@@ -6249,6 +6486,7 @@
       "item.losthorizon.death_sword": "Death Sword",
       "advancements.onyx_advancement.descr": "The stone whispers strange things...",
       "item.losthorizon.basalt_edge": "Basalt Edge",
+      "item.losthorizon.moonbell": "Moonbell",
       "item.losthorizon.gold_ring": "Gold Ring",
       "item.losthorizon.suspicious_stew_enchanted_blossum": "Suspicious Stew",
       "item.losthorizon.starry_jade": "Starry Jade",
@@ -6270,6 +6508,7 @@
       "item.losthorizon.emerald_gold_ring.description_0": "Made to protect travelers of the woods.",
       "enchantment.losthorizon.veil_of_shadows": "Veil of Shadows",
       "subtitles.fairy_birds": "",
+      "item.losthorizon.eclipse_blade": "§3Eclipse Blade",
       "item.losthorizon.runite_armor_helmet": "Runite Helmet",
       "advancements.totem_of_the_moon_advancement.descr": "Tu marches dans les ombres lunaires.",
       "item.losthorizon.onyx_block": "Block of Onyx",
@@ -6289,7 +6528,15 @@
       "item.losthorizon.magic_leaves": "Magic Leaves",
       "item.losthorizon.climbing_pick": "Climbing Pick",
       "item.minecraft.lingering_potion.effect.furtivity_potion": "Lingering Potion of Furtivity",
-      "entity.losthorizon.heart_guardian": "Heart Guardian"
+      "item.losthorizon.black_blaze_spawn_egg": "Black Blaze Spawn Egg",
+      "entity.losthorizon.heart_guardian": "Heart Guardian",
+      "item.losthorizon.ash_of_dawn": "Ash Of Dawn",
+      "entity.villager.losthorizon.hunter": "Hunter",
+      "entity.villager.losthorizon.necromancer_work": "Necromancer",
+      "item.losthorizon.lunar_sword": "Lunar Sword",
+      "item.losthorizon.lunar_sword.description_0": "§dForged beneath the full moon",
+      "item.losthorizon.lunar_sword.description_1": "§dInfused with astral silence",
+      "item.losthorizon.lunar_sword.description_2": "§dIts blade reflects dreams"
     },
     "fr_fr": {
       "block.losthorizon.necromancer_grimoire_block.description_0": "Un livre ancien scellé par magie.",
@@ -6298,8 +6545,8 @@
       "item.losthorizon.heart_block": "Heart Block",
       "advancements.aether_heart_recipe.title": "Aether Heart Recipe",
       "item.losthorizon.mythril_ore": "Minerai de Mythril",
-      "advancements.onyx_advancement.title": "Profondeurs les plus sombres",
       "item.losthorizon.mythril_enchanted_armor_leggings": "Jambières en mythril enchanté",
+      "advancements.onyx_advancement.title": "Profondeurs les plus sombres",
       "block.losthorizon.basalt_obsidian_ore.description_0": "Un bloc ancestral, fusion brutale entre l’obsidienne et le basalte, formé dans les failles volcaniques les plus profondes.",
       "entity.losthorizon.necromancer": "Nécromancien",
       "subtitles.ring_infuser": "",
@@ -6310,8 +6557,8 @@
       "item.losthorizon.destiny_dice.description_3": "Chaque lancer bouleverse la trame",
       "item.losthorizon.onyx": "Onyx",
       "item.losthorizon.destiny_dice.description_4": "du monde, pour le meilleur… ou le pire.",
-      "item.losthorizon.mythril_gold_ring": "Anneau du vent dansant",
       "item.losthorizon.magic_stairs": "Escaliers magiques",
+      "item.losthorizon.mythril_gold_ring": "Anneau du vent dansant",
       "item.losthorizon.mythril_shovel": "Pelle en mythril",
       "book.losthorizon.frozen_grimoire.page1": "13 jours que je suis ici, sans mon épée glacée je n\u0027y serai pas arrivé.",
       "item.losthorizon.onyx_iron_ring.description_0": "Ce bijou murmure dans les",
@@ -6320,8 +6567,8 @@
       "death.attack.corruption.player": "%1$s n’a pas pu échapper à %2$s et à la corruption rampante.",
       "item.losthorizon.ice_crystal": "Cristal de Glace",
       "item.losthorizon.onyx_iron_ring.description_1": "ténèbres. Forgé dans le deuil et",
-      "item.losthorizon.onyx_iron_ring.description_2": "l’onyx, il cache le porteur des",
       "enchantment.losthorizon.dimensional_step": "Dimensional Step",
+      "item.losthorizon.onyx_iron_ring.description_2": "l’onyx, il cache le porteur des",
       "advancements.frosbite_dagger_advancement.title": "Mains froides, Lame acérée",
       "item.losthorizon.onyx_iron_ring.description_3": "vivants comme des morts.",
       "advancements.lost_horizon_advancement.descr": "Progrès Lost Horizon",
@@ -6393,8 +6640,11 @@
       "item.losthorizon.link_dagger": "§4Dague du Lien",
       "item.losthorizon.basalt_obsidian_ore": "Minerai de Basalt Obsidian",
       "item.losthorizon.runite_ore": "Minerai de runite",
+      "item.losthorizon.moonbell.description_2": "§dInterrompt les ténèbres",
       "entity.minecraft.villager.losthorizon.necromancer_work": "Nécromancien",
+      "item.losthorizon.moonbell.description_1": "§dRappelle les esprits",
       "item.losthorizon.starry_jade_raw": "Jade étoilée brute",
+      "item.losthorizon.moonbell.description_0": "§dSonorité oubliée",
       "item.losthorizon.ice_crystal_gold_ring.description_1": "nord, ce bijou d’or enferme un éclat",
       "item.losthorizon.totem_of_the_moon": "Totem de la Lune",
       "advancements.lantern_shield_advancement.descr": "Et la lumière fût… attachée à ton bras.",
@@ -6470,6 +6720,7 @@
       "message.link_dagger_craft": "§3La Dague du Lien te regarde. Elle connaît ton nom.",
       "item.losthorizon.ice_crystal_iron_ring.description_0": "Enveloppé du calme des",
       "item.losthorizon.mythril_iron_ring": "Anneau du piédestal calme",
+      "entity.losthorizon.black_blaze": "Black Blaze",
       "item.losthorizon.luminous_berries": "Baies lumineuses",
       "item.losthorizon.anchor_totem": "Totem d\u0027ancrage",
       "item.losthorizon.mythril_enchanted_pickaxe": "Pioche en mythril enchanté",
@@ -6482,9 +6733,12 @@
       "item.losthorizon.eye_of_hyperion.description_2": "L’œil éternel",
       "item.losthorizon.necromancer_grimoire": "Grimoire du nécromancien",
       "item.losthorizon.mythril_armor_helmet": "Casque en mythril",
+      "item.losthorizon.eclipse_blade.description_0": "§5Forgée dans l’ombre",
       "item.losthorizon.runite_hoe": "Houe en runite",
       "advancements.frosbite_dagger_advancement.descr": "Le givre mord plus que le fer.",
+      "item.losthorizon.eclipse_blade.description_1": "§5Trempée dans la lumière",
       "item.losthorizon.eye_of_hyperion.description_0": "Voit l’invisible",
+      "item.losthorizon.eclipse_blade.description_2": "§5Lame du jugement",
       "item.losthorizon.magic_pressure_plate": "Plaque de pression magique",
       "item.losthorizon.knife": "Couteau",
       "item.losthorizon.mythril_enchanted_armor_helmet": "Casque en mythril enchanté",
@@ -6499,6 +6753,7 @@
       "item.losthorizon.death_sword": "Death Sword",
       "item.losthorizon.basalt_edge": "Basalt Edge",
       "advancements.onyx_advancement.descr": "La pierre murmure des choses étranges…",
+      "item.losthorizon.moonbell": "Moonbell",
       "item.losthorizon.gold_ring": "Bague en or",
       "item.losthorizon.suspicious_stew_enchanted_blossum": "Soupe suspecte",
       "item.losthorizon.starry_jade": "Jade étoilée",
@@ -6520,6 +6775,7 @@
       "item.losthorizon.emerald_gold_ring.description_0": "Forgée pour protéger les voyageurs des bois.",
       "enchantment.losthorizon.veil_of_shadows": "Voile d\u0027ombre",
       "subtitles.fairy_birds": "",
+      "item.losthorizon.eclipse_blade": "§3Lame d’Éclipse",
       "item.losthorizon.runite_armor_helmet": "Casque en runite",
       "advancements.totem_of_the_moon_advancement.descr": "Tu marches dans les ombres lunaires.",
       "item.losthorizon.onyx_block": "Bloc d\u0027onyx",
@@ -6539,8 +6795,49 @@
       "item.losthorizon.magic_leaves": "Feuilles magiques",
       "item.losthorizon.climbing_pick": "Pic d\u0027escalade",
       "item.minecraft.lingering_potion.effect.furtivity_potion": "Potion persistante de furtivité",
-      "entity.losthorizon.heart_guardian": "Gardien du Cœur"
+      "item.losthorizon.black_blaze_spawn_egg": "Black Blaze Spawn Egg",
+      "entity.losthorizon.heart_guardian": "Gardien du Cœur",
+      "item.losthorizon.ash_of_dawn": "Ash Of Dawn",
+      "entity.villager.losthorizon.hunter": "Hunter",
+      "entity.villager.losthorizon.necromancer_work": "Necromancer",
+      "item.losthorizon.lunar_sword": "Lunar Sword",
+      "item.losthorizon.lunar_sword.description_0": "§dForgée sous la pleine lune",
+      "item.losthorizon.lunar_sword.description_1": "§dImprégnée de silence astral",
+      "item.losthorizon.lunar_sword.description_2": "§dSa lame relète les rêves"
     }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModBiomes.java",
+      "src/main/java/net/mcreator/losthorizon/mixin/NoiseGeneratorSettingsMixin.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModMobEffects.java",
+      "src/main/java/net/mcreator/losthorizon/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModScreens.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModMenus.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModPotions.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModParticleTypes.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModParticles.java",
+      "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModVillagerProfessions.java",
+      "src/main/resources/data/minecraft/tags/point_of_interest_type/acquirable_job_site.json",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModKeyMappings.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModTrades.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModBlocks.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModBlockEntities.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModItems.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModEntities.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModEntityRenderers.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModSounds.java",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModModels.java",
+      "src/main/java/net/mcreator/losthorizon/network/LosthorizonModVariables.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
+      "src/main/java/net/mcreator/losthorizon/LosthorizonMod.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/assets/losthorizon/sounds.json",
+      "src/main/java/net/mcreator/losthorizon/init/LosthorizonModTabs.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/losthorizon.mixins.json"
+    ]
   },
   "foldersRoot": {
     "name": "~",
@@ -6572,6 +6869,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Black Blaze",
+            "children": []
           }
         ]
       },
@@ -6639,6 +6940,27 @@
               },
               {
                 "name": "EyeOfHyperion",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Relics of the Eclipse",
+            "children": [
+              {
+                "name": "Eclipse Blade",
+                "children": []
+              },
+              {
+                "name": "Moonbell",
+                "children": []
+              },
+              {
+                "name": "Ash of Dawn",
+                "children": []
+              },
+              {
+                "name": "Lunar Sword",
                 "children": []
               }
             ]
@@ -6710,9 +7032,9 @@
   "workspaceSettings": {
     "modid": "losthorizon",
     "modName": "LostHorizon",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "LostHorizon enrichit Minecraft avec de nouvelles structures, des mobs uniques, des métiers inédits et des objets variés. Explore des ruines oubliées, affronte des créatures dangereuses et découvre des artefacts rares, tout en restant fidèle à l’esprit du jeu. Ajoute plus de défis et d’immersion à la survie !",
-    "author": "elie, MCreator",
+    "author": "Malicaeus, MCreator",
     "websiteURL": "https://github.com/elieduclr/LostHorizon",
     "license": "GNU General Public License version 3 (GPLv3)",
     "serverSideOnly": false,
@@ -6721,9 +7043,9 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "neoforge-1.21.4",
+    "currentGenerator": "neoforge-1.21.8",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.losthorizon"
   },
-  "mcreatorVersion": 202500113416
+  "mcreatorVersion": 202500344519
 }

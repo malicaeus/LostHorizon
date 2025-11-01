@@ -9,27 +9,21 @@ import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.fml.util.thread.SidedThreadGroups;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.IEventBus;
 
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.util.Tuple;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.losthorizon.network.LosthorizonModVariables;
-import net.mcreator.losthorizon.init.LosthorizonModVillagerProfessions;
-import net.mcreator.losthorizon.init.LosthorizonModTabs;
-import net.mcreator.losthorizon.init.LosthorizonModSounds;
-import net.mcreator.losthorizon.init.LosthorizonModPotions;
-import net.mcreator.losthorizon.init.LosthorizonModParticleTypes;
-import net.mcreator.losthorizon.init.LosthorizonModMobEffects;
-import net.mcreator.losthorizon.init.LosthorizonModMenus;
-import net.mcreator.losthorizon.init.LosthorizonModItems;
-import net.mcreator.losthorizon.init.LosthorizonModEntities;
-import net.mcreator.losthorizon.init.LosthorizonModBlocks;
-import net.mcreator.losthorizon.init.LosthorizonModBlockEntities;
+import net.mcreator.losthorizon.init.*;
+
+import javax.annotation.Nullable;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Map;
@@ -37,6 +31,10 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Collection;
 import java.util.ArrayList;
+
+import java.lang.invoke.MethodType;
+import java.lang.invoke.MethodHandles;
+import java.lang.invoke.MethodHandle;
 
 @Mod("losthorizon")
 public class LosthorizonMod {
@@ -55,13 +53,11 @@ public class LosthorizonMod {
 		LosthorizonModEntities.REGISTRY.register(modEventBus);
 		LosthorizonModTabs.REGISTRY.register(modEventBus);
 		LosthorizonModVariables.ATTACHMENT_TYPES.register(modEventBus);
-
 		LosthorizonModPotions.REGISTRY.register(modEventBus);
 		LosthorizonModMobEffects.REGISTRY.register(modEventBus);
 		LosthorizonModMenus.REGISTRY.register(modEventBus);
 		LosthorizonModParticleTypes.REGISTRY.register(modEventBus);
 		LosthorizonModVillagerProfessions.PROFESSIONS.register(modEventBus);
-
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
@@ -83,7 +79,7 @@ public class LosthorizonMod {
 	@SuppressWarnings({"rawtypes", "unchecked"})
 	private void registerNetworking(final RegisterPayloadHandlersEvent event) {
 		final PayloadRegistrar registrar = event.registrar(MODID);
-		MESSAGES.forEach((id, networkMessage) -> registrar.playBidirectional(id, ((NetworkMessage) networkMessage).reader(), ((NetworkMessage) networkMessage).handler()));
+		MESSAGES.forEach((id, networkMessage) -> registrar.playBidirectional(id, ((NetworkMessage) networkMessage).reader(), ((NetworkMessage) networkMessage).handler(), ((NetworkMessage) networkMessage).handler()));
 		networkingRegistered = true;
 	}
 
@@ -104,5 +100,27 @@ public class LosthorizonMod {
 		});
 		actions.forEach(e -> e.getA().run());
 		workQueue.removeAll(actions);
+	}
+
+	private static Object minecraft;
+	private static MethodHandle playerHandle;
+
+	@Nullable
+	public static Player clientPlayer() {
+		if (FMLEnvironment.dist.isClient()) {
+			try {
+				if (minecraft == null || playerHandle == null) {
+					Class<?> minecraftClass = Class.forName("net.minecraft.client.Minecraft");
+					minecraft = MethodHandles.publicLookup().findStatic(minecraftClass, "getInstance", MethodType.methodType(minecraftClass)).invoke();
+					playerHandle = MethodHandles.publicLookup().findGetter(minecraftClass, "player", Class.forName("net.minecraft.client.player.LocalPlayer"));
+				}
+				return (Player) playerHandle.invoke(minecraft);
+			} catch (Throwable e) {
+				LOGGER.error("Failed to get client player", e);
+				return null;
+			}
+		} else {
+			return null;
+		}
 	}
 }

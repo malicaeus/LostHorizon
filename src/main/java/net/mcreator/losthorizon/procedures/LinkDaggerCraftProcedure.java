@@ -40,7 +40,7 @@ public class LinkDaggerCraftProcedure {
 		if (itemstack.getItem() == LosthorizonModItems.LINK_DAGGER.get()) {
 			if (world instanceof ServerLevel _level) {
 				LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
-				entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
+				entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
 				entityToSpawn.setVisualOnly(true);
 				_level.addFreshEntity(entityToSpawn);
 			}

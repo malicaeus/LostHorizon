@@ -60,6 +60,10 @@
 - **Solar Feather**: Grants fire damage immunity. Applies Fire Resistance I when burning. Cooldown: 30s.  
 - **Eye of Hyperion**: Reveals nearby invisible entities and grants Night Vision. Cooldown: 45s.
 
+### 🌕 Relics of the Eclipse
+- Eclipse Blade : Celestial blade slicing through the shadow.
+- Moonbell : Mystical bell with lunar effects.
+
 ### 💍 Infused Rings and Gems
 
 The **Ring Infuser** allows you to combine **gold or silver rings** with **mystical gems**. Each combination grants unique effects to the player, balanced with a drawback. To infuse a ring, you also need a Heart of Link. This makes the process more strategic, and rewards players who dare to challenge the Heart Guardian.

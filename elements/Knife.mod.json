@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -7,6 +7,7 @@
     "customModelName": "Ranged item",
     "customProperties": {},
     "states": [],
+    "animations": [],
     "name": "Knife",
     "rarity": "COMMON",
     "creativeTabs": [
@@ -24,6 +25,7 @@
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
+    "isPiglinCurrency": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": true,
@@ -58,6 +60,7 @@
     },
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
-    "musicDiscAnalogOutput": 0
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": []
   }
 }

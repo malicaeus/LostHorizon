@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.item;
 
 import net.minecraft.world.level.Level;
@@ -12,15 +11,12 @@ import net.mcreator.losthorizon.procedures.LuminousBerriesLeJoueurTermineDutilis
 
 public class LuminousBerriesItem extends Item {
 	public LuminousBerriesItem(Item.Properties properties) {
-		super(properties.rarity(Rarity.UNCOMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build()));
+		super(properties.rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build()));
 	}
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
 		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
 		LuminousBerriesLeJoueurTermineDutiliserLitemProcedure.execute(entity);
 		return retval;
 	}

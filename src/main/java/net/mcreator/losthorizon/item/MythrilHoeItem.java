@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.item;
 
 import net.minecraft.world.item.ToolMaterial;

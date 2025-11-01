@@ -1,5 +1,5 @@
 {
-  "_fv": 77,
+  "_fv": 79,
   "_type": "item",
   "definition": {
     "renderType": 0,
@@ -7,6 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
+    "animations": [],
     "name": "Imperial ring of frost",
     "rarity": "RARE",
     "creativeTabs": [
@@ -24,6 +25,7 @@
     },
     "destroyAnyBlock": false,
     "immuneToFire": false,
+    "isPiglinCurrency": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -66,6 +68,7 @@
     },
     "musicDiscDescription": "",
     "musicDiscLengthInTicks": 100,
-    "musicDiscAnalogOutput": 0
+    "musicDiscAnalogOutput": 0,
+    "providedBannerPatterns": []
   }
 }

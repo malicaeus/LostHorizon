@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -6,10 +5,10 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.entity.InsideBlockEffectApplier;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
@@ -17,7 +16,7 @@ import net.mcreator.losthorizon.procedures.TrapQuandLentiteEntreEnCollisionAvecL
 
 public class TrapBlock extends Block {
 	public TrapBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.STONE).strength(3f, 200f).speedFactor(0f).jumpFactor(0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(properties.strength(3f, 200f).speedFactor(0f).jumpFactor(0f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -41,8 +40,8 @@ public class TrapBlock extends Block {
 	}
 
 	@Override
-	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
-		super.entityInside(blockstate, world, pos, entity);
+	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity, InsideBlockEffectApplier insideBlockEffectApplier) {
+		super.entityInside(blockstate, world, pos, entity, insideBlockEffectApplier);
 		TrapQuandLentiteEntreEnCollisionAvecLeBlocProcedure.execute(world, entity);
 	}
 }

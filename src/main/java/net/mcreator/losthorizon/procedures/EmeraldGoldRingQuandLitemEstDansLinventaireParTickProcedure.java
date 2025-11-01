@@ -25,7 +25,7 @@ public class EmeraldGoldRingQuandLitemEstDansLinventaireParTickProcedure {
 			{
 				LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.emerald_gold_ring_cooldown = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0, false, false));
@@ -33,14 +33,14 @@ public class EmeraldGoldRingQuandLitemEstDansLinventaireParTickProcedure {
 				{
 					LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 					_vars.emerald_gold_ring_cooldown = false;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			});
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == LosthorizonModItems.EMERALD_GOLD_RING.get()
 				&& world.getBiome(BlockPos.containing(x, y, z)).is(TagKey.create(Registries.BIOME, ResourceLocation.parse("minecraft:is_forest")))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 100, 0, false, false));
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == LosthorizonModItems.EMERALD_GOLD_RING.get() && (entity.level().dimension()) == Level.NETHER) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

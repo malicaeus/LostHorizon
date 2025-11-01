@@ -11,7 +11,7 @@ public class CryptGuardianChaqueMiseAJourDeTickDeLentiteProcedure {
 		if (entity == null)
 			return;
 		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
-			entity.getPersistentData().putDouble("IA", (entity.getPersistentData().getDouble("IA") + 1));
+			entity.getPersistentData().putDouble("IA", (entity.getPersistentData().getDoubleOr("IA", 0) + 1));
 			if (entity instanceof CryptGuardianEntity _datEntSetL)
 				_datEntSetL.getEntityData().set(CryptGuardianEntity.DATA_idle, false);
 		} else {
@@ -22,21 +22,21 @@ public class CryptGuardianChaqueMiseAJourDeTickDeLentiteProcedure {
 			entity.getPersistentData().putDouble("IA", 0);
 			entity.getPersistentData().putString("State", "Idle");
 		}
-		if ((entity.getPersistentData().getString("State")).equals("Idle")) {
-			if (entity.getPersistentData().getDouble("IA") == 20) {
+		if ((entity.getPersistentData().getStringOr("State", "")).equals("Idle")) {
+			if (entity.getPersistentData().getDoubleOr("IA", 0) == 20) {
 				CryptGuardianRandomProcedure.execute(world, x, y, z, entity);
 			}
 		}
-		if ((entity.getPersistentData().getString("State")).equals("Melee")) {
+		if ((entity.getPersistentData().getStringOr("State", "")).equals("Melee")) {
 			CryptGuardianMeleeProcedure.execute(world, x, y, z, entity);
 		}
-		if ((entity.getPersistentData().getString("State")).equals("Potion")) {
+		if ((entity.getPersistentData().getStringOr("State", "")).equals("Potion")) {
 			CryptGuardianPotionProcedure.execute(entity);
 		}
-		if ((entity.getPersistentData().getString("State")).equals("Regen")) {
+		if ((entity.getPersistentData().getStringOr("State", "")).equals("Regen")) {
 			CryptGuardianRegenProcedure.execute(entity);
 		}
-		if (entity.getPersistentData().getDouble("IA") == 200) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 200) {
 			entity.getPersistentData().putDouble("IA", 0);
 			CryptGuardianRandomProcedure.execute(world, x, y, z, entity);
 		}

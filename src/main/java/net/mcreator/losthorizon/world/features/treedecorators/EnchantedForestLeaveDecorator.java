@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.world.features.treedecorators;
 
 import net.neoforged.neoforge.registries.RegisterEvent;
@@ -18,7 +17,7 @@ import net.minecraft.core.BlockPos;
 
 import com.mojang.serialization.MapCodec;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class EnchantedForestLeaveDecorator extends LeaveVineDecorator {
 	public static MapCodec<EnchantedForestLeaveDecorator> CODEC = MapCodec.unit(EnchantedForestLeaveDecorator::new);
 	public static TreeDecoratorType<?> DECORATOR_TYPE = new TreeDecoratorType<>(CODEC);

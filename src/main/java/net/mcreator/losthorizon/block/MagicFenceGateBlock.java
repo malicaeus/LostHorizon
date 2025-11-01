@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.block;
 
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -13,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class MagicFenceGateBlock extends FenceGateBlock {
 	public MagicFenceGateBlock(BlockBehaviour.Properties properties) {
-		super(WoodType.OAK, properties.ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
+		super(WoodType.OAK, properties.sound(SoundType.WOOD).strength(2f, 3f).ignitedByLava().instrument(NoteBlockInstrument.BASS).forceSolidOn());
 	}
 
 	@Override

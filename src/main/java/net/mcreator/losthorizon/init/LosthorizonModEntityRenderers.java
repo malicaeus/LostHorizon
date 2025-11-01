@@ -1,4 +1,3 @@
-
 /*
  *    MCreator note: This file will be REGENERATED on each build.
  */
@@ -15,8 +14,9 @@ import net.mcreator.losthorizon.client.renderer.NecromancerBossRenderer;
 import net.mcreator.losthorizon.client.renderer.LinkedRenderer;
 import net.mcreator.losthorizon.client.renderer.HeartGuardianRenderer;
 import net.mcreator.losthorizon.client.renderer.CryptGuardianRenderer;
+import net.mcreator.losthorizon.client.renderer.BlackBlazeRenderer;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(Dist.CLIENT)
 public class LosthorizonModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
@@ -26,5 +26,8 @@ public class LosthorizonModEntityRenderers {
 		event.registerEntityRenderer(LosthorizonModEntities.CRYPT_GUARDIAN.get(), CryptGuardianRenderer::new);
 		event.registerEntityRenderer(LosthorizonModEntities.LINKED.get(), LinkedRenderer::new);
 		event.registerEntityRenderer(LosthorizonModEntities.HEART_GUARDIAN.get(), HeartGuardianRenderer::new);
+		event.registerEntityRenderer(LosthorizonModEntities.BLACK_BLAZE.get(), BlackBlazeRenderer::new);
+		event.registerEntityRenderer(LosthorizonModEntities.BLACK_BLAZE_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(LosthorizonModEntities.ASH_OF_DAWN_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

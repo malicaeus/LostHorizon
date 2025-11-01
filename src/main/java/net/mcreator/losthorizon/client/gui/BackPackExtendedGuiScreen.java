@@ -5,21 +5,18 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.losthorizon.world.inventory.BackPackExtendedGuiMenu;
+import net.mcreator.losthorizon.init.LosthorizonModScreens;
 
-import java.util.HashMap;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-
-public class BackPackExtendedGuiScreen extends AbstractContainerScreen<BackPackExtendedGuiMenu> {
-	private final static HashMap<String, Object> guistate = BackPackExtendedGuiMenu.guistate;
+public class BackPackExtendedGuiScreen extends AbstractContainerScreen<BackPackExtendedGuiMenu> implements LosthorizonModScreens.ScreenAccessor {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private boolean menuStateUpdateActive = false;
 
 	public BackPackExtendedGuiScreen(BackPackExtendedGuiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -32,6 +29,12 @@ public class BackPackExtendedGuiScreen extends AbstractContainerScreen<BackPackE
 		this.imageHeight = 190;
 	}
 
+	@Override
+	public void updateMenuState(int elementType, String name, Object elementState) {
+		menuStateUpdateActive = true;
+		menuStateUpdateActive = false;
+	}
+
 	private static final ResourceLocation texture = ResourceLocation.parse("losthorizon:textures/screens/back_pack_extended_gui.png");
 
 	@Override
@@ -41,12 +44,8 @@ public class BackPackExtendedGuiScreen extends AbstractContainerScreen<BackPackE
 	}
 
 	@Override
-	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
-		RenderSystem.setShaderColor(1, 1, 1, 1);
-		RenderSystem.enableBlend();
-		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(RenderType::guiTextured, texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		RenderSystem.disableBlend();
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int mouseX, int mouseY) {
+		guiGraphics.blit(RenderPipelines.GUI_TEXTURED, texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 	}
 
 	@Override

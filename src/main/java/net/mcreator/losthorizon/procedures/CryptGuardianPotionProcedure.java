@@ -6,8 +6,10 @@ import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.ThrownSplashPotion;
+import net.minecraft.world.entity.projectile.ThrownLingeringPotion;
 import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractThrownPotion;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
@@ -19,7 +21,7 @@ public class CryptGuardianPotionProcedure {
 			return;
 		double Chain = 0;
 		double ChainWait = 0;
-		if (entity.getPersistentData().getDouble("IA") == 20) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 20) {
 			{
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();
@@ -33,7 +35,7 @@ public class CryptGuardianPotionProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 		}
-		if (entity.getPersistentData().getDouble("IA") == 60) {
+		if (entity.getPersistentData().getDoubleOr("IA", 0) == 60) {
 			{
 				Entity _shootFrom = entity;
 				Level projectileLevel = _shootFrom.level();
@@ -50,7 +52,7 @@ public class CryptGuardianPotionProcedure {
 	}
 
 	private static Projectile createPotionProjectile(Level level, ItemStack contents, Entity shooter, Vec3 acceleration) {
-		ThrownPotion entityToSpawn = new ThrownPotion(EntityType.POTION, level);
+		AbstractThrownPotion entityToSpawn = contents.getItem() == Items.LINGERING_POTION ? new ThrownLingeringPotion(EntityType.LINGERING_POTION, level) : new ThrownSplashPotion(EntityType.SPLASH_POTION, level);
 		entityToSpawn.setItem(contents);
 		return initProjectileProperties(entityToSpawn, shooter, acceleration);
 	}

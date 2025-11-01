@@ -1,4 +1,3 @@
-
 package net.mcreator.losthorizon.potion;
 
 import net.neoforged.neoforge.event.ModifyDefaultComponentsEvent;
@@ -21,7 +20,7 @@ import net.mcreator.losthorizon.init.LosthorizonModMobEffects;
 import java.util.List;
 import java.util.ArrayList;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber
 public class FireMobEffect extends MobEffect {
 	public FireMobEffect() {
 		super(MobEffectCategory.HARMFUL, -439035, mobEffectInstance -> ParticleTypes.LAVA);

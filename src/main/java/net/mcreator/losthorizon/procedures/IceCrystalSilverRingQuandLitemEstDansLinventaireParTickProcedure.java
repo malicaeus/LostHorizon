@@ -26,14 +26,14 @@ public class IceCrystalSilverRingQuandLitemEstDansLinventaireParTickProcedure {
 			{
 				LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 				_vars.ice_crystal_silver_ring_cooldown = true;
-				_vars.syncPlayerVariables(entity);
+				_vars.markSyncDirty();
 			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (!(entityiterator == entity) || !(entityiterator instanceof Player) || !(entityiterator instanceof ServerPlayer)) {
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 1, false, false));
+							_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 100, 1, false, false));
 					}
 				}
 			}
@@ -41,13 +41,13 @@ public class IceCrystalSilverRingQuandLitemEstDansLinventaireParTickProcedure {
 				{
 					LosthorizonModVariables.PlayerVariables _vars = entity.getData(LosthorizonModVariables.PLAYER_VARIABLES);
 					_vars.ice_crystal_silver_ring_cooldown = false;
-					_vars.syncPlayerVariables(entity);
+					_vars.markSyncDirty();
 				}
 			});
 		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 8 && (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == LosthorizonModItems.ICE_CRYSTAL_IRON_RING.get()) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 200, 0, false, false));
 		}
 	}
 }

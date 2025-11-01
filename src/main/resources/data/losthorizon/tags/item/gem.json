@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "losthorizon:ice_crystal",
-    "losthorizon:onyx",
-    "losthorizon:mythril",
     "losthorizon:starry_jade",
-    "minecraft:emerald"
+    "minecraft:emerald",
+    "losthorizon:ice_crystal",
+    "losthorizon:mythril",
+    "losthorizon:onyx"
   ]
 }
