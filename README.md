@@ -2,7 +2,7 @@
 
 [🇫🇷 Version française](https://github.com/malicaeus/LostHorizon/blob/main/README.md) | [🇺🇸 English version](https://github.com/malicaeus/LostHorizon/blob/main/EN-README.md)
 
-![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.4-blue)  
+![Minecraft Version](https://img.shields.io/badge/Minecraft-1.21.8-blue)  
 ![Mod Loader](https://img.shields.io/badge/Forge/NeoForge-FML-orange)  
 ![License](https://img.shields.io/github/license/malicaeus/LostHorizon)  
 
