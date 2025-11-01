@@ -61,8 +61,10 @@
 - **Œil d’Hyperion** : Révèle les entités invisibles proches et donne Night Vision. Recharge : 45s.
 
 #### 🌕 Reliques de l'éclipse
-- Lame d’Éclipse : lame céleste tranchant l'ombre.
-- Cloche de lune : Cloche mystique aux effets lunaires.
+- **Eclipse Blade** : Lame céleste tranchant l'ombre.
+- **Cloche lunaire** : cloche mystique aux effets lunaires.
+- **Cendre de l'aube** : relique enflammée lâchée par le **Dark Blaze**.
+- **Épée lunaire** : forgée sous la pleine lune, cette lame astrale révèle ce qui se cache dans l'ombre.
 
 ### 💍 Bagues et gemmes infusées
 
@@ -190,6 +192,12 @@ Effets :
 
 - Neutre par défaut, il attaque uniquement si provoqué.
 - Capable d’attaquer au corps-à-corps et d’utiliser des potions offensives.
+
+#### 👹 Dark Blaze
+
+Une variante rare du Blaze.
+- Apparaît dans le Nether, généralement **en petits groupes (1 à 2)**.
+- Laisse tomber **Ash of Dawn** à sa mort.
 
 ### 👨‍🌾 Métiers de villageois
 
