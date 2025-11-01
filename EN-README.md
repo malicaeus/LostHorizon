@@ -61,8 +61,10 @@
 - **Eye of Hyperion**: Reveals nearby invisible entities and grants Night Vision. Cooldown: 45s.
 
 ### 🌕 Relics of the Eclipse
-- Eclipse Blade : Celestial blade slicing through the shadow.
-- Moonbell : Mystical bell with lunar effects.
+- **Eclipse Blade** : Celestial blade slicing through the shadow.
+- **Moonbell** : Mystical bell with lunar effects.
+- **Ash of Dawn** : A burning relic dropped by the **Dark Blaze**.
+- **Lunar Sword** : Forged beneath the full moon, this astral blade reveals what hides in shadow.
 
 ### 💍 Infused Rings and Gems
 
@@ -191,6 +193,12 @@ Effects:
 
 - Neutral by default, attacks only when provoked.
 - Capable of melee attacks and using offensive potions.
+
+#### 👹 Dark Blaze
+
+A rare, variant of the Blaze.  
+- Spawns in the Nether, usually **in small groups (1–2)**.  
+- Drops **Ash of Dawn** upon death.
 
 ### 👨‍🌾 Villager Professions
 
