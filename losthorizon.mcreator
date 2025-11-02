@@ -5870,6 +5870,29 @@
         ]
       },
       "path": "~/Tools/Relics of the Eclipse/Lunar Sword"
+    },
+    {
+      "name": "HeartGuardianQuandLentiteMeurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_guardian_quand_lentite_meurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/HeartGuardianQuandLentiteMeurtProcedure.java"
+        ]
+      },
+      "path": "~/Biomes/EnchantedForest/Boss"
     }
   ],
   "variable_elements": [
@@ -7032,7 +7055,7 @@
   "workspaceSettings": {
     "modid": "losthorizon",
     "modName": "LostHorizon",
-    "version": "0.2.3",
+    "version": "0.3.0",
     "description": "LostHorizon enrichit Minecraft avec de nouvelles structures, des mobs uniques, des métiers inédits et des objets variés. Explore des ruines oubliées, affronte des créatures dangereuses et découvre des artefacts rares, tout en restant fidèle à l’esprit du jeu. Ajoute plus de défis et d’immersion à la survie !",
     "author": "Malicaeus, MCreator",
     "websiteURL": "https://github.com/elieduclr/LostHorizon",

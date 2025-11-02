@@ -30,7 +30,6 @@
       ]
     },
     {
-      "name": "food_pool",
       "rolls": {
         "min": 2,
         "max": 4
@@ -44,7 +43,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 3
+                "max": 2
               }
             }
           ],
@@ -72,7 +71,6 @@
       ]
     },
     {
-      "name": "ingredients_pool",
       "rolls": {
         "min": 1,
         "max": 2
@@ -85,8 +83,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3,
-                "max": 6
+                "min": 2,
+                "max": 4
               }
             }
           ],
@@ -99,8 +97,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3,
-                "max": 6
+                "min": 2,
+                "max": 4
               }
             }
           ],
@@ -128,7 +126,6 @@
       ]
     },
     {
-      "name": "tools_deco_pool",
       "rolls": 1,
       "entries": [
         {
@@ -143,8 +140,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2,
-                "max": 6
+                "min": 1,
+                "max": 4
               }
             }
           ],
