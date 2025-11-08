@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "medium_key"
+      },
+      "name": "default"
+    }
+  }
+}

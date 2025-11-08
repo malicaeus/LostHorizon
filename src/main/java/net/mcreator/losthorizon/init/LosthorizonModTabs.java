@@ -124,6 +124,7 @@ public class LosthorizonModTabs {
 			tabData.accept(LosthorizonModItems.ARAPAIMA_RAW.get());
 			tabData.accept(LosthorizonModItems.ARAPAIMA_COOKED.get());
 			tabData.accept(LosthorizonModItems.LUMINOUS_BERRIES.get());
+			tabData.accept(LosthorizonModItems.CRYSTALLIZED_HONEY.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(LosthorizonModBlocks.TRAP.get().asItem());
 			tabData.accept(LosthorizonModBlocks.RING_INFUSER.get().asItem());

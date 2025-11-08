@@ -135,6 +135,7 @@ public class LosthorizonModItems {
 	public static final DeferredItem<Item> MOONBELL;
 	public static final DeferredItem<Item> ASH_OF_DAWN;
 	public static final DeferredItem<Item> LUNAR_SWORD;
+	public static final DeferredItem<Item> CRYSTALLIZED_HONEY;
 	static {
 		FROSTBITE_DAGGER = register("frostbite_dagger", FrosbiteDaggerItem::new);
 		KNIFE = register("knife", KnifeItem::new);
@@ -243,6 +244,7 @@ public class LosthorizonModItems {
 		MOONBELL = register("moonbell", MoonbellItem::new);
 		ASH_OF_DAWN = register("ash_of_dawn", AshOfDawnItem::new);
 		LUNAR_SWORD = register("lunar_sword", LunarSwordItem::new);
+		CRYSTALLIZED_HONEY = register("crystallized_honey", CrystallizedHoneyItem::new);
 	}
 
 	// Start of user code block custom items

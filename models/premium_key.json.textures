@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "premium_key"
+      },
+      "name": "default"
+    }
+  }
+}
