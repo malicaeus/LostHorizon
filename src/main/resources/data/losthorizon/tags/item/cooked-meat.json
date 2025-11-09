@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cooked_cod",
+    "minecraft:cooked_porkchop",
+    "minecraft:cooked_beef",
+    "minecraft:cooked_chicken",
+    "losthorizon:red_bellied_piranha_cooked",
+    "losthorizon:arapaima_cooked",
+    "minecraft:cooked_rabbit",
+    "minecraft:rotten_flesh",
+    "minecraft:cooked_mutton",
+    "losthorizon:red_grouper_cooked",
+    "minecraft:cooked_salmon"
+  ]
+}

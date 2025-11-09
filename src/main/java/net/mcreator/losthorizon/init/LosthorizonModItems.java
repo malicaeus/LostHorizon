@@ -136,6 +136,12 @@ public class LosthorizonModItems {
 	public static final DeferredItem<Item> ASH_OF_DAWN;
 	public static final DeferredItem<Item> LUNAR_SWORD;
 	public static final DeferredItem<Item> CRYSTALLIZED_HONEY;
+	public static final DeferredItem<Item> TRAVELERS_PIE;
+	public static final DeferredItem<Item> ICE_SCALE;
+	public static final DeferredItem<Item> ONYX_ESSENCE;
+	public static final DeferredItem<Item> MYSTICAL_MUSHROOMS;
+	public static final DeferredItem<Item> MYSTICAL_MUSHROOMS_CROPS;
+	public static final DeferredItem<Item> RUNIC_AMBROSIA;
 	static {
 		FROSTBITE_DAGGER = register("frostbite_dagger", FrosbiteDaggerItem::new);
 		KNIFE = register("knife", KnifeItem::new);
@@ -245,6 +251,12 @@ public class LosthorizonModItems {
 		ASH_OF_DAWN = register("ash_of_dawn", AshOfDawnItem::new);
 		LUNAR_SWORD = register("lunar_sword", LunarSwordItem::new);
 		CRYSTALLIZED_HONEY = register("crystallized_honey", CrystallizedHoneyItem::new);
+		TRAVELERS_PIE = register("travelers_pie", TravelerSPieItem::new);
+		ICE_SCALE = register("ice_scale", IceScaleItem::new);
+		ONYX_ESSENCE = register("onyx_essence", OnyxEssenceItem::new);
+		MYSTICAL_MUSHROOMS = register("mystical_mushrooms", MysticalMushroomsItem::new);
+		MYSTICAL_MUSHROOMS_CROPS = block(LosthorizonModBlocks.MYSTICAL_MUSHROOMS_CROPS);
+		RUNIC_AMBROSIA = register("runic_ambrosia", RunicAmbrosiaItem::new);
 	}
 
 	// Start of user code block custom items

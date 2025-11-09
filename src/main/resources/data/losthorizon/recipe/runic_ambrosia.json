@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "ded",
+    "cba"
+  ],
+  "key": {
+    "a": "minecraft:blaze_powder",
+    "b": "losthorizon:crystallized_honey",
+    "c": "losthorizon:runite_ingot",
+    "d": "minecraft:emerald",
+    "e": "minecraft:golden_apple"
+  },
+  "result": {
+    "id": "losthorizon:runic_ambrosia",
+    "count": 1
+  }
+}

@@ -264,5 +264,12 @@
   "item.losthorizon.lunar_sword.description_0": "§dForged beneath the full moon",
   "item.losthorizon.lunar_sword.description_1": "§dInfused with astral silence",
   "item.losthorizon.lunar_sword.description_2": "§dIts blade reflects dreams",
-  "item.losthorizon.crystallized_honey": "Crystallized Honey"
+  "item.losthorizon.crystallized_honey": "Crystallized Honey",
+  "item.losthorizon.travelers_pie": "Traveler\u0027s Pie",
+  "item.losthorizon.ice_scale": "Ice Scale",
+  "item.losthorizon.onyx_essence": "Onyx Essence",
+  "item.losthorizon.mystical_mushrooms": "Mystical Mushrooms",
+  "item.losthorizon.mystical_mushrooms_crops": "Mystical Mushrooms Crop",
+  "effect.losthorizon.knockback_resistance": "Knockback Resistance",
+  "item.losthorizon.runic_ambrosia": "Runic Ambrosia"
 }

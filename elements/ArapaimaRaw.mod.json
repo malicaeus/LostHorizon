@@ -5,6 +5,7 @@
     "renderType": 0,
     "texture": "arapaima",
     "customModelName": "Normal",
+    "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
@@ -51,7 +52,7 @@
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": false,
+    "isMeat": true,
     "isAlwaysEdible": false,
     "animation": "eat",
     "isMusicDisc": false,

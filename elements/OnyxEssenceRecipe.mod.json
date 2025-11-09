@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Onyx"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Onyx"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Onyx"
+      },
+      {
+        "value": "CUSTOM:MysticalMushrooms"
+      },
+      {
+        "value": "CUSTOM:Onyx"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.GLASS_BOTTLE"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:OnyxEssence"
+    },
+    "name": "onyx_essence",
+    "namespace": "mod"
+  }
+}

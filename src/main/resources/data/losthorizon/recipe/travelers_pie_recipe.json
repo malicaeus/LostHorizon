@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": "#losthorizon:cooked-meat",
+    "b": "minecraft:carrot",
+    "c": "losthorizon:mythril",
+    "d": "minecraft:potato",
+    "e": "minecraft:bread"
+  },
+  "result": {
+    "id": "losthorizon:travelers_pie",
+    "count": 1
+  }
+}

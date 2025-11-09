@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "losthorizon:block/mystical_mushrooms_stage1",
+    "particle": "losthorizon:block/mystical_mushrooms_stage0"
+  },
+  "render_type": "cutout"
+}
