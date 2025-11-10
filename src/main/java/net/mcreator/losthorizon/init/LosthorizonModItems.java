@@ -142,6 +142,7 @@ public class LosthorizonModItems {
 	public static final DeferredItem<Item> MYSTICAL_MUSHROOMS;
 	public static final DeferredItem<Item> MYSTICAL_MUSHROOMS_CROPS;
 	public static final DeferredItem<Item> RUNIC_AMBROSIA;
+	public static final DeferredItem<Item> THUNDER_HEART;
 	static {
 		FROSTBITE_DAGGER = register("frostbite_dagger", FrosbiteDaggerItem::new);
 		KNIFE = register("knife", KnifeItem::new);
@@ -257,6 +258,7 @@ public class LosthorizonModItems {
 		MYSTICAL_MUSHROOMS = register("mystical_mushrooms", MysticalMushroomsItem::new);
 		MYSTICAL_MUSHROOMS_CROPS = block(LosthorizonModBlocks.MYSTICAL_MUSHROOMS_CROPS);
 		RUNIC_AMBROSIA = register("runic_ambrosia", RunicAmbrosiaItem::new);
+		THUNDER_HEART = register("thunder_heart", ThunderHeartItem::new);
 	}
 
 	// Start of user code block custom items

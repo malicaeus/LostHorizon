@@ -1,0 +1,10 @@
+{
+  "_fv": 79,
+  "_type": "loottable",
+  "definition": {
+    "type": "Entity",
+    "pools": [],
+    "name": "charged_creeper/creeper",
+    "namespace": "minecraft"
+  }
+}

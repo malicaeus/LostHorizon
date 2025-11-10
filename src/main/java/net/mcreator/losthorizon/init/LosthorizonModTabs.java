@@ -130,6 +130,7 @@ public class LosthorizonModTabs {
 			tabData.accept(LosthorizonModItems.ONYX_ESSENCE.get());
 			tabData.accept(LosthorizonModItems.MYSTICAL_MUSHROOMS.get());
 			tabData.accept(LosthorizonModItems.RUNIC_AMBROSIA.get());
+			tabData.accept(LosthorizonModItems.THUNDER_HEART.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(LosthorizonModBlocks.TRAP.get().asItem());
 			tabData.accept(LosthorizonModBlocks.RING_INFUSER.get().asItem());

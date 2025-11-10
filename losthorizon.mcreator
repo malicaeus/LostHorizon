@@ -6400,6 +6400,69 @@
         ]
       },
       "path": "~/Food/Runic Ambrosia"
+    },
+    {
+      "name": "ThunderHeart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_heart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/item/ThunderHeartItem.java",
+          "src/main/resources/assets/losthorizon/items/thunder_heart.json",
+          "src/main/resources/assets/losthorizon/models/item/thunder_heart.json"
+        ]
+      },
+      "path": "~/Food/Thunder Heart"
+    },
+    {
+      "name": "ThunderHeartLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_heart_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/ThunderHeartLeJoueurTermineDutiliserLitemProcedure.java"
+        ]
+      },
+      "path": "~/Food/Thunder Heart"
+    },
+    {
+      "name": "ChargedCreeper",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "charged_creeper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/charged_creeper/creeper.json"
+        ]
+      },
+      "path": "~/Loot"
     }
   ],
   "variable_elements": [
@@ -7105,7 +7168,8 @@
       "item.losthorizon.mystical_mushrooms": "Mystical Mushrooms",
       "item.losthorizon.mystical_mushrooms_crops": "Mystical Mushrooms Crop",
       "effect.losthorizon.knockback_resistance": "Knockback Resistance",
-      "item.losthorizon.runic_ambrosia": "Runic Ambrosia"
+      "item.losthorizon.runic_ambrosia": "Runic Ambrosia",
+      "item.losthorizon.thunder_heart": "Thunder Heart"
     },
     "fr_fr": {
       "block.losthorizon.necromancer_grimoire_block.description_0": "Un livre ancien scellé par magie.",
@@ -7380,7 +7444,8 @@
       "item.losthorizon.mystical_mushrooms": "Champignons Mystiques",
       "item.losthorizon.mystical_mushrooms_crops": "Plant de Champignons Mystiques",
       "effect.losthorizon.knockback_resistance": "Résistance au recul",
-      "item.losthorizon.runic_ambrosia": "Ambroisie Runique"
+      "item.losthorizon.runic_ambrosia": "Ambroisie Runique",
+      "item.losthorizon.thunder_heart": "Thunder Heart"
     }
   },
   "metadata": {
@@ -7630,6 +7695,10 @@
           {
             "name": "Runic Ambrosia",
             "children": []
+          },
+          {
+            "name": "Thunder Heart",
+            "children": []
           }
         ]
       }
@@ -7653,5 +7722,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.losthorizon"
   },
-  "mcreatorVersion": 202500344519
+  "mcreatorVersion": 202500345720
 }
