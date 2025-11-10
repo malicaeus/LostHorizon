@@ -23,6 +23,13 @@
         },
         "amount": 1.0,
         "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "EXPLOSION_KNOCKBACK_RESISTANCE"
+        },
+        "amount": 1.0,
+        "operation": "ADD_VALUE"
       }
     ]
   }

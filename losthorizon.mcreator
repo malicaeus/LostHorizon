@@ -6463,6 +6463,174 @@
         ]
       },
       "path": "~/Loot"
+    },
+    {
+      "name": "MysticalCuisine",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_cuisine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/mystical_cuisine.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "HealingSweetness",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_sweetness",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/healing_sweetness.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "HeartOfIce",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_of_ice",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/heart_of_ice.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "TravelersProvisions",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travelers_provisions",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/travelers_provisions.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "TravelerSPieQuandLobjetEstFabriquefondu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "traveler_s_pie_quand_lobjet_est_fabriquefondu",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/TravelerSPieQuandLobjetEstFabriquefonduProcedure.java"
+        ]
+      },
+      "path": "~/Food/Travelers Pie"
+    },
+    {
+      "name": "WillingCorruption",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "willing_corruption",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/willing_corruption.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "InnerThunder",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inner_thunder",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/inner_thunder.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "FeastOfTheGods",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feast_of_the_gods",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/feast_of_the_gods.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "FeastOfTheGodsLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feast_of_the_gods_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/loot_table/gameplay/feast_of_the_gods.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "MysticGourmet",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_gourmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/mystic_gourmet.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "GrantMysticGourmet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grant_mystic_gourmet",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/GrantMysticGourmetProcedure.java"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "MysticGourmetLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mystic_gourmet_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/loot_table/gameplay/mystic_gourmet.json"
+        ]
+      },
+      "path": "~/Food"
     }
   ],
   "variable_elements": [
@@ -7169,7 +7337,23 @@
       "item.losthorizon.mystical_mushrooms_crops": "Mystical Mushrooms Crop",
       "effect.losthorizon.knockback_resistance": "Knockback Resistance",
       "item.losthorizon.runic_ambrosia": "Runic Ambrosia",
-      "item.losthorizon.thunder_heart": "Thunder Heart"
+      "item.losthorizon.thunder_heart": "Thunder Heart",
+      "advancements.mystical_cuisine.descr": "Taste a mystical food for the first time",
+      "advancements.mystical_cuisine.title": "Mystical Cuisine",
+      "advancements.healing_sweetness.descr": "Crystallized honey purifies what eats away at you from within.",
+      "advancements.healing_sweetness.title": "Healing Sweetness",
+      "advancements.heart_of_ice.title": "Heart of Ice",
+      "advancements.heart_of_ice.descr": "Get ready to face the flames of the Nether",
+      "advancements.travelers_provisions.descr": "A pie worthy of the greatest explorers",
+      "advancements.travelers_provisions.title": "Traveler\u0027s Provisions",
+      "advancements.willing_corruption.descr": "Accepts corruption from Onyx to gain power",
+      "advancements.willing_corruption.title": "Willing Corruption",
+      "advancements.inner_thunder.descr": "The heart of a charged Creeper now beats within you",
+      "advancements.inner_thunder.title": "Inner Thunder",
+      "advancements.feast_of_the_gods.descr": "Savour Runic Ambrosia, food of legends",
+      "advancements.feast_of_the_gods.title": "Feast of the Gods",
+      "advancements.mystic_gourmet.title": "Mystic Gourmet",
+      "advancements.mystic_gourmet.descr": "Taste ALL the mystical foods of Lost Horizon"
     },
     "fr_fr": {
       "block.losthorizon.necromancer_grimoire_block.description_0": "Un livre ancien scellé par magie.",
@@ -7445,7 +7629,23 @@
       "item.losthorizon.mystical_mushrooms_crops": "Plant de Champignons Mystiques",
       "effect.losthorizon.knockback_resistance": "Résistance au recul",
       "item.losthorizon.runic_ambrosia": "Ambroisie Runique",
-      "item.losthorizon.thunder_heart": "Thunder Heart"
+      "item.losthorizon.thunder_heart": "Cœur de Foudre",
+      "advancements.mystical_cuisine.descr": "Goûte à un aliment mystique pour la première fois",
+      "advancements.mystical_cuisine.title": "Cuisine Mystique",
+      "advancements.healing_sweetness.descr": "Le miel cristalisé purifie ce qui te ronge de l\u0027intérieur",
+      "advancements.healing_sweetness.title": "Douceur Currative",
+      "advancements.heart_of_ice.title": "Cœur de Glace",
+      "advancements.heart_of_ice.descr": "Prépare-toi à affronter les flammes du Nether",
+      "advancements.travelers_provisions.descr": "Une tourte digne des plus grands explorateurs",
+      "advancements.travelers_provisions.title": "Provisions du Voyageur",
+      "advancements.willing_corruption.descr": "Accepte la corruption de l\u0027Onyx pour gagner en puissance",
+      "advancements.willing_corruption.title": "Corruption Volontaire",
+      "advancements.inner_thunder.descr": "Le cœur d\u0027un Creeper chargé bat désormais en toi",
+      "advancements.inner_thunder.title": "Foudre Intérieure",
+      "advancements.feast_of_the_gods.descr": "Savoure l\u0027Ambroisie Runique, nourriture des légendes",
+      "advancements.feast_of_the_gods.title": "Festin des Dieux",
+      "advancements.mystic_gourmet.title": "Gourmet Mystique",
+      "advancements.mystic_gourmet.descr": "Goûte à TOUS les aliments mystiques de LostHorizon"
     }
   },
   "metadata": {

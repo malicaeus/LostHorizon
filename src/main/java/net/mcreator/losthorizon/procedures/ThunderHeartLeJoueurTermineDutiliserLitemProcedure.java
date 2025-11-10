@@ -9,8 +9,12 @@ import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 import net.mcreator.losthorizon.init.LosthorizonModMobEffects;
 
@@ -31,6 +35,19 @@ public class ThunderHeartLeJoueurTermineDutiliserLitemProcedure {
 			entityToSpawn.snapTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));
 			entityToSpawn.setVisualOnly(true);
 			_level.addFreshEntity(entityToSpawn);
+		}
+		if (!(entity instanceof ServerPlayer _plr5 && _plr5.level() instanceof ServerLevel _serverLevel5
+				&& _plr5.getAdvancements().getOrStartProgress(_serverLevel5.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:mystical_cuisine"))).isDone())) {
+			if (entity instanceof ServerPlayer _player && _player.level() instanceof ServerLevel _level) {
+				AdvancementHolder _adv = _level.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:mystical_cuisine"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
 		}
 	}
 }

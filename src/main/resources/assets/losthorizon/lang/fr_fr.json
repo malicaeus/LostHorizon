@@ -272,5 +272,21 @@
   "item.losthorizon.mystical_mushrooms_crops": "Plant de Champignons Mystiques",
   "effect.losthorizon.knockback_resistance": "Résistance au recul",
   "item.losthorizon.runic_ambrosia": "Ambroisie Runique",
-  "item.losthorizon.thunder_heart": "Thunder Heart"
+  "item.losthorizon.thunder_heart": "Cœur de Foudre",
+  "advancements.mystical_cuisine.descr": "Goûte à un aliment mystique pour la première fois",
+  "advancements.mystical_cuisine.title": "Cuisine Mystique",
+  "advancements.healing_sweetness.descr": "Le miel cristalisé purifie ce qui te ronge de l\u0027intérieur",
+  "advancements.healing_sweetness.title": "Douceur Currative",
+  "advancements.heart_of_ice.title": "Cœur de Glace",
+  "advancements.heart_of_ice.descr": "Prépare-toi à affronter les flammes du Nether",
+  "advancements.travelers_provisions.descr": "Une tourte digne des plus grands explorateurs",
+  "advancements.travelers_provisions.title": "Provisions du Voyageur",
+  "advancements.willing_corruption.descr": "Accepte la corruption de l\u0027Onyx pour gagner en puissance",
+  "advancements.willing_corruption.title": "Corruption Volontaire",
+  "advancements.inner_thunder.descr": "Le cœur d\u0027un Creeper chargé bat désormais en toi",
+  "advancements.inner_thunder.title": "Foudre Intérieure",
+  "advancements.feast_of_the_gods.descr": "Savoure l\u0027Ambroisie Runique, nourriture des légendes",
+  "advancements.feast_of_the_gods.title": "Festin des Dieux",
+  "advancements.mystic_gourmet.title": "Gourmet Mystique",
+  "advancements.mystic_gourmet.descr": "Goûte à TOUS les aliments mystiques de LostHorizon"
 }

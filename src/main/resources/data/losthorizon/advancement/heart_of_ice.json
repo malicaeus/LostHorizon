@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "losthorizon:ice_scale"
+    },
+    "title": {
+      "translate": "advancements.heart_of_ice.title"
+    },
+    "description": {
+      "translate": "advancements.heart_of_ice.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "heart_of_ice_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "losthorizon:ice_scale"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "losthorizon:mystical_cuisine"
+}

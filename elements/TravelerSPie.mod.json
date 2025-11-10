@@ -39,6 +39,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
+    "onCrafted": {
+      "name": "TravelerSPieQuandLobjetEstFabriquefondu"
+    },
     "onFinishUsingItem": {
       "name": "TravelerSPieLeJoueurTermineDutiliserLitem"
     },

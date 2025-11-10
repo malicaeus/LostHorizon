@@ -12,5 +12,6 @@ public class KnockbackResistanceMobEffect extends MobEffect {
 	public KnockbackResistanceMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -6710887);
 		this.addAttributeModifier(Attributes.KNOCKBACK_RESISTANCE, ResourceLocation.fromNamespaceAndPath(LosthorizonMod.MODID, "effect.knockback_resistance_0"), 1, AttributeModifier.Operation.ADD_VALUE);
+		this.addAttributeModifier(Attributes.EXPLOSION_KNOCKBACK_RESISTANCE, ResourceLocation.fromNamespaceAndPath(LosthorizonMod.MODID, "effect.knockback_resistance_1"), 1, AttributeModifier.Operation.ADD_VALUE);
 	}
 }

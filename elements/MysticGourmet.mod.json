@@ -1,0 +1,26 @@
+{
+  "_fv": 79,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Mystic Gourmet",
+    "achievementDescription": "Taste ALL the mystical foods of Lost Horizon",
+    "achievementIcon": {
+      "value": "CUSTOM:RunicAmbrosia"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": false,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [
+      "MysticGourmetLoot"
+    ],
+    "rewardRecipes": [],
+    "rewardXP": 500,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:FeastOfTheGods"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"custom_trigger\"></block></next></block></xml>"
+  }
+}

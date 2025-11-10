@@ -8,11 +8,14 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.AdvancementHolder;
 
 public class CrystallizedHoneyLeJoueurTermineDutiliserLitemProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -85,6 +88,19 @@ public class CrystallizedHoneyLeJoueurTermineDutiliserLitemProcedure {
 			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.HEART, x, y, z, 100, 2, 3, 2, 0.2);
+		}
+		if (!(entity instanceof ServerPlayer _plr35 && _plr35.level() instanceof ServerLevel _serverLevel35
+				&& _plr35.getAdvancements().getOrStartProgress(_serverLevel35.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:mystical_cuisine"))).isDone())) {
+			if (entity instanceof ServerPlayer _player && _player.level() instanceof ServerLevel _level) {
+				AdvancementHolder _adv = _level.getServer().getAdvancements().get(ResourceLocation.parse("losthorizon:mystical_cuisine"));
+				if (_adv != null) {
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
+			}
 		}
 	}
 }

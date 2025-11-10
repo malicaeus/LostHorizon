@@ -272,5 +272,21 @@
   "item.losthorizon.mystical_mushrooms_crops": "Mystical Mushrooms Crop",
   "effect.losthorizon.knockback_resistance": "Knockback Resistance",
   "item.losthorizon.runic_ambrosia": "Runic Ambrosia",
-  "item.losthorizon.thunder_heart": "Thunder Heart"
+  "item.losthorizon.thunder_heart": "Thunder Heart",
+  "advancements.mystical_cuisine.descr": "Taste a mystical food for the first time",
+  "advancements.mystical_cuisine.title": "Mystical Cuisine",
+  "advancements.healing_sweetness.descr": "Crystallized honey purifies what eats away at you from within.",
+  "advancements.healing_sweetness.title": "Healing Sweetness",
+  "advancements.heart_of_ice.title": "Heart of Ice",
+  "advancements.heart_of_ice.descr": "Get ready to face the flames of the Nether",
+  "advancements.travelers_provisions.descr": "A pie worthy of the greatest explorers",
+  "advancements.travelers_provisions.title": "Traveler\u0027s Provisions",
+  "advancements.willing_corruption.descr": "Accepts corruption from Onyx to gain power",
+  "advancements.willing_corruption.title": "Willing Corruption",
+  "advancements.inner_thunder.descr": "The heart of a charged Creeper now beats within you",
+  "advancements.inner_thunder.title": "Inner Thunder",
+  "advancements.feast_of_the_gods.descr": "Savour Runic Ambrosia, food of legends",
+  "advancements.feast_of_the_gods.title": "Feast of the Gods",
+  "advancements.mystic_gourmet.title": "Mystic Gourmet",
+  "advancements.mystic_gourmet.descr": "Taste ALL the mystical foods of Lost Horizon"
 }

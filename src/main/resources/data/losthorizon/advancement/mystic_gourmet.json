@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "losthorizon:runic_ambrosia"
+    },
+    "title": {
+      "translate": "advancements.mystic_gourmet.title"
+    },
+    "description": {
+      "translate": "advancements.mystic_gourmet.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mystic_gourmet_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 500,
+    "loot": [
+      "losthorizon:gameplay/mystic_gourmet"
+    ]
+  },
+  "parent": "losthorizon:feast_of_the_gods"
+}
