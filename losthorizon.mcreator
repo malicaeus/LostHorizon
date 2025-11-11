@@ -6631,6 +6631,89 @@
         ]
       },
       "path": "~/Food"
+    },
+    {
+      "name": "ThunderHeartRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_heart_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/recipe/thunder_heart.json",
+          "src/main/resources/data/losthorizon/advancement/recipes/thunder_heart_recipe.json"
+        ]
+      },
+      "path": "~/Food/Thunder Heart"
+    },
+    {
+      "name": "FightingOnTheEdge",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fighting_on_the_edge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/fighting_on_the_edge.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "FightingOnTheEdgeGrant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fighting_on_the_edge_grant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/FightingOnTheEdgeGrantProcedure.java"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "HeartGuardianQuandLentiteEstBlessee",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_guardian_quand_lentite_est_blessee",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/HeartGuardianQuandLentiteEstBlesseeProcedure.java"
+        ]
+      },
+      "path": "~/Biomes/EnchantedForest/Boss"
+    },
+    {
+      "name": "FightingOnTheEdgeLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fighting_on_the_edge_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/loot_table/gameplay/fighting_on_the_edge.json"
+        ]
+      },
+      "path": "~/Food"
     }
   ],
   "variable_elements": [
@@ -7353,7 +7436,9 @@
       "advancements.feast_of_the_gods.descr": "Savour Runic Ambrosia, food of legends",
       "advancements.feast_of_the_gods.title": "Feast of the Gods",
       "advancements.mystic_gourmet.title": "Mystic Gourmet",
-      "advancements.mystic_gourmet.descr": "Taste ALL the mystical foods of Lost Horizon"
+      "advancements.mystic_gourmet.descr": "Taste ALL the mystical foods of Lost Horizon",
+      "advancements.fighting_on_the_edge.descr": "Kill a boss with less than 2 hearts after consuming an Onyx Essence.",
+      "advancements.fighting_on_the_edge.title": "Fighting on the Edge"
     },
     "fr_fr": {
       "block.losthorizon.necromancer_grimoire_block.description_0": "Un livre ancien scellé par magie.",
@@ -7645,7 +7730,9 @@
       "advancements.feast_of_the_gods.descr": "Savoure l\u0027Ambroisie Runique, nourriture des légendes",
       "advancements.feast_of_the_gods.title": "Festin des Dieux",
       "advancements.mystic_gourmet.title": "Gourmet Mystique",
-      "advancements.mystic_gourmet.descr": "Goûte à TOUS les aliments mystiques de LostHorizon"
+      "advancements.mystic_gourmet.descr": "Goûte à TOUS les aliments mystiques de LostHorizon",
+      "advancements.fighting_on_the_edge.descr": "Tue un boss avec moins de 2 cœurs après avoir consommé une Essence d\u0027Onyx",
+      "advancements.fighting_on_the_edge.title": "Combat au Bord du Gouffre"
     }
   },
   "metadata": {

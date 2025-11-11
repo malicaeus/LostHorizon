@@ -34,6 +34,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.losthorizon.procedures.HeartGuardianQuandLentiteMeurtProcedure;
+import net.mcreator.losthorizon.procedures.HeartGuardianQuandLentiteEstBlesseeProcedure;
 import net.mcreator.losthorizon.procedures.HeartGuardianIsActivateProcedure;
 import net.mcreator.losthorizon.procedures.HeartGuardianChaqueMiseAJourDeTickDeLentiteProcedure;
 import net.mcreator.losthorizon.procedures.CryptGuardianPlaybackConditionProcedure;
@@ -121,6 +122,15 @@ public class HeartGuardianEntity extends Monster {
 
 	@Override
 	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
+		if (!HeartGuardianQuandLentiteEstBlesseeProcedure.execute(entity))
+			return false;
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
 		return super.hurtServer(level, damagesource, amount);

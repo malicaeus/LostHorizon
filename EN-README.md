@@ -29,6 +29,91 @@
 - **Furtivity**: Increases speed in sneak mode.
 - **Fire**: Sets touched entities on fire.
 
+### 🍴 Mystical Food
+
+LostHorizon introduces a **mystic food system** offering strategic options for exploration, combat and survival.
+
+#### 🍯 Crystallized Honey
+- **Nutrition**: 6 points | **Saturation**: 0.5 | **Stack size**: 16
+- **Always edible**: ✅ Yes
+- **Effect**: Removes a random negative effect (Poison, Wither, Weakness, Slowness, etc.)
+- **Obtained**: Found in certain structures or craftable
+- **Use**: Emergency antidote usable at any time
+
+#### 🍄 Mystic Mushrooms
+- **Stack size**: 64
+- **Use**: Crafting ingredient for Onyx Essence
+- **Obtained**: Found in mystic biomes
+
+#### ❄️ Ice Scale
+- **Nutrition**: 2 points | **Saturation**: 0.4 | **Stack size**: 16
+- **Always edible**: ✅ Yes
+- **Effects**:
+  - Fire Resistance I (45s)
+  - Regeneration I (5s)
+  - ⚠️ Slowness I (8s) — your body cools down
+- **Obtained**: Rare drop (10%) from mobs in the Ice Tower, or craft with 4 Ice Crystals + 1 raw fish
+- **Use**: Ideal preparation before exploring the Nether or fighting Dark Blazes
+
+#### 🥧 Traveler's Pie
+- **Nutrition**: 8 points | **Saturation**: 1.2 | **Stack size**: 16
+- **Always edible**: ❌ No (requires hunger)
+- **Effects**:
+  - Speed II (30s)
+  - Enhanced Jump I (30s)
+  - Haste I (20s)
+- **Recipe**: Bread + Cooked Meat + Carrot + Potato + Mythril (center)
+- **Use**: Premium exploration food for long journeys
+
+#### 🖤 Onyx Essence
+- **Nutrition**: 1 point | **Saturation**: 0.1 | **Stack size**: 8
+- **Always edible**: ✅ Yes
+- **Effects**:
+  - Strength II (25s)
+  - Absorption I (15s) — +2 temporary hearts
+  - ⚠️ Hunger II (30s) — the corruption eats you
+  - ⚠️ Immediate loss of 1/2 heart
+- **Recipe**: Glass bottle + 3 Onyx + 1 Red Mushroom + Mystic Mushrooms
+- **Use**: Desperate combat elixir — sacrifice health for a massive boost. Ideal for critical boss fights.
+
+#### ⚡ Thunder Heart
+- **Nutrition**: 2 points | **Saturation**: 0.3 | **Stack size**: 8
+- **Always edible**: ✅ Yes
+- **Effects**:
+  - Speed III (15s)
+  - Haste II (15s)
+  - Knockback resistance (15s)
+  - ⚠️ Glowing (20s) — you glow as if struck by lightning
+- **Obtained**: Rare drop (10%) from charged creepers that kill a creeper, or craft with Heart of the Bond + 4 Gunpowder + 4 Redstone
+- **Use**: Offensive rush item to charge a boss and attack quickly without being knocked back
+
+#### ✨ Runic Ambrosia
+- **Nutrition**: 10 points | **Saturation**: 2.0 | **Stack size**: 8
+- **Always edible**: ❌ No (requires hunger)
+- **Effects**:
+  - Regeneration II (45s)
+  - Resistance I (60s)
+  - Absorption II (45s) — +4 temporary hearts
+  - Luck II (3 min)
+  - Fire Resistance I (60s)
+- **Complex recipe**: 2 Crystallized Honey + 2 Runite + 1 Golden Apple + 2 Emeralds + 2 Blaze Powder
+- **Use**: Endgame exploration ultimate food. Extremely costly but grants multiple long buffs to survive the toughest situations.
+
+---
+
+#### 🏆 Food-related advancements
+
+A full advancement tree rewards culinary exploration:
+- 🍄 Mystical Cuisine: Taste your first mystic food
+- 🍯 Curative Sweetness: Eat Crystallized Honey
+- ❄️ Heart of Ice: Eat an Ice Scale
+- 🥧 Traveler's Provisions: Craft a Traveler's Pie
+- 🖤 Willing Corruption: Eat an Onyx Essence *(Goal)*
+- ⚡ Inner Thunder: Eat a Thunder Heart
+- ✨ Feast of the Gods: Eat a Runic Ambrosia *(Goal)*
+- 🍽️ Mystic Gourmet: Taste ALL mystic foods *(Challenge)*
+- ⚔️ Fighting on the Edge: Kill a boss with ≤2 hearts while under the effect of Onyx Essence *(Hidden challenge)*
+
 ### 🧱 Ores
 - **Basalt Obsidian** *(Nether)*: Solid and dark.
 - **Onyx** *(Nether)*: Perfect for vicious weapons.

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "minecraft:gunpowder",
+    "b": "minecraft:redstone",
+    "c": "losthorizon:heart_link"
+  },
+  "result": {
+    "id": "losthorizon:thunder_heart",
+    "count": 1
+  }
+}

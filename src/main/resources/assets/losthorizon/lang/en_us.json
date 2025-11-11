@@ -288,5 +288,7 @@
   "advancements.feast_of_the_gods.descr": "Savour Runic Ambrosia, food of legends",
   "advancements.feast_of_the_gods.title": "Feast of the Gods",
   "advancements.mystic_gourmet.title": "Mystic Gourmet",
-  "advancements.mystic_gourmet.descr": "Taste ALL the mystical foods of Lost Horizon"
+  "advancements.mystic_gourmet.descr": "Taste ALL the mystical foods of Lost Horizon",
+  "advancements.fighting_on_the_edge.descr": "Kill a boss with less than 2 hearts after consuming an Onyx Essence.",
+  "advancements.fighting_on_the_edge.title": "Fighting on the Edge"
 }

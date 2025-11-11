@@ -135,6 +135,9 @@
     "whenMobDies": {
       "name": "HeartGuardianQuandLentiteMeurt"
     },
+    "whenMobIsHurt": {
+      "name": "HeartGuardianQuandLentiteEstBlessee"
+    },
     "onMobTickUpdate": {
       "name": "HeartGuardianChaqueMiseAJourDeTickDeLentite"
     },
