@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": "losthorizon:ice_crystal",
+    "b": "#losthorizon:raw-fish"
+  },
+  "result": {
+    "id": "losthorizon:ice_scale",
+    "count": 1
+  }
+}

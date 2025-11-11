@@ -1,0 +1,26 @@
+{
+  "_fv": 79,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Feast of the Gods",
+    "achievementDescription": "Savour Runic Ambrosia, food of legends",
+    "achievementIcon": {
+      "value": "CUSTOM:RunicAmbrosia"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [
+      "FeastOfTheGodsLoot"
+    ],
+    "rewardRecipes": [],
+    "rewardXP": 150,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:TravelersProvisions"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"advancement_trigger\" deletable=\"false\" x=\"40\" y=\"80\"><next><block type=\"item_consumed\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:RunicAmbrosia</field></block></value></block></next></block></xml>"
+  }
+}

@@ -36,6 +36,7 @@
       "value": -1,
       "falpha": 0.0
     },
+    "spawnEggTexture": "",
     "creativeTabs": [
       {
         "value": "MISC"
@@ -102,7 +103,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "CUSTOM:HeartLink"
+      "value": ""
     },
     "livingSound": {
       "value": ""
@@ -131,6 +132,12 @@
         "value": false
       }
     ],
+    "whenMobDies": {
+      "name": "HeartGuardianQuandLentiteMeurt"
+    },
+    "whenMobIsHurt": {
+      "name": "HeartGuardianQuandLentiteEstBlessee"
+    },
     "onMobTickUpdate": {
       "name": "HeartGuardianChaqueMiseAJourDeTickDeLentite"
     },
@@ -165,6 +172,9 @@
       2
     ],
     "sensitiveToVibration": false,
-    "vibrationalEvents": []
+    "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 7.0
+    }
   }
 }

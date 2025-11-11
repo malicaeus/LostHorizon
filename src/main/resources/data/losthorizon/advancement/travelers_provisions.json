@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "losthorizon:travelers_pie"
+    },
+    "title": {
+      "translate": "advancements.travelers_provisions.title"
+    },
+    "description": {
+      "translate": "advancements.travelers_provisions.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "travelers_provisions_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 40
+  },
+  "parent": "losthorizon:mystical_cuisine"
+}

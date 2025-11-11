@@ -124,6 +124,13 @@ public class LosthorizonModTabs {
 			tabData.accept(LosthorizonModItems.ARAPAIMA_RAW.get());
 			tabData.accept(LosthorizonModItems.ARAPAIMA_COOKED.get());
 			tabData.accept(LosthorizonModItems.LUMINOUS_BERRIES.get());
+			tabData.accept(LosthorizonModItems.CRYSTALLIZED_HONEY.get());
+			tabData.accept(LosthorizonModItems.TRAVELERS_PIE.get());
+			tabData.accept(LosthorizonModItems.ICE_SCALE.get());
+			tabData.accept(LosthorizonModItems.ONYX_ESSENCE.get());
+			tabData.accept(LosthorizonModItems.MYSTICAL_MUSHROOMS.get());
+			tabData.accept(LosthorizonModItems.RUNIC_AMBROSIA.get());
+			tabData.accept(LosthorizonModItems.THUNDER_HEART.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(LosthorizonModBlocks.TRAP.get().asItem());
 			tabData.accept(LosthorizonModBlocks.RING_INFUSER.get().asItem());

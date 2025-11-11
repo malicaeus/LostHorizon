@@ -33,6 +33,8 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.losthorizon.procedures.HeartGuardianQuandLentiteMeurtProcedure;
+import net.mcreator.losthorizon.procedures.HeartGuardianQuandLentiteEstBlesseeProcedure;
 import net.mcreator.losthorizon.procedures.HeartGuardianIsActivateProcedure;
 import net.mcreator.losthorizon.procedures.HeartGuardianChaqueMiseAJourDeTickDeLentiteProcedure;
 import net.mcreator.losthorizon.procedures.CryptGuardianPlaybackConditionProcedure;
@@ -108,11 +110,6 @@ public class HeartGuardianEntity extends Monster {
 		return super.getPassengerRidingPosition(entity).add(0, -0.35F, 0);
 	}
 
-	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
-		this.spawnAtLocation(serverLevel, new ItemStack(LosthorizonModItems.HEART_LINK.get()));
-	}
-
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("entity.generic.hurt"));
@@ -125,9 +122,24 @@ public class HeartGuardianEntity extends Monster {
 
 	@Override
 	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Level world = this.level();
+		Entity entity = this;
+		Entity sourceentity = damagesource.getEntity();
+		Entity immediatesourceentity = damagesource.getDirectEntity();
+		if (!HeartGuardianQuandLentiteEstBlesseeProcedure.execute(entity))
+			return false;
 		if (damagesource.is(DamageTypes.DRAGON_BREATH))
 			return false;
 		return super.hurtServer(level, damagesource, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		HeartGuardianQuandLentiteMeurtProcedure.execute(this, source.getEntity());
 	}
 
 	@Override

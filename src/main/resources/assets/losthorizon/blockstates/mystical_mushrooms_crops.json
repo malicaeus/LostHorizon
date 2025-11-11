@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "losthorizon:block/mystical_mushrooms_crops"
+    },
+    "blockstate=1": {
+      "model": "losthorizon:block/mystical_mushrooms_stages_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "losthorizon:block/mystical_mushrooms_stages_blockstate_1"
+    }
+  }
+}

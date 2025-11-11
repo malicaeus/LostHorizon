@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "losthorizon:onyx_essence"
+    },
+    "title": {
+      "translate": "advancements.willing_corruption.title"
+    },
+    "description": {
+      "translate": "advancements.willing_corruption.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "willing_corruption_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "losthorizon:onyx_essence"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "losthorizon:mystical_cuisine"
+}

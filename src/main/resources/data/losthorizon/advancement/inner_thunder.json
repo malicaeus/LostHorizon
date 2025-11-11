@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "losthorizon:thunder_heart"
+    },
+    "title": {
+      "translate": "advancements.inner_thunder.title"
+    },
+    "description": {
+      "translate": "advancements.inner_thunder.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "inner_thunder_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "losthorizon:thunder_heart"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 75
+  },
+  "parent": "losthorizon:mystical_cuisine"
+}

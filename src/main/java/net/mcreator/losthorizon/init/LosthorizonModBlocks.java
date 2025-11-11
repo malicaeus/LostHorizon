@@ -40,6 +40,7 @@ public class LosthorizonModBlocks {
 	public static final DeferredBlock<Block> STARRY_JADE_ORE;
 	public static final DeferredBlock<Block> STARRY_JADE_BLOCK;
 	public static final DeferredBlock<Block> HEART_BLOCK;
+	public static final DeferredBlock<Block> MYSTICAL_MUSHROOMS_CROPS;
 	static {
 		ONYX_ORE = register("onyx_ore", OnyxOreBlock::new);
 		ONYX_BLOCK = register("onyx_block", OnyxBlockBlock::new);
@@ -65,6 +66,7 @@ public class LosthorizonModBlocks {
 		STARRY_JADE_ORE = register("starry_jade_ore", StarryJadeOreBlock::new);
 		STARRY_JADE_BLOCK = register("starry_jade_block", StarryJadeBlockBlock::new);
 		HEART_BLOCK = register("heart_block", HeartBlockBlock::new);
+		MYSTICAL_MUSHROOMS_CROPS = register("mystical_mushrooms_crops", MysticalMushroomsStage0Block::new);
 	}
 
 	// Start of user code block custom blocks

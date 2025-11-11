@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "losthorizon:crystallized_honey"
+    },
+    "title": {
+      "translate": "advancements.healing_sweetness.title"
+    },
+    "description": {
+      "translate": "advancements.healing_sweetness.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "healing_sweetness_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "losthorizon:crystallized_honey"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "losthorizon:mystical_cuisine"
+}

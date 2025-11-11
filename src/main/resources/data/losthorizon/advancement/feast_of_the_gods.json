@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "losthorizon:runic_ambrosia"
+    },
+    "title": {
+      "translate": "advancements.feast_of_the_gods.title"
+    },
+    "description": {
+      "translate": "advancements.feast_of_the_gods.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "feast_of_the_gods_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "losthorizon:runic_ambrosia"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 150,
+    "loot": [
+      "losthorizon:gameplay/feast_of_the_gods"
+    ]
+  },
+  "parent": "losthorizon:travelers_provisions"
+}

@@ -29,6 +29,91 @@
 - **Furtivity** : Augmente la vitesse en mode sneak.
 - **Fire** : Enflamme les entités touchées.
 
+### 🍴 Nourriture mystique
+
+LostHorizon introduit un **système de nourriture mystique** offrant des options stratégiques pour l'exploration, le combat et la survie.
+
+#### 🍯 Miel cristalisé
+- **Nutrition** : 6 points | **Saturation** : 0.5 | **Stack** : 16
+- **Toujours mangeable** : ✅ Oui
+- **Effet** : Retire un effet négatif aléatoire (Poison, Wither, Weakness, Slowness, etc.)
+- **Obtention** : Trouvable dans certaines structures ou craftable
+- **Usage** : Antidote d'urgence utilisable à tout moment
+
+#### 🍄 Champignons mystiques
+- **Stack** : 64
+- **Usage** : Ingrédient de craft pour l'Essence d'Onyx
+- **Obtention** : Trouvables dans les biomes mystiques
+
+#### ❄️ Écaille de Glace
+- **Nutrition** : 2 points | **Saturation** : 0.4 | **Stack** : 16
+- **Toujours mangeable** : ✅ Oui
+- **Effets** :
+  - Résistance au feu I (45s)
+  - Régénération I (5s)
+  - ⚠️ Lenteur I (8s) - ton corps refroidit
+- **Obtention** : Drop rare (10%) des mobs dans l'Ice Tower, ou craft avec 4 Cristaux de glace + 1 poisson cru
+- **Usage** : Préparation idéale avant d'explorer le Nether ou combattre les Dark Blazes
+
+#### 🥧 Tourte du Voyageur
+- **Nutrition** : 8 points | **Saturation** : 1.2 | **Stack** : 16
+- **Toujours mangeable** : ❌ Non (nécessite d'avoir faim)
+- **Effets** :
+  - Vitesse II (30s)
+  - Saut amélioré I (30s)
+  - Hâte I (20s)
+- **Craft** : Pain + Viande cuite + Carotte + Pomme de terre + Mythril (centre)
+- **Usage** : Nourriture premium d'exploration pour les longs voyages
+
+#### 🖤 Essence d'Onyx
+- **Nutrition** : 1 point | **Saturation** : 0.1 | **Stack** : 8
+- **Toujours mangeable** : ✅ Oui
+- **Effets** :
+  - Force II (25s)
+  - Absorption I (15s) - +2 cœurs temporaires
+  - ⚠️ Hunger II (30s) - la corruption te dévore
+  - ⚠️ Perte immédiate de ½ cœur
+- **Craft** : Fiole en verre + 3 Onyx + 1 Champignon rouge + Champignons mystiques
+- **Usage** : Élixir de combat désespéré - tu sacrifies ta santé pour un boost massif. Idéal pour les boss fights en situation critique.
+
+#### ⚡ Cœur de Foudre
+- **Nutrition** : 2 points | **Saturation** : 0.3 | **Stack** : 8
+- **Toujours mangeable** : ✅ Oui
+- **Effets** :
+  - Vitesse III (15s)
+  - Hâte II (15s)
+  - Résistance aux reculs (15s)
+  - ⚠️ Glowing (20s) - tu brilles comme frappé par la foudre
+- **Obtention** : Drop rare (10%) des Creepers chargés tuant un Creeper, ou craft avec Cœur du lien + 4 Poudre à canon + 4 Redstone
+- **Usage** : Item de rush offensif pour foncer sur un boss et attaquer rapidement sans être repoussé
+
+#### ✨ Ambroisie Runique
+- **Nutrition** : 10 points | **Saturation** : 2.0 | **Stack** : 8
+- **Toujours mangeable** : ❌ Non (nécessite d'avoir faim)
+- **Effets** :
+  - Régénération II (45s)
+  - Résistance I (60s)
+  - Absorption II (45s) - +4 cœurs temporaires
+  - Luck II (3min)
+  - Résistance au feu I (60s)
+- **Craft complexe** : 2 Miel cristalisé + 2 Runite + 1 Pomme dorée + 2 Émeraudes + 2 Poudre de blaze
+- **Usage** : Nourriture ultime d'exploration endgame. Coût extrêmement élevé mais buffs multiples et longs pour survivre aux situations les plus dangereuses.
+
+---
+
+#### 🏆 Avancements liés à la nourriture
+
+Un arbre d'avancements complet récompense l'exploration culinaire :
+- 🍄 **Cuisine Mystique** : Goûte ton premier aliment mystique
+- 🍯 **Douceur Currative** : Mange du Miel cristalisé
+- ❄️ **Cœur de Glace** : Mange une Écaille de Glace
+- 🥧 **Provisions du Voyageur** : Crafte une Tourte du Voyageur
+- 🖤 **Corruption Volontaire** : Mange une Essence d'Onyx *(Goal)*
+- ⚡ **Foudre Intérieure** : Mange un Cœur de Foudre
+- ✨ **Festin des Dieux** : Mange une Ambroisie Runique *(Goal)*
+- 🍽️ **Gourmet Mystique** : Goûte TOUS les aliments mystiques *(Challenge)*
+- ⚔️ **Combat au Bord du Gouffre** : Tue un boss avec ≤2 cœurs sous effet d'Essence d'Onyx *(Challenge caché)*
+
 ### 🧱 Minerais
 - **Basalt Obsidian** *(Nether)* : Solide et sombre.
 - **Onyx** *(Nether)* : Parfait pour les armes vicieuses.

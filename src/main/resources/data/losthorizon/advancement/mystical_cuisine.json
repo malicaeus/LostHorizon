@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "losthorizon:mystical_mushrooms"
+    },
+    "title": {
+      "translate": "advancements.mystical_cuisine.title"
+    },
+    "description": {
+      "translate": "advancements.mystical_cuisine.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mystical_cuisine_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 50
+  },
+  "parent": "losthorizon:lost_horizon_advancement"
+}

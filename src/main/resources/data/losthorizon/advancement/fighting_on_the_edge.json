@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "losthorizon:onyx_essence"
+    },
+    "title": {
+      "translate": "advancements.fighting_on_the_edge.title"
+    },
+    "description": {
+      "translate": "advancements.fighting_on_the_edge.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "fighting_on_the_edge_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 300,
+    "loot": [
+      "losthorizon:gameplay/fighting_on_the_edge"
+    ]
+  },
+  "parent": "losthorizon:willing_corruption"
+}

@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "losthorizon:textures/screens/losthorizon.png",
+    "background": "losthorizon:screens/losthorizon",
     "icon": {
       "id": "losthorizon:totem_of_the_moon"
     },

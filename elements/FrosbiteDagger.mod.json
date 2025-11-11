@@ -8,6 +8,7 @@
     "texture": "frostbite_dagger",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
+    "guiTexture": "",
     "name": "Frostbite Dagger",
     "specialInformation": {
       "fixedValue": []
@@ -37,6 +38,9 @@
     "damageOnCrafting": false,
     "onEntityHitWith": {
       "name": "FrosbiteDaggerQuandUneEntiteVivanteEstFrappeeAvecLoutil"
+    },
+    "onBlockDestroyedWithTool": {
+      "name": "FrosbiteDaggerQuandLeBlocEstDetruitAvecLoutil"
     }
   }
 }

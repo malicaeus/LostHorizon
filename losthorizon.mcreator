@@ -3957,7 +3957,7 @@
       "name": "MagicLeavesLoot",
       "type": "loottable",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "magic_leaves_loot",
       "metadata": {
         "files": [
@@ -5870,6 +5870,850 @@
         ]
       },
       "path": "~/Tools/Relics of the Eclipse/Lunar Sword"
+    },
+    {
+      "name": "HeartGuardianQuandLentiteMeurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_guardian_quand_lentite_meurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/HeartGuardianQuandLentiteMeurtProcedure.java"
+        ]
+      },
+      "path": "~/Biomes/EnchantedForest/Boss"
+    },
+    {
+      "name": "CrystallizedHoney",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallized_honey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/losthorizon/items/crystallized_honey.json",
+          "src/main/resources/assets/losthorizon/models/item/crystallized_honey.json",
+          "src/main/java/net/mcreator/losthorizon/item/CrystallizedHoneyItem.java"
+        ]
+      },
+      "path": "~/Food/Crystallized Honey"
+    },
+    {
+      "name": "CrystallizedHoneyLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystallized_honey_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/CrystallizedHoneyLeJoueurTermineDutiliserLitemProcedure.java"
+        ]
+      },
+      "path": "~/Food/Crystallized Honey"
+    },
+    {
+      "name": "MythrilOreQuandLeBlocEstDetruitParUnJoueur",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythril_ore_quand_le_bloc_est_detruit_par_un_joueur",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/MythrilOreQuandLeBlocEstDetruitParUnJoueurProcedure.java"
+        ]
+      },
+      "path": "~/Ore/Mythril"
+    },
+    {
+      "name": "TravelerSPie",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travelers_pie",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/losthorizon/items/travelers_pie.json",
+          "src/main/resources/assets/losthorizon/models/item/travelers_pie.json",
+          "src/main/java/net/mcreator/losthorizon/item/TravelerSPieItem.java"
+        ]
+      },
+      "path": "~/Food/Travelers Pie"
+    },
+    {
+      "name": "TravelerSPieLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "traveler_s_pie_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/TravelerSPieLeJoueurTermineDutiliserLitemProcedure.java"
+        ]
+      },
+      "path": "~/Food/Travelers Pie"
+    },
+    {
+      "name": "TravelersPieRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travelers_pie_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/recipe/travelers_pie_recipe.json",
+          "src/main/resources/data/losthorizon/advancement/recipes/travelers_pie_recipe.json"
+        ]
+      },
+      "path": "~/Food/Travelers Pie"
+    },
+    {
+      "name": "IceScale",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_scale",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/item/IceScaleItem.java",
+          "src/main/resources/assets/losthorizon/items/ice_scale.json",
+          "src/main/resources/assets/losthorizon/models/item/ice_scale.json"
+        ]
+      },
+      "path": "~/Food/Ice Scale"
+    },
+    {
+      "name": "IceScaleLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_scale_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/IceScaleLeJoueurTermineDutiliserLitemProcedure.java"
+        ]
+      },
+      "path": "~/Food/Ice Scale"
+    },
+    {
+      "name": "FrosbiteDaggerQuandLeBlocEstDetruitAvecLoutil",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frosbite_dagger_quand_le_bloc_est_detruit_avec_loutil",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/FrosbiteDaggerQuandLeBlocEstDetruitAvecLoutilProcedure.java"
+        ]
+      },
+      "path": "~/Tools/Frostbite Dagger"
+    },
+    {
+      "name": "IceScaleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_scale_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/recipe/ice_scale_recipe.json",
+          "src/main/resources/data/losthorizon/advancement/recipes/ice_scale_recipe.json"
+        ]
+      },
+      "path": "~/Food/Ice Scale"
+    },
+    {
+      "name": "OnyxEssence",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_essence",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/item/OnyxEssenceItem.java",
+          "src/main/resources/assets/losthorizon/items/onyx_essence.json",
+          "src/main/resources/assets/losthorizon/models/item/onyx_essence.json"
+        ]
+      },
+      "path": "~/Food/Onyx Essence"
+    },
+    {
+      "name": "OnyxEssenceLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_essence_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/OnyxEssenceLeJoueurTermineDutiliserLitemProcedure.java"
+        ]
+      },
+      "path": "~/Food/Onyx Essence"
+    },
+    {
+      "name": "OnyxEssenceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onyx_essence_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/recipes/onyx_essence_recipe.json",
+          "src/main/resources/data/losthorizon/recipe/onyx_essence.json"
+        ]
+      },
+      "path": "~/Food/Onyx Essence"
+    },
+    {
+      "name": "MysticalMushrooms",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_mushrooms",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/item/MysticalMushroomsItem.java",
+          "src/main/resources/assets/losthorizon/items/mystical_mushrooms.json",
+          "src/main/resources/assets/losthorizon/models/item/mystical_mushrooms.json"
+        ]
+      },
+      "path": "~/Food/Mystical Mushrooms"
+    },
+    {
+      "name": "MysticalMushroomsStage0",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_mushrooms_crops",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/losthorizon/models/item/mystical_mushrooms_crops.json",
+          "src/main/resources/assets/losthorizon/blockstates/mystical_mushrooms_crops.json",
+          "src/main/resources/assets/losthorizon/models/block/mystical_mushrooms_crops.json",
+          "src/main/resources/data/losthorizon/loot_table/blocks/mystical_mushrooms_crops.json",
+          "src/main/resources/assets/losthorizon/items/mystical_mushrooms_crops.json",
+          "src/main/java/net/mcreator/losthorizon/block/MysticalMushroomsStage0Block.java"
+        ]
+      },
+      "path": "~/Food/Mystical Mushrooms"
+    },
+    {
+      "name": "MysticalMushroomsLorsqueVousCliquezAvecLeBoutonDroitDeLaSourisSurUnBloc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_mushrooms_lorsque_vous_cliquez_avec_le_bouton_droit_de_la_souris_sur_un_bloc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/MysticalMushroomsLorsqueVousCliquezAvecLeBoutonDroitDeLaSourisSurUnBlocProcedure.java"
+        ]
+      },
+      "path": "~/Food/Mystical Mushrooms"
+    },
+    {
+      "name": "MysticalMushroomsStages",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_mushrooms_stages",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/losthorizon/models/block/mystical_mushrooms_stages_blockstate_0.json",
+          "src/main/resources/assets/losthorizon/models/block/mystical_mushrooms_stages_blockstate_1.json"
+        ]
+      },
+      "path": "~/Food/Mystical Mushrooms"
+    },
+    {
+      "name": "MysticalMushroomsStage0ConditionDeReussiteDeLaPoudreDos",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_mushrooms_stage_0_condition_de_reussite_de_la_poudre_dos",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/MysticalMushroomsStage0ConditionDeReussiteDeLaPoudreDosProcedure.java"
+        ]
+      },
+      "path": "~/Food/Mystical Mushrooms"
+    },
+    {
+      "name": "MysticalMushroomsStage0EnCasDeSuccesDeLaPoudreDos",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_mushrooms_stage_0_en_cas_de_succes_de_la_poudre_dos",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/MysticalMushroomsStage0EnCasDeSuccesDeLaPoudreDosProcedure.java"
+        ]
+      },
+      "path": "~/Food/Mystical Mushrooms"
+    },
+    {
+      "name": "MysticalMushroomsStageLorsDeLaMiseAJourDuTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_mushrooms_stage_lors_de_la_mise_a_jour_du_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/MysticalMushroomsStageLorsDeLaMiseAJourDuTickProcedure.java"
+        ]
+      },
+      "path": "~/Food/Mystical Mushrooms"
+    },
+    {
+      "name": "MysticalMushroomsStage0QuandLeBlocEstDetruitParUnJoueur",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_mushrooms_stage_0_quand_le_bloc_est_detruit_par_un_joueur",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/MysticalMushroomsStage0QuandLeBlocEstDetruitParUnJoueurProcedure.java"
+        ]
+      },
+      "path": "~/Food/Mystical Mushrooms"
+    },
+    {
+      "name": "KnockbackResistance",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knockback_resistance",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/potion/KnockbackResistanceMobEffect.java"
+        ]
+      },
+      "path": "~/Potion"
+    },
+    {
+      "name": "RunicAmbrosia",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "runic_ambrosia",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/item/RunicAmbrosiaItem.java",
+          "src/main/resources/assets/losthorizon/models/item/runic_ambrosia.json",
+          "src/main/resources/assets/losthorizon/items/runic_ambrosia.json"
+        ]
+      },
+      "path": "~/Food/Runic Ambrosia"
+    },
+    {
+      "name": "RunicAmbrosiaLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "runic_ambrosia_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/RunicAmbrosiaLeJoueurTermineDutiliserLitemProcedure.java"
+        ]
+      },
+      "path": "~/Food/Runic Ambrosia"
+    },
+    {
+      "name": "RunicAmbrosiaRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "runic_ambrosia_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/recipes/runic_ambrosia_recipe.json",
+          "src/main/resources/data/losthorizon/recipe/runic_ambrosia.json"
+        ]
+      },
+      "path": "~/Food/Runic Ambrosia"
+    },
+    {
+      "name": "ThunderHeart",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_heart",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/item/ThunderHeartItem.java",
+          "src/main/resources/assets/losthorizon/items/thunder_heart.json",
+          "src/main/resources/assets/losthorizon/models/item/thunder_heart.json"
+        ]
+      },
+      "path": "~/Food/Thunder Heart"
+    },
+    {
+      "name": "ThunderHeartLeJoueurTermineDutiliserLitem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_heart_le_joueur_termine_dutiliser_litem",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/ThunderHeartLeJoueurTermineDutiliserLitemProcedure.java"
+        ]
+      },
+      "path": "~/Food/Thunder Heart"
+    },
+    {
+      "name": "ChargedCreeper",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "charged_creeper",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/charged_creeper/creeper.json"
+        ]
+      },
+      "path": "~/Loot"
+    },
+    {
+      "name": "MysticalCuisine",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystical_cuisine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/mystical_cuisine.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "HealingSweetness",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_sweetness",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/healing_sweetness.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "HeartOfIce",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_of_ice",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/heart_of_ice.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "TravelersProvisions",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "travelers_provisions",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/travelers_provisions.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "TravelerSPieQuandLobjetEstFabriquefondu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "traveler_s_pie_quand_lobjet_est_fabriquefondu",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/TravelerSPieQuandLobjetEstFabriquefonduProcedure.java"
+        ]
+      },
+      "path": "~/Food/Travelers Pie"
+    },
+    {
+      "name": "WillingCorruption",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "willing_corruption",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/willing_corruption.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "InnerThunder",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inner_thunder",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/inner_thunder.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "FeastOfTheGods",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feast_of_the_gods",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/feast_of_the_gods.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "FeastOfTheGodsLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "feast_of_the_gods_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/loot_table/gameplay/feast_of_the_gods.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "MysticGourmet",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_gourmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/mystic_gourmet.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "GrantMysticGourmet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grant_mystic_gourmet",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/GrantMysticGourmetProcedure.java"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "MysticGourmetLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mystic_gourmet_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/loot_table/gameplay/mystic_gourmet.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "ThunderHeartRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_heart_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/recipe/thunder_heart.json",
+          "src/main/resources/data/losthorizon/advancement/recipes/thunder_heart_recipe.json"
+        ]
+      },
+      "path": "~/Food/Thunder Heart"
+    },
+    {
+      "name": "FightingOnTheEdge",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fighting_on_the_edge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/advancement/fighting_on_the_edge.json"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "FightingOnTheEdgeGrant",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fighting_on_the_edge_grant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/FightingOnTheEdgeGrantProcedure.java"
+        ]
+      },
+      "path": "~/Food"
+    },
+    {
+      "name": "HeartGuardianQuandLentiteEstBlessee",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heart_guardian_quand_lentite_est_blessee",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/losthorizon/procedures/HeartGuardianQuandLentiteEstBlesseeProcedure.java"
+        ]
+      },
+      "path": "~/Biomes/EnchantedForest/Boss"
+    },
+    {
+      "name": "FightingOnTheEdgeLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fighting_on_the_edge_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/losthorizon/loot_table/gameplay/fighting_on_the_edge.json"
+        ]
+      },
+      "path": "~/Food"
     }
   ],
   "variable_elements": [
@@ -6267,6 +7111,37 @@
     ],
     "BLOCKS:minecraft:wooden_buttons": [
       "~CUSTOM:MagicButton"
+    ],
+    "ITEMS:minecraft:meat": [
+      "~CUSTOM:ArapaimaCooked",
+      "~CUSTOM:ArapaimaRaw",
+      "~CUSTOM:RedBelliedPiranhaCooked",
+      "~CUSTOM:RedBelliedPiranhaRaw",
+      "~CUSTOM:RedGrouperCooked",
+      "~CUSTOM:RedGrouperRaw"
+    ],
+    "ITEMS:mod:cooked-meat": [
+      "Items.COOKED_PORKCHOP",
+      "Items.COOKED_BEEF",
+      "Items.COOKED_CHICKEN",
+      "Items.COOKED_RABBIT",
+      "Items.COOKED_MUTTON",
+      "Items.ROTTEN_FLESH",
+      "CUSTOM:RedGrouperCooked",
+      "CUSTOM:RedBelliedPiranhaCooked",
+      "CUSTOM:ArapaimaCooked",
+      "Items.COOKED_FISH#0",
+      "Items.COOKED_FISH#1"
+    ],
+    "ITEMS:mod:raw-fish": [
+      "CUSTOM:RedGrouperRaw",
+      "CUSTOM:RedBelliedPiranhaRaw",
+      "CUSTOM:ArapaimaRaw",
+      "Items.FISH#0",
+      "Items.FISH#1"
+    ],
+    "BLOCKS:minecraft:crops": [
+      "CUSTOM:MysticalMushroomsStage0"
     ]
   },
   "tab_element_order": {},
@@ -6536,7 +7411,34 @@
       "item.losthorizon.lunar_sword": "Lunar Sword",
       "item.losthorizon.lunar_sword.description_0": "§dForged beneath the full moon",
       "item.losthorizon.lunar_sword.description_1": "§dInfused with astral silence",
-      "item.losthorizon.lunar_sword.description_2": "§dIts blade reflects dreams"
+      "item.losthorizon.lunar_sword.description_2": "§dIts blade reflects dreams",
+      "item.losthorizon.crystallized_honey": "Crystallized Honey",
+      "item.losthorizon.travelers_pie": "Traveler\u0027s Pie",
+      "item.losthorizon.ice_scale": "Ice Scale",
+      "item.losthorizon.onyx_essence": "Onyx Essence",
+      "item.losthorizon.mystical_mushrooms": "Mystical Mushrooms",
+      "item.losthorizon.mystical_mushrooms_crops": "Mystical Mushrooms Crop",
+      "effect.losthorizon.knockback_resistance": "Knockback Resistance",
+      "item.losthorizon.runic_ambrosia": "Runic Ambrosia",
+      "item.losthorizon.thunder_heart": "Thunder Heart",
+      "advancements.mystical_cuisine.descr": "Taste a mystical food for the first time",
+      "advancements.mystical_cuisine.title": "Mystical Cuisine",
+      "advancements.healing_sweetness.descr": "Crystallized honey purifies what eats away at you from within.",
+      "advancements.healing_sweetness.title": "Healing Sweetness",
+      "advancements.heart_of_ice.title": "Heart of Ice",
+      "advancements.heart_of_ice.descr": "Get ready to face the flames of the Nether",
+      "advancements.travelers_provisions.descr": "A pie worthy of the greatest explorers",
+      "advancements.travelers_provisions.title": "Traveler\u0027s Provisions",
+      "advancements.willing_corruption.descr": "Accepts corruption from Onyx to gain power",
+      "advancements.willing_corruption.title": "Willing Corruption",
+      "advancements.inner_thunder.descr": "The heart of a charged Creeper now beats within you",
+      "advancements.inner_thunder.title": "Inner Thunder",
+      "advancements.feast_of_the_gods.descr": "Savour Runic Ambrosia, food of legends",
+      "advancements.feast_of_the_gods.title": "Feast of the Gods",
+      "advancements.mystic_gourmet.title": "Mystic Gourmet",
+      "advancements.mystic_gourmet.descr": "Taste ALL the mystical foods of Lost Horizon",
+      "advancements.fighting_on_the_edge.descr": "Kill a boss with less than 2 hearts after consuming an Onyx Essence.",
+      "advancements.fighting_on_the_edge.title": "Fighting on the Edge"
     },
     "fr_fr": {
       "block.losthorizon.necromancer_grimoire_block.description_0": "Un livre ancien scellé par magie.",
@@ -6614,7 +7516,7 @@
       "book.losthorizon.rythe_notes.page1": "J’ai vu des éclats bleutés dans la grotte du nord-est. Ils résonnaient... comme s’ils vivaient. Runite, Mythril ? Je reviendrai équipé. Si quelqu’un lit ceci, cherchez la statue glacée.",
       "item.losthorizon.heart_activator": "Activateur du Cœur",
       "effect.losthorizon.furtivity": "Furtivité",
-      "item.losthorizon.frosbite_dagger.description_0": "Frostbite Dagger",
+      "item.losthorizon.frosbite_dagger.description_0": "Dague Givrée",
       "advancements.runite_advancement.descr": "Tu entends ces voix ?",
       "subtitles.broken_crystal": "",
       "item_group.losthorizon.rings": "Bagues",
@@ -6797,13 +7699,40 @@
       "item.minecraft.lingering_potion.effect.furtivity_potion": "Potion persistante de furtivité",
       "item.losthorizon.black_blaze_spawn_egg": "Black Blaze Spawn Egg",
       "entity.losthorizon.heart_guardian": "Gardien du Cœur",
-      "item.losthorizon.ash_of_dawn": "Ash Of Dawn",
-      "entity.villager.losthorizon.hunter": "Hunter",
-      "entity.villager.losthorizon.necromancer_work": "Necromancer",
-      "item.losthorizon.lunar_sword": "Lunar Sword",
+      "item.losthorizon.ash_of_dawn": "Cendres de l\u0027Aube",
+      "entity.villager.losthorizon.hunter": "Chasseur",
+      "entity.villager.losthorizon.necromancer_work": "Nécromancien",
+      "item.losthorizon.lunar_sword": "Épée Lunaire",
       "item.losthorizon.lunar_sword.description_0": "§dForgée sous la pleine lune",
       "item.losthorizon.lunar_sword.description_1": "§dImprégnée de silence astral",
-      "item.losthorizon.lunar_sword.description_2": "§dSa lame relète les rêves"
+      "item.losthorizon.lunar_sword.description_2": "§dSa lame relète les rêves",
+      "item.losthorizon.crystallized_honey": "Miel Cristallisé",
+      "item.losthorizon.travelers_pie": "Tourte du Voyageur",
+      "item.losthorizon.ice_scale": "Écaille de Glace",
+      "item.losthorizon.onyx_essence": "Essence d\u0027Onyx",
+      "item.losthorizon.mystical_mushrooms": "Champignons Mystiques",
+      "item.losthorizon.mystical_mushrooms_crops": "Plant de Champignons Mystiques",
+      "effect.losthorizon.knockback_resistance": "Résistance au recul",
+      "item.losthorizon.runic_ambrosia": "Ambroisie Runique",
+      "item.losthorizon.thunder_heart": "Cœur de Foudre",
+      "advancements.mystical_cuisine.descr": "Goûte à un aliment mystique pour la première fois",
+      "advancements.mystical_cuisine.title": "Cuisine Mystique",
+      "advancements.healing_sweetness.descr": "Le miel cristalisé purifie ce qui te ronge de l\u0027intérieur",
+      "advancements.healing_sweetness.title": "Douceur Currative",
+      "advancements.heart_of_ice.title": "Cœur de Glace",
+      "advancements.heart_of_ice.descr": "Prépare-toi à affronter les flammes du Nether",
+      "advancements.travelers_provisions.descr": "Une tourte digne des plus grands explorateurs",
+      "advancements.travelers_provisions.title": "Provisions du Voyageur",
+      "advancements.willing_corruption.descr": "Accepte la corruption de l\u0027Onyx pour gagner en puissance",
+      "advancements.willing_corruption.title": "Corruption Volontaire",
+      "advancements.inner_thunder.descr": "Le cœur d\u0027un Creeper chargé bat désormais en toi",
+      "advancements.inner_thunder.title": "Foudre Intérieure",
+      "advancements.feast_of_the_gods.descr": "Savoure l\u0027Ambroisie Runique, nourriture des légendes",
+      "advancements.feast_of_the_gods.title": "Festin des Dieux",
+      "advancements.mystic_gourmet.title": "Gourmet Mystique",
+      "advancements.mystic_gourmet.descr": "Goûte à TOUS les aliments mystiques de LostHorizon",
+      "advancements.fighting_on_the_edge.descr": "Tue un boss avec moins de 2 cœurs après avoir consommé une Essence d\u0027Onyx",
+      "advancements.fighting_on_the_edge.title": "Combat au Bord du Gouffre"
     }
   },
   "metadata": {
@@ -7026,13 +7955,46 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Food",
+        "children": [
+          {
+            "name": "Crystallized Honey",
+            "children": []
+          },
+          {
+            "name": "Travelers Pie",
+            "children": []
+          },
+          {
+            "name": "Ice Scale",
+            "children": []
+          },
+          {
+            "name": "Onyx Essence",
+            "children": []
+          },
+          {
+            "name": "Mystical Mushrooms",
+            "children": []
+          },
+          {
+            "name": "Runic Ambrosia",
+            "children": []
+          },
+          {
+            "name": "Thunder Heart",
+            "children": []
+          }
+        ]
       }
     ]
   },
   "workspaceSettings": {
     "modid": "losthorizon",
     "modName": "LostHorizon",
-    "version": "0.2.3",
+    "version": "0.3.0",
     "description": "LostHorizon enrichit Minecraft avec de nouvelles structures, des mobs uniques, des métiers inédits et des objets variés. Explore des ruines oubliées, affronte des créatures dangereuses et découvre des artefacts rares, tout en restant fidèle à l’esprit du jeu. Ajoute plus de défis et d’immersion à la survie !",
     "author": "Malicaeus, MCreator",
     "websiteURL": "https://github.com/elieduclr/LostHorizon",
@@ -7047,5 +8009,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.losthorizon"
   },
-  "mcreatorVersion": 202500344519
+  "mcreatorVersion": 202500345720
 }

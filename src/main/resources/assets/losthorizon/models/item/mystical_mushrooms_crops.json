@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "losthorizon:block/mystical_mushrooms_stage0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "losthorizon:arapaima_raw",
+    "losthorizon:red_grouper_raw",
+    "minecraft:cod",
+    "losthorizon:red_bellied_piranha_raw",
+    "minecraft:salmon"
+  ]
+}

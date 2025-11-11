@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Mythril"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "TAG:mod:cooked-meat"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.CARROT"
+      },
+      {
+        "value": "CUSTOM:Mythril"
+      },
+      {
+        "value": "Items.POTATO"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BREAD"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TravelerSPie"
+    },
+    "name": "travelers_pie_recipe",
+    "namespace": "mod"
+  }
+}
